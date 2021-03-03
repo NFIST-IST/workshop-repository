@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'NFIST'
-SITENAME = 'Workshops'
+SITENAME = 'Workshops NFIST'
 SITEURL = ''
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/Lisbon'
+LOCALE = 'pt_PT.utf8'
 
 DEFAULT_LANG = 'en'
 
@@ -19,16 +20,72 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Pelican', 'https://getpelican.com/'),
+         # ('Python.org', 'https://www.python.org/'),
+         # ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
+         # ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Facebook', 'facebok.com/NucleoFisicaIST','facebook-square'),
+          ('Instagram','instagram.com/nfist_/','instagram'),
+          ('Website','nfist.pt', 'link'),)
 
 DEFAULT_PAGINATION = 5
 
+#Plugins
+PLUGIN_PATHS = ['pelican-plugins']
+
+MARKUP = ("md",)
+
+# from pelican_jupyter import liquid as nb_liquid
+from pelican_jupyter import markup as nb_markup
+
+PLUGIN_PATHS = ['pelican-plugins']
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+
+PLUGINS = [
+    'i18n_subsites',
+    'series',
+    'tag_cloud',
+    'liquid_tags.youtube',
+    # 'liquid_tags.notebook',
+    # 'liquid_tags.include_code',
+    'render_math',
+    # 'pelican-ipynb.markup' 
+    nb_markup
+    ]
+
+I18N_TEMPLATES_LANG = 'en'
+
+IGNORE_FILES = [".ipynb_checkpoints"]
+
+IPYNB_FIX_CSS = False
+IPYNB_EXPORT_TEMPLATE="base"
+
+#Theme Settings
+THEME = 'pelican-themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'sandstone'
+
+SHOW_ARTICLE_AUTHOR = False
+SHOW_ARTICLE_CATEGORY = False
+SHOW_DATE_MODIFIED = False
+
+PYGMENTS_STYLE = 'default'
+
+# BOOTSTRAP_FLUID = True
+
+SITELOGO = 'images/logo.png'
+SITELOGO_SIZE = 100
+HIDE_SITENAME = False
+
+BOOTSTRAP_NAVBAR_INVERSE = False
+
+SERIES_TEXT = 'Parte %(index)s do %(name)s'
+DISPLAY_SERIES_ON_SIDEBAR = True
+SHOW_SERIES = True
+
+FAVICON = 'images/favicon.png'
+
+DISPLAY_TAGS_ON_SIDEBAR = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
