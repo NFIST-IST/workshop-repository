@@ -26,9 +26,9 @@ AUTHOR_FEED_RSS = None
          # ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Facebook', 'facebok.com/NucleoFisicaIST','facebook-square'),
-          ('Instagram','instagram.com/nfist_/','instagram'),
-          ('Website','nfist.pt', 'link'),)
+SOCIAL = (('Facebook', 'https:\\www.facebook.com/NucleoFisicaIST','facebook-square'),
+        ('Instagram','https:\\www.instagram.com/nfist_/','instagram'),
+        ('Website','https:\\www.nfist.pt', 'link'),)
 
 DEFAULT_PAGINATION = 5
 
