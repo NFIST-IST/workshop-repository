@@ -32,6 +32,11 @@ SOCIAL = (('Facebook', 'facebok.com/NucleoFisicaIST','facebook-square'),
 
 DEFAULT_PAGINATION = 5
 
+ARTICLE_URL = "{category}/{slug}/"
+ARTICLE_SAVE_AS = "{category}/{slug}.html"
+PAGE_URL = "{category}/{slug}/"
+PAGE_SAVE_AS = "{category}/{slug}.html"
+
 #Plugins
 PLUGIN_PATHS = ['pelican-plugins']
 
