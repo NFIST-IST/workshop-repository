@@ -32,7 +32,7 @@ SOCIAL = (('Facebook', 'https:\\www.facebook.com/NucleoFisicaIST','facebook-squa
 
 DEFAULT_PAGINATION = 5
 
-ARTICLE_URL = "{category}/{slug}/"
+ARTICLE_URL = "{category}/{slug}"
 ARTICLE_SAVE_AS = "{category}/{slug}.html"
 PAGE_URL = "{category}/{slug}/"
 PAGE_SAVE_AS = "{category}/{slug}.html"
