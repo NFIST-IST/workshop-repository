@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'NFIST'
-SITENAME = 'Workshops NFIST'
+SITENAME = 'workshops'
 SITEURL = ''
 
 PATH = 'content'
@@ -18,6 +18,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+LOAD_CONTENT_CACHE = False
 
 # Blogroll
 # LINKS = (('Pelican', 'https://getpelican.com/'),
