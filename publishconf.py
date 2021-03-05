@@ -10,7 +10,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = 'https://nfist-ist.github.io/teste'
+SITEURL = 'https://nfist-ist.github.io/workshop-repository/'
 RELATIVE_URLS = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
