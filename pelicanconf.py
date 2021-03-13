@@ -47,7 +47,6 @@ MARKUP = ("md",)
 # from pelican_jupyter import liquid as nb_liquid
 from pelican_jupyter import markup as nb_markup
 
-PLUGIN_PATHS = ['pelican-plugins']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 PLUGINS = [
@@ -87,7 +86,7 @@ HIDE_SITENAME = False
 
 BOOTSTRAP_NAVBAR_INVERSE = False
 
-SERIES_TEXT = 'Parte %(index)s do %(name)s'
+#SERIES_TEXT = ''
 DISPLAY_SERIES_ON_SIDEBAR = True
 SHOW_SERIES = True
 
