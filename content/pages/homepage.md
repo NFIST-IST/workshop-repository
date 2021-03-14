@@ -3,8 +3,7 @@ URL:
 save_as: index.html
 Template: homepage
 
-### This is the homepage!
-
+## Work In Progress
 Aqui poderás encontrar informação e tutoriais 
 relacionados com diversas áreas e para diversos níveis. 
 

@@ -75,7 +75,7 @@
                     <a href="{{ SITEURL }}/{{ article.url }}"
                        rel="bookmark"
                        title="{{ _('Permalink to') }} {{ article.title|striptags }}">
-                        {{ article.title }}
+                        {{article.series.name}} - {{ article.title }}
                     </a>
                 </h1>
             </header>
