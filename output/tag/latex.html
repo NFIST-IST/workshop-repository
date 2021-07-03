@@ -36,7 +36,7 @@
 <body>
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -67,19 +67,31 @@
 </div> <!-- /.navbar -->
 
 <!-- Banner -->
-<!-- End Banner -->
+<!-- <style> -->
+<!-- 	#banner{ -->
+<!-- 	    background-image:url("//banner.png"); -->
+<!-- 	} -->
+<!-- </style> -->
+
+<!-- <div id="banner"> -->
+<!-- 	<div class="container-fluid"> -->
+<!-- 	</div> -->
+<!-- </div> -->
+
+<img src="//banner.png" 
+     class="img-responsive" alt="" style="max-height:250px; padding:5px"><!-- End Banner -->
 
 <!-- Content Container -->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="/workshop-latex/latex">1. Workshop LaTeX</a></h2>
-                <div class="summary"><p>\LaTeX</p>
-                    <!-- <a class="btn btn-default btn-xs" href="/workshop-latex/latex">LER TUDO </a> -->
-                </div>
+                        <h2><a href="/workshop-latex/latex">1. Workshop LaTeX</a></h2>
+                        <div class="summary"><p>\LaTeX</p>
+                            <!-- <a class="btn btn-default btn-xs" href="/workshop-latex/latex">LER TUDO </a> -->
+                        </div>
             </article>
-            <hr/>
+            <!-- <hr/> -->
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -107,7 +119,7 @@
 <!-- End Content Container -->
 
 <footer>
-   <div class="container">
+   <div class="container-fluid">
       <hr>
       <div class="row">
          <div class="col-xs-10">&copy; 2021 NFIST
@@ -127,6 +139,7 @@
 <script src="/theme/js/respond.min.js"></script>
 
 
+    <script src="/theme/js/bodypadding.js"></script>
 
 
 </body>

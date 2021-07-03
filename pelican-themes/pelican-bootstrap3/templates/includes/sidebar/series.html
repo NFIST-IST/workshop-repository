@@ -8,13 +8,13 @@
     {% if article.series.previous %}
     <li class="list-group-item">
       <h5></i>{{ _('Anterior:') }}</h5>
-      <a href="{{ SITEURL }}/{{ article.series.previous.url }}">{{ article.series.previous.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.series.previous.url }}">  • {{ article.series.previous.title }}</a>
     </li>
     {% endif %}
     {% if article.series.next %}
     <li class="list-group-item">
       <h5>{{ _('Seguinte:') }}</h5>
-      <a href="{{ SITEURL }}/{{ article.series.next.url }}">{{ article.series.next.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.series.next.url }}">  • {{ article.series.next.title }}</a>
     </li>
     {% endif %}
   </ul>

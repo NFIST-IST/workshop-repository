@@ -11,6 +11,7 @@ TIMEZONE = 'Europe/Lisbon'
 LOCALE = 'pt_PT.utf8'
 
 DEFAULT_LANG = 'en'
+BANNER = "images/workshop_fc_banner.png"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -42,6 +43,19 @@ PAGE_SAVE_AS = "{category}/{slug}.html"
 #Plugins
 PLUGIN_PATHS = ['pelican-plugins']
 
+# MARKDOWN = ['(css_class=highlight, linenums=True)','extra']
+
+MARKDOWN = {
+        'extensions': ['markdown.extensions.codehilite'],
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight',
+            'linenums':None,'guess_lang':False},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
+
 MARKUP = ("md",)
 
 # from pelican_jupyter import liquid as nb_liquid
@@ -63,7 +77,7 @@ PLUGINS = [
 
 I18N_TEMPLATES_LANG = 'en'
 
-IGNORE_FILES = [".ipynb_checkpoints"]
+IGNORE_FILES = [".ipynb_checkpoints",".*"]
 
 IPYNB_FIX_CSS = False
 IPYNB_EXPORT_TEMPLATE="base"
@@ -76,9 +90,9 @@ SHOW_ARTICLE_AUTHOR = False
 SHOW_ARTICLE_CATEGORY = False
 SHOW_DATE_MODIFIED = False
 
-PYGMENTS_STYLE = 'monokai'
 
-# BOOTSTRAP_FLUID = True
+PYGMENTS_STYLE = 'monokai'
+BOOTSTRAP_FLUID = True
 
 SITELOGO = 'images/logo.png'
 SITELOGO_SIZE = 100

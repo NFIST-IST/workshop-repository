@@ -1,0 +1,13 @@
+<!-- <style> -->
+<!-- 	#banner{ -->
+<!-- 	    background-image:url("{{ SITEURL}}/{{ category|lower()|replace(" ","-") }}/banner.png"); -->
+<!-- 	} -->
+<!-- </style> -->
+
+<!-- <div id="banner"> -->
+<!-- 	<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}"> -->
+<!-- 	</div> -->
+<!-- </div> -->
+
+<img src="{{ SITEURL}}/{{ category|lower()|replace(" ","-") }}/banner.png" 
+     class="img-responsive" alt="" style="max-height:250px; padding:5px">
