@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Introdução à Programação em Python - workshops</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../images/favicon.png" rel="icon">
+
+<link rel="canonical" href="../workshop-fc/programacaopython">
+
+        <meta name="author" content="Bernardo Silva, Luís Lourenço" />
+        <meta name="keywords" content="Programação,Física,Secundário" />
+
+        <meta property="og:site_name" content="workshops" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Introdução à Programação em Python"/>
+        <meta property="og:url" content="../workshop-fc/programacaopython"/>
+        <meta property="og:description" content=""/>
+        <meta property="article:published_time" content="2021-07-02" />
+            <meta property="article:section" content="Workshop FC" />
+            <meta property="article:tag" content="Programação" />
+            <meta property="article:tag" content="Física" />
+            <meta property="article:tag" content="Secundário" />
+            <meta property="article:author" content="Bernardo Silva, Luís Lourenço" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops ATOM Feed"/>
+
+        <link href="../feeds/workshop-fc.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops Workshop FC ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+<img class="img-responsive pull-left" style="margin-right:2px" src="../images/logo.png" width="100"/> workshops            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="../category/workshop-fc.html">Workshop fc</a>
+                        </li>
+                        <li >
+                            <a href="../category/workshop-latex.html">Workshop latex</a>
+                        </li>
+                        <li >
+                            <a href="../category/workshop-mathematica.html">Workshop mathematica</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../workshop-fc/programacaopython"
+                       rel="bookmark"
+                       title="Permalink to Introdução à Programação em Python">
+                        Workshop FC - Introdução à Programação em Python
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Data</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2021-07-02T00:00:00+01:00"> sex 02 julho 2021</time>
+    </span>
+
+            <span class="label label-default">Workshop</span>
+            Parte 4 de 10 do Workshop FC
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="../tag/programacao.html">Programação</a>
+        /
+	<a href="../tag/fisica.html">Física</a>
+        /
+	<a href="../tag/secundario.html">Secundário</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <style type="text/css">.highlight .hll { background-color: var(--jp-cell-editor-active-background) }
+.highlight  { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
+.highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
+.highlight .err { color: var(--jp-mirror-editor-error-color) } /* Error */
+.highlight .k { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword */
+.highlight .o { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator */
+.highlight .p { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation */
+.highlight .ch { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Preproc */
+.highlight .cpf { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Single */
+.highlight .cs { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Special */
+.highlight .kc { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Type */
+.highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
+.highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
+.highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
+.highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
+.highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
+.highlight .mh { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Hex */
+.highlight .mi { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer */
+.highlight .mo { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Oct */
+.highlight .sa { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Affix */
+.highlight .sb { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Backtick */
+.highlight .sc { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Char */
+.highlight .dl { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Delimiter */
+.highlight .sd { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Doc */
+.highlight .s2 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Double */
+.highlight .se { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Escape */
+.highlight .sh { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Heredoc */
+.highlight .si { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Interpol */
+.highlight .sx { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Other */
+.highlight .sr { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Regex */
+.highlight .s1 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Single */
+.highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
+.highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */</style><div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://colab.research.google.com/github/NFIST-IST/workshop-repository/blob/main/content/workshop_fc/2_programacaopython.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Vari&#225;veis">Vari&#225;veis<a class="anchor-link" href="#Vari&#225;veis">&#182;</a></h1>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Os blocos principais de todas as linguagens de programação são as <strong>variáveis</strong>. Estas permitem guardar dados para serem posteriormente manipulados. Existem vários tipos de variáveis.</p>
+<p>Os tipos de variáveis mais importantes são:</p>
+<ul>
+<li><code>int</code> (integer): números inteiros</li>
+<li><code>float</code>: números reais</li>
+<li><code>str</code> (string): Texto</li>
+<li><code>list</code>: coleção de múltiplos items ordenados e editáveis</li>
+<li><code>tuple</code>: coleção de múltiplos items ordenados e não editáveis</li>
+<li><code>bool</code> (boolean): Verdadeiro ou falso</li>
+<li><code>complex</code>,<code>dict</code>,<code>set</code>, ...</li>
+</ul>
+<p>Iremos apenas forcar-nos nos tipos que nos serão úteis mais à frente.</p>
+<p>Podemos definir uma variável através de um nome e um valor:</p>
+
+<pre><code>variavel = valor</code></pre>
+<p>Quando queremos mudar o valor da mesma variável, podemos repetir esta operação para um novo valor:</p>
+
+<pre><code>variavel = novo_valor</code></pre>
+<p>Este novo valor pode também depender do valor anterior. Se quisermos mudar o valor de uma variável para o seu dobro, por exemplo, podemos simplesmente escrever:</p>
+
+<pre><code>variavel = variavel*2</code></pre>
+<p>Na linguagem de programação Python, não necessitamos de especificar o tipo de uma variável, uma vez que este é assumido de acordo com o seu conteúdo.</p>
+<p>Vejamos agora em que consiste cada tipo de variável.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Integers-e-floats"><em>Integers</em> e <em>floats</em><a class="anchor-link" href="#Integers-e-floats">&#182;</a></h2><p>Estas variáveis representam números, que podem, ou não, ser inteiros. No entanto, tirando algumas situações muito específicas, não existe grande diferença entre ambos, podendo ser tratados da mesma forma.</p>
+
+<pre><code>inteiro = 10
+decimal = 3.14</code></pre>
+<p>Vejamos como podemos manipular este tipo de variáveis.
+Comecemos por definir a variável <code>x</code>, com o valor 2, e fazer algumas operações sobre a mesma.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>  <span class="c1">#Soma </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">#Diferença</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">#Produto</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>  <span class="c1">#Divisão</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="c1">#Potência</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2
+3
+0
+4
+0.5
+8
+4
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Na linha 10, alteramos o valor de <code>x</code>para ser o seu dobro. É importante não interpretar esta linha como uma equação matemática (que daria 0=2, sendo impossível). A operação deve ler-se da direita para a esquerda, assim "Guardar o valor <code>2*x</code> na variável <code>x</code>¨.</p>
+<p>Podemos definir outras variáveis, onde guardamos o resultado destas operações</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="mi">2</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">w</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>4 8 1.0 64
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Agora que temos mais variáveis, podemos efetuar operações entre elas, mais ou menos complexas.</p>
+<p><em>Nota: as operações seguem as regras matemáticas usiais da prioridade de parêntesis, multiplicações e divisões antes de somas e subtrações,...</em></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="p">)</span> <span class="o">+</span> <span class="n">y</span><span class="o">/</span><span class="mi">8</span> <span class="o">+</span> <span class="mi">5</span><span class="o">*</span><span class="n">z</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>290.0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h4 id="Desafio"><strong>Desafio</strong><a class="anchor-link" href="#Desafio">&#182;</a></h4><ul>
+<li>Definir as variáveis $a$, $b$, $c$ e $d$ com valores 2, 3.5, 5 e 2.7, respetivamente;</li>
+<li>Efetuar a operação $a \times (b + 2\times(c^2 + b\times d) - a)$ e guardar o resultado na variável com o nome $resultado$;</li>
+<li>Imprimir a variável $resultado$ e verificar que se obteve 140.8</li>
+</ul>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Strings">Strings<a class="anchor-link" href="#Strings">&#182;</a></h3><p>Strings representam texto, sendo representadas entre aspas duplas, <code>"texto"</code>, ou apóstrofos, <code>'texto'</code>.</p>
+<p>Vejamos como podemos manipular algumas strings.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Olá&quot;</span>
+<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;Mundo&quot;</span>
+<span class="n">ano</span> <span class="o">=</span> <span class="mi">2021</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">string1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string2</span><span class="p">)</span>
+
+<span class="c1">#Somar strings</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string1</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="n">string2</span><span class="p">)</span>
+
+<span class="c1">#Formatar strings</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Estamos no ano </span><span class="si">{</span><span class="n">ano</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Olá
+Mundo
+Olá, Mundo
+Estamos no ano 2021
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Na linha 9 somamos as duas strings definidas com uma terceira, que não guardamos em nenhuma variável, e o que se obtem é o esperado: o texto é concatenado pela ordem em que é somado.</p>
+<p>Na linha 12 usamos um conceito chamado <code>f-string</code>. Quando uma string é precedida de um <code>f</code>, podemos no interior da mesma colocar, entre chavetas, uma variável, cujo valor será convertido para texto, nesse mesmo sítio.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Listas">Listas<a class="anchor-link" href="#Listas">&#182;</a></h2><p>Por vezes, é mais eficiente guardar muitas dados numa única variável. Para isso, usamos listas. Estas guardam <code>n</code> variáveis em lugares numerados de 0 a <code>n-1</code>. Para definirmos uma lista, devemos escrever dentro de parêntesis retos os seus elementos, sepearados de vírgulas.</p>
+
+<pre><code>lista = [elemento_0, elemento_1, elemento_2, elemento_3, ...]</code></pre>
+<p>Os elementos de uma lista podem ser de qualquer tipo, podendo mesmo ser de tipos diferentes entre si (apesar de não ser muito aconselhado este tipo de utilização)</p>
+<p>Se quisermos aceder a um elemento <code>i</code> de uma lista, devemos escrever o nome da variável, seguido do valor de <code>i</code> entre parêntesis retos.</p>
+
+<pre><code>lista[i]</code></pre>
+<p>É importante manter em mente que o primeiro elemento corresponde a <code>i=0</code>, o segundo a <code>i = 1</code> e assim sucessivamente.
+Se o índice for negativo, conta-se do fim (ex: <code>i = -1</code>é o último elemento, <code>i = -2</code> o penúltimo,...).</p>
+<p>Analisemos o seguinte exemplo:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Inicialização da lista</span>
+<span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lista completa: &quot;</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
+
+<span class="c1"># Aceder aos elementos</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;O elemento na posição 2 é:&quot;</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># Número de elementos da lista</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;O tamanho da lista pode ser obtido pelo comando len(lista):&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
+
+<span class="c1"># Adicionar uma variável à lista</span>
+<span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Foi adicionada uma variável à lista!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lista completa:&quot;</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Novo tamanho da lista:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
+
+<span class="c1"># Alterar uma das entradas da lista</span>
+<span class="n">lista</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Foi somado 5 ao elemento 2 da lista.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lista completa:&quot;</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Lista completa:  [10, 20, 30, 40]
+O elemento na posição 2 é: 30
+O tamanho da lista pode ser obtido pelo comando len(lista): 4
+Foi adicionada uma variável à lista!
+Lista completa: [10, 20, 30, 40, 50]
+Novo tamanho da lista: 5
+Foi somado 5 ao elemento 2 da lista.
+Lista completa: [10, 20, 35, 40, 50]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Podemos então resumir algumas funcionalidades das listas utilizadas:</p>
+<ul>
+<li>Linha 2: Definição inicial da lista (pode ou não começar vazia)
+<pre><code>lista = []</code></pre>
+</li>
+<li>Linha 7: Aceder a um elemento da lista (as posições começam a contar de 0)
+<pre><code>lista[i]</code></pre>
+</li>
+<li>Linha 13: Adicionar um elemento ao final da lista
+<pre><code>lista.append(x)</code></pre>
+</li>
+<li>Linhas 10 e 16: Obter o tamanho da lista
+<pre><code>len(lista)</code></pre>
+</li>
+</ul>
+
+</div>
+</div>
+
+
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Workshop FC - Parte 4</h4>
+       <h5>Anteriores:</h5>
+       <ul>
+           <li><a href="../workshop-fc/intro_workshop">1. Introdução ao Workshop</a></li>
+           <li><a href="../workshop-fc/programacao">1.1. O que é a programação?</a></li>
+           <li><a href="../workshop-fc/funcionamento">1.2. Funcionamento</a></li>
+       </ul>
+       <h5>Seguintes:</h5>
+       <ul>
+           <li><a href="../workshop-fc/variaveis">2.1. Variáveis</a></li>
+           <li><a href="../workshop-fc/ifs">2.2. Condições If</a></li>
+           <li><a href="../workshop-fc/funcoes">2.3. Funções e Bibliotecas</a></li>
+           <li><a href="../workshop-fc/ciclos">2.4. Ciclos</a></li>
+           <li><a href="../workshop-fc/matplotlib">2.5. A Biblioteca Matplotlib</a></li>
+           <li><a href="../workshop-fc/bit_of_mafs">3.1. Matemática</a></li>
+       </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item" style="padding: 8px 10px">
+  <h4><i class="fa fa-user fa-lg"></i><span class="icon-label">Segue-nos</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://www.facebook.com/NucleoFisicaIST"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+    <li class="list-group-item"><a href="https://www.instagram.com/nfist_/"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+    <li class="list-group-item"><a href="https://www.nfist.pt"><i class="fa fa-link fa-lg"></i> Website</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Series -->
+<li class="list-group-item">
+  <h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Workshop FC</span></h4>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h5></i>Anterior:</h5>
+      <a href="../workshop-fc/funcionamento">  • Funcionamento</a>
+    </li>
+    <li class="list-group-item">
+      <h5>Seguinte:</h5>
+      <a href="../workshop-fc/variaveis">  • Variáveis</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Series -->
+
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container-fluid">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2021 NFIST
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Voltar ao início</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+
+    <script src="../theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>
