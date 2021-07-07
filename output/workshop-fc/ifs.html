@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>O que é a programação? - workshops</title>
+    <title>Condições If - workshops</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,15 @@
 
     <link href="../images/favicon.png" rel="icon">
 
-<link rel="canonical" href="../workshop-fc/programacao">
+<link rel="canonical" href="../workshop-fc/ifs">
 
         <meta name="author" content="Bernardo Silva, Luís Lourenço" />
         <meta name="keywords" content="Programação,Física,Secundário" />
 
         <meta property="og:site_name" content="workshops" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="O que é a programação?"/>
-        <meta property="og:url" content="../workshop-fc/programacao"/>
+        <meta property="og:title" content="Condições If"/>
+        <meta property="og:url" content="../workshop-fc/ifs"/>
         <meta property="og:description" content=""/>
         <meta property="article:published_time" content="2021-07-02" />
             <meta property="article:section" content="Workshop FC" />
@@ -86,10 +86,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../workshop-fc/programacao"
+                    <a href="../workshop-fc/ifs"
                        rel="bookmark"
-                       title="Permalink to O que é a programação?">
-                        Workshop FC - O que é a programação?
+                       title="Permalink to Condições If">
+                        Workshop FC - Condições If
                     </a>
                 </h1>
             </header>
@@ -103,7 +103,7 @@
     </span>
 
             <span class="label label-default">Workshop</span>
-            Parte 2 de 10 do Workshop FC
+            Parte 6 de 10 do Workshop FC
 
 
 
@@ -160,37 +160,191 @@
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */</style><div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/NFIST-IST/workshop-repository/blob/main/content/workshop_fc/1_1_python.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p><a href="https://colab.research.google.com/github/NFIST-IST/workshop-repository/blob/main/content/workshop_fc/2_2_ifs.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="O-que-&#233;-a-programa&#231;&#227;o?">O que &#233; a programa&#231;&#227;o?<a class="anchor-link" href="#O-que-&#233;-a-programa&#231;&#227;o?">&#182;</a></h1>
+<h1 id="Condi&#231;&#245;es-If">Condi&#231;&#245;es <em>If</em><a class="anchor-link" href="#Condi&#231;&#245;es-If">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>De certeza que já ouviste este termo, ou outros equivalentes, mas sabes realmente o que é a programação?</strong></p>
-<p>Simplificando (talvez um pouco a mais), programar é uma forma de darmos instruções a um computador. A única coisa que um computador "percebe" são zeros e uns, mas, felizmente, já não temos que nos preocupar em aprender essa linguagem que se diz de "baixo nível". Uma linguagem de programação é criada de forma a servir de interface entre as instruções que um computador percebe e o que nos é conveniente e fácil de escrever. Às instruções que nós escrevemos é usual chamar de "código".</p>
-<p><strong>E porque é que existem várias linguagens de programação e qual é a diferença entre elas?</strong></p>
-<p>A enorme variedade de opções vem do facto de várias pessoas com objetivos diferentes terem desenvolvido ferramentas diferentes (podes pensar em como também existem várias línguas no mundo que foram evoluindo cada uma no seu sentido), mas estas são, fundamentalmente, equivalentes.</p>
-<p>Qualquer que seja o objetivo, muito provavelmente pode ser resolvido com a linguagem que escolheres. No entanto, haverá sempre algumas que serão mais ou menos adequadas (ninguém te impede de pregar um prego com uma chave de fendas, mas claramente não é a melhor maneira de o fazer). Outras diferenças podem ter a ver com o quão eficiente é a linguagem para traduzir as instruções de forma a que o computador as realize o mais rapidamente possível, ou a quantidade de trabalho e tempo que é preciso dispender para escrever o código.</p>
-<p>Será sempre necessário avaliar os compromissos necessários de fazer quando se escolhe uma linguagem em oposição a outra qualquer.</p>
-<p><strong>E para este workshop? O que vamos usar?</strong></p>
+<p>Quando temos a necessidade de executar algum código apenas se se verificar dada uma condição, podemos utilizar um <code>if</code> (se).</p>
+
+<pre><code>if {condicao}:
+  {código a executar se a condição for verdadeira}</code></pre>
+<p>Podemos ainda executar operações se a condição for falsa, através de um <code>else</code> (caso contrário):</p>
+
+<pre><code>if {condicao}:
+  {código a executar se a condição for verdadeira}
+else:
+  {código a executar se a condição for falsa}</code></pre>
+<p>Existe, por fim, a opção de verificar mais que uma condição, com um <code>elif</code> (<code>else</code> + <code>if</code>):</p>
+
+<pre><code>if {condicao 1}:
+  {código a executar se a condição for verdadeira}
+elif {condicao 2}:
+  {código a executar se a condição 1 for falsa e a condição 2 for verdadeira}
+else:
+  {código a executar se ambas as condições forem falsas}</code></pre>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Python">Python<a class="anchor-link" href="#Python">&#182;</a></h1>
+<p>(Nota: as chavetas <code>{ }</code> não devem ser escritas, são apenas para representar que o texte deve ser substituído por alguma coisa)</p>
+
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">35</span>
+
+<span class="k">if</span> <span class="n">x</span><span class="o">&gt;</span><span class="n">y</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x é maior que y&quot;</span><span class="p">)</span>
+
+<span class="k">elif</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">y</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x é menor que y&quot;</span><span class="p">)</span>
+
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x e y são iguais&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>x é menor que y
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Neste workshop iremos utilizar a linguagem de programação Python. Esta, para além de bastante poderosa, é também muito fácil no que toca a escrever código, sendo o código, por vezes, muito semelhante a linguagem natural. Como é também uma linguagem muito popular, encontrarás na internet imensos conteúdos para aprenderes mais ou para te ajudarem a resolver os problemas que possam surgir.</p>
+<p>Na sintaxe (maneira como se escreve), não nos devemos esquecer dos dois pontos <code>:</code> no final da linha, a seguir à condição.</p>
+<p>Outra coisa muito importante de realçar aqui é a <strong>indentação</strong>. Chamamos indentação ao espaço entre o início da linha e o texto nela escrito. Um parágrafo, de acordo com as regras do portugês, deverá estar <strong>indentado</strong>.</p>
+<p>Neste caso, a maneira de o Python saber que operações estão dentro do <code>if</code> é através da indentação. Todas estas operações deverão ter uma indentação maior que a do <code>if</code>, ou seja, se o <code>if</code> estiver no início da linha, as operações têm que ter pelo menos um espaço no início da linha. O número de espaços não é importante (podendo também ser um <code>Tab</code>, a tecla por cima do <em>Caps Lock</em>), sendo usual usar 2 a 4 espaços. De notar que é também importante que todas as operações tenham o mesmo número de espaços, se não obteremos um erro.</p>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="k">if</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Esta operação está dentro do if&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Esta também&quot;</span><span class="p">)</span>
+     <span class="c1">#print(&quot;Se o comentário desta for retirado, ocorrerá um erro&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Esta operação está fora do if&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Esta operação está dentro do if
+Esta também
+Esta operação está fora do if
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Quando estamos interessados em verificar mais que uma condição, podemos usar um <code>if</code> dentro de outro, ou operações lógicas (<code>and</code>, <code>or</code>, ...).</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x está no intervalo ]2,5[&quot;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x está no intervalo ]2,5[&quot;</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x é igual a 0 ou a 10&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>x está no intervalo ]2,5[
+x está no intervalo ]2,5[
+x é igual a 0 ou a 10
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 
@@ -227,17 +381,17 @@
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
-    <h4>Workshop FC - Parte 2</h4>
+    <h4>Workshop FC - Parte 6</h4>
        <h5>Anteriores:</h5>
        <ul>
            <li><a href="../workshop-fc/intro_workshop">1. Introdução ao Workshop</a></li>
-       </ul>
-       <h5>Seguintes:</h5>
-       <ul>
+           <li><a href="../workshop-fc/programacao">1.1. O que é a programação?</a></li>
            <li><a href="../workshop-fc/funcionamento">1.2. Funcionamento</a></li>
            <li><a href="../workshop-fc/programacaopython">2. Introdução à Programação em Python</a></li>
            <li><a href="../workshop-fc/variaveis">2.1. Variáveis</a></li>
-           <li><a href="../workshop-fc/ifs">2.2. Condições If</a></li>
+       </ul>
+       <h5>Seguintes:</h5>
+       <ul>
            <li><a href="../workshop-fc/funcoes">2.3. Funções e Bibliotecas</a></li>
            <li><a href="../workshop-fc/ciclos">2.4. Ciclos</a></li>
            <li><a href="../workshop-fc/matplotlib">2.5. A Biblioteca Matplotlib</a></li>
@@ -271,11 +425,11 @@
   <ul class="list-group">
     <li class="list-group-item">
       <h5></i>Anterior:</h5>
-      <a href="../workshop-fc/intro_workshop">  • Introdução ao Workshop</a>
+      <a href="../workshop-fc/variaveis">  • Variáveis</a>
     </li>
     <li class="list-group-item">
       <h5>Seguinte:</h5>
-      <a href="../workshop-fc/funcionamento">  • Funcionamento</a>
+      <a href="../workshop-fc/funcoes">  • Funções e Bibliotecas</a>
     </li>
   </ul>
 </li>

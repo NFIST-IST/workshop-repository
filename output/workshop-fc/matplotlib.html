@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Variáveis - workshops</title>
+    <title>A Biblioteca Matplotlib - workshops</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,15 @@
 
     <link href="../images/favicon.png" rel="icon">
 
-<link rel="canonical" href="../workshop-fc/variaveis">
+<link rel="canonical" href="../workshop-fc/matplotlib">
 
         <meta name="author" content="Bernardo Silva, Luís Lourenço" />
         <meta name="keywords" content="Programação,Física,Secundário" />
 
         <meta property="og:site_name" content="workshops" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Variáveis"/>
-        <meta property="og:url" content="../workshop-fc/variaveis"/>
+        <meta property="og:title" content="A Biblioteca Matplotlib"/>
+        <meta property="og:url" content="../workshop-fc/matplotlib"/>
         <meta property="og:description" content=""/>
         <meta property="article:published_time" content="2021-07-02" />
             <meta property="article:section" content="Workshop FC" />
@@ -86,10 +86,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../workshop-fc/variaveis"
+                    <a href="../workshop-fc/matplotlib"
                        rel="bookmark"
-                       title="Permalink to Variáveis">
-                        Workshop FC - Variáveis
+                       title="Permalink to A Biblioteca Matplotlib">
+                        Workshop FC - A Biblioteca Matplotlib
                     </a>
                 </h1>
             </header>
@@ -103,7 +103,7 @@
     </span>
 
             <span class="label label-default">Workshop</span>
-            Parte 5 de 10 do Workshop FC
+            Parte 9 de 10 do Workshop FC
 
 
 
@@ -160,7 +160,7 @@
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */</style><div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/NFIST-IST/workshop-repository/blob/main/content/workshop_fc/2_1_variaveis.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p><a href="https://colab.research.google.com/github/NFIST-IST/workshop-repository/blob/main/content/workshop_fc/2_5_matplotlib.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 
 </div>
 </div>
@@ -520,107 +520,6 @@ Lista completa: [10, 20, 35, 40, 50]
 
 </div>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Booleanas">Booleanas<a class="anchor-link" href="#Booleanas">&#182;</a></h1><p>Variáveis <code>bool</code> representam apenas valores de verdade, ou seja, verdadeiro ou falso e, como tal, só podem tomar dois valores:</p>
-<ul>
-<li><code>True</code> </li>
-<li><code>False</code></li>
-</ul>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">b</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">6</span><span class="o">/</span><span class="mi">2</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">1</span>
-<span class="n">w</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True False True True True True
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Aqui usamos a operação <code>==</code>, que é o equivalente a verificar se o que está à esquerda é igual ao que está à direita. Como podes ver, o Python considera que <code>0</code> é igual a <code>False</code> e que <code>1</code> é igual a <code>True</code>.  Qualquer número diferente de 0 é considerado como verdadeiro, enquanto que 0 é falso.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Podemos ainda usar a operaçãoa <code>not</code>, que faz a negação de um booleano.</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">True</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">False</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>False
-True
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 
 
@@ -656,20 +555,20 @@ True
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
-    <h4>Workshop FC - Parte 5</h4>
+    <h4>Workshop FC - Parte 9</h4>
        <h5>Anteriores:</h5>
        <ul>
            <li><a href="../workshop-fc/intro_workshop">1. Introdução ao Workshop</a></li>
            <li><a href="../workshop-fc/programacao">1.1. O que é a programação?</a></li>
            <li><a href="../workshop-fc/funcionamento">1.2. Funcionamento</a></li>
            <li><a href="../workshop-fc/programacaopython">2. Introdução à Programação em Python</a></li>
-       </ul>
-       <h5>Seguintes:</h5>
-       <ul>
+           <li><a href="../workshop-fc/variaveis">2.1. Variáveis</a></li>
            <li><a href="../workshop-fc/ifs">2.2. Condições If</a></li>
            <li><a href="../workshop-fc/funcoes">2.3. Funções e Bibliotecas</a></li>
            <li><a href="../workshop-fc/ciclos">2.4. Ciclos</a></li>
-           <li><a href="../workshop-fc/matplotlib">2.5. A Biblioteca Matplotlib</a></li>
+       </ul>
+       <h5>Seguintes:</h5>
+       <ul>
            <li><a href="../workshop-fc/bit_of_mafs">3.1. Matemática</a></li>
        </ul>
 </section>
@@ -700,11 +599,11 @@ True
   <ul class="list-group">
     <li class="list-group-item">
       <h5></i>Anterior:</h5>
-      <a href="../workshop-fc/programacaopython">  • Introdução à Programação em Python</a>
+      <a href="../workshop-fc/ciclos">  • Ciclos</a>
     </li>
     <li class="list-group-item">
       <h5>Seguinte:</h5>
-      <a href="../workshop-fc/ifs">  • Condições If</a>
+      <a href="../workshop-fc/bit_of_mafs">  • Matemática</a>
     </li>
   </ul>
 </li>

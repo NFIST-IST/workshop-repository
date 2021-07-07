@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>O que é a programação? - workshops</title>
+    <title>Funções e Bibliotecas - workshops</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="/images/favicon.png" rel="icon">
+    <link href="../images/favicon.png" rel="icon">
 
-<link rel="canonical" href="/workshop-fc/programação">
+<link rel="canonical" href="../workshop-fc/funcoes">
 
         <meta name="author" content="Bernardo Silva, Luís Lourenço" />
         <meta name="keywords" content="Programação,Física,Secundário" />
 
         <meta property="og:site_name" content="workshops" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="O que é a programação?"/>
-        <meta property="og:url" content="/workshop-fc/programação"/>
+        <meta property="og:title" content="Funções e Bibliotecas"/>
+        <meta property="og:url" content="../workshop-fc/funcoes"/>
         <meta property="og:description" content=""/>
         <meta property="article:published_time" content="2021-07-02" />
             <meta property="article:section" content="Workshop FC" />
@@ -30,14 +30,17 @@
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.sandstone.min.css" type="text/css"/>
-    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="/theme/css/pygments/monokai.css" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
 
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops ATOM Feed"/>
 
-
+        <link href="../feeds/workshop-fc.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops Workshop FC ATOM Feed"/>
 </head>
 <body>
 
@@ -50,19 +53,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/" class="navbar-brand">
-<img class="img-responsive pull-left" style="margin-right:2px" src="/images/logo.png" width="100"/> workshops            </a>
+            <a href="../" class="navbar-brand">
+<img class="img-responsive pull-left" style="margin-right:2px" src="../images/logo.png" width="100"/> workshops            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="/category/workshop-fc.html">Workshop fc</a>
+                            <a href="../category/workshop-fc.html">Workshop fc</a>
                         </li>
                         <li >
-                            <a href="/category/workshop-latex.html">Workshop latex</a>
+                            <a href="../category/workshop-latex.html">Workshop latex</a>
                         </li>
                         <li >
-                            <a href="/category/workshop-mathematica.html">Workshop mathematica</a>
+                            <a href="../category/workshop-mathematica.html">Workshop mathematica</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -83,10 +86,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/workshop-fc/programação"
+                    <a href="../workshop-fc/funcoes"
                        rel="bookmark"
-                       title="Permalink to O que é a programação?">
-                        Workshop FC - O que é a programação?
+                       title="Permalink to Funções e Bibliotecas">
+                        Workshop FC - Funções e Bibliotecas
                     </a>
                 </h1>
             </header>
@@ -100,17 +103,17 @@
     </span>
 
             <span class="label label-default">Workshop</span>
-            Parte 2 de 4 do Workshop FC
+            Parte 7 de 10 do Workshop FC
 
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/programacao.html">Programação</a>
+	<a href="../tag/programacao.html">Programação</a>
         /
-	<a href="/tag/fisica.html">Física</a>
+	<a href="../tag/fisica.html">Física</a>
         /
-	<a href="/tag/secundario.html">Secundário</a>
+	<a href="../tag/secundario.html">Secundário</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -157,29 +160,29 @@
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */</style><div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="O-que-&#233;-a-programa&#231;&#227;o?">O que &#233; a programa&#231;&#227;o?<a class="anchor-link" href="#O-que-&#233;-a-programa&#231;&#227;o?">&#182;</a></h1>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>De certeza que já ouviste este termo, ou outros equivalentes, mas sabes realmente o que é a programação?</strong></p>
-<p>Simplificando (talvez um pouco a mais), programar é uma forma de darmos instruções a um computador. A única coisa que um computador "percebe" são zeros e uns, mas, felizmente, já não temos que nos preocupar em aprender essa linguagem que se diz de "baixo nível". Uma linguagem de programação é criada de forma a servir de interface entre as instruções que um computador percebe e o que nos é conveniente e fácil de escrever. Às instruções que nós escrevemos é usual chamar de "código".</p>
-<p><strong>E porque é que existem várias linguagens de programação e qual é a diferença entre elas?</strong></p>
-<p>A enorme variedade de opções vem do facto de várias pessoas com objetivos diferentes terem desenvolvido ferramentas diferentes (podes pensar em como também existem várias línguas no mundo que foram evoluindo cada uma no seu sentido), mas estas são, fundamentalmente, equivalentes.</p>
-<p>Qualquer que seja o objetivo, muito provavelmente pode ser resolvido com a linguagem que escolheres. No entanto, haverá sempre algumas que serão mais ou menos adequadas (ninguém te impede de pregar um prego com uma chave de fendas, mas claramente não é a melhor maneira de o fazer). Outras diferenças podem ter a ver com o quão eficiente é a linguagem para traduzir as instruções de forma a que o computador as realize o mais rapidamente possível, ou a quantidade de trabalho e tempo que é preciso dispender para escrever o código.</p>
-<p>Será sempre necessário avaliar os compromissos necessários de fazer quando se escolhe uma linguagem em oposição a outra qualquer.</p>
-<p><strong>E para este workshop? O que vamos usar?</strong></p>
+<p><a href="https://colab.research.google.com/github/NFIST-IST/workshop-repository/blob/main/content/workshop_fc/2_3_funcoes.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Python">Python<a class="anchor-link" href="#Python">&#182;</a></h1>
+<p>Num contexto de programação, uma função tem um papel muito semelhante a uma função matemática. Se considerarmos a função $f(x) = ax + b$, $x$ é o argumento da função, $f$ é o nome da função, e  valor de $ax+b$ será o seu "resultado" ou valor retornado.</p>
+<p>Em programação, mais especificamente em Python, podemos definir uma função da seguinte forma:</p>
+
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Neste workshop iremos utilizar a linguagem de programação Python. Esta, para além de bastante poderosa, é também muito fácil no que toca a escrever código, sendo o código, por vezes, muito semelhante a linguagem natural. Como é também uma linguagem muito popular, encontrarás na internet imensos conteúdos para aprenderes mais ou para te ajudarem a resolver os problemas que possam surgir.</p>
+
+<pre><code>def nome_da_funcao(argumento1,argumento2,...):
+    {Efetuar as operações desejadas}
+    return {resultado}</code></pre>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>A declaração de uma função começa com <code>def</code> (definir), seguido do nome que queremos dar à função (sem espaços e, boa prática, sem acentos ou cedilhas), dentro de parêntesis os argumentos desejados com os respetivos nomes e, por fim, <code>:</code>.</p>
 
 </div>
 </div>
@@ -218,15 +221,21 @@
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
-    <h4>Workshop FC - Parte 2</h4>
+    <h4>Workshop FC - Parte 7</h4>
        <h5>Anteriores:</h5>
        <ul>
-           <li><a href="/workshop-fc/intro_workshop">1. Introdução ao Workshop</a></li>
+           <li><a href="../workshop-fc/intro_workshop">1. Introdução ao Workshop</a></li>
+           <li><a href="../workshop-fc/programacao">1.1. O que é a programação?</a></li>
+           <li><a href="../workshop-fc/funcionamento">1.2. Funcionamento</a></li>
+           <li><a href="../workshop-fc/programacaopython">2. Introdução à Programação em Python</a></li>
+           <li><a href="../workshop-fc/variaveis">2.1. Variáveis</a></li>
+           <li><a href="../workshop-fc/ifs">2.2. Condições If</a></li>
        </ul>
        <h5>Seguintes:</h5>
        <ul>
-           <li><a href="/workshop-fc/funcionamento">3. Funcionamento</a></li>
-           <li><a href="/workshop-fc/variaveis">4. Variáveis</a></li>
+           <li><a href="../workshop-fc/ciclos">2.4. Ciclos</a></li>
+           <li><a href="../workshop-fc/matplotlib">2.5. A Biblioteca Matplotlib</a></li>
+           <li><a href="../workshop-fc/bit_of_mafs">3.1. Matemática</a></li>
        </ul>
 </section>
         </article>
@@ -256,11 +265,11 @@
   <ul class="list-group">
     <li class="list-group-item">
       <h5></i>Anterior:</h5>
-      <a href="/workshop-fc/intro_workshop">  • Introdução ao Workshop</a>
+      <a href="../workshop-fc/ifs">  • Condições If</a>
     </li>
     <li class="list-group-item">
       <h5>Seguinte:</h5>
-      <a href="/workshop-fc/funcionamento">  • Funcionamento</a>
+      <a href="../workshop-fc/ciclos">  • Ciclos</a>
     </li>
   </ul>
 </li>
@@ -281,21 +290,25 @@
          <div class="col-xs-10">&copy; 2021 NFIST
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
          <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Voltar ao início</a></p></div>
       </div>
    </div>
 </footer>
-<script src="/theme/js/jquery.min.js"></script>
+<script src="../theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/theme/js/bootstrap.min.js"></script>
+<script src="../theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="/theme/js/respond.min.js"></script>
+<script src="../theme/js/respond.min.js"></script>
 
 
-    <script src="/theme/js/bodypadding.js"></script>
+    <script src="../theme/js/bodypadding.js"></script>
 
 
 </body>

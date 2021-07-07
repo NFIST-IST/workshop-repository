@@ -13,6 +13,7 @@ LOCALE = 'pt_PT.utf8'
 DEFAULT_LANG = 'en'
 BANNER = "images/workshop_fc_banner.png"
 
+CC_LICENSE = "CC-BY-SA"
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -33,7 +34,7 @@ SOCIAL = (('Facebook', 'https://www.facebook.com/NucleoFisicaIST','facebook-squa
         ('Instagram','https://www.instagram.com/nfist_/','instagram'),
         ('Website','https://www.nfist.pt', 'link'),)
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = False
 
 ARTICLE_URL = "{category}/{slug}"
 ARTICLE_SAVE_AS = "{category}/{slug}.html"
