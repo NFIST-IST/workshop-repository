@@ -482,7 +482,7 @@ Hello World!
 TEX Archive Network&lt;/em&gt;: &lt;a href="http://www.ctan.org"&gt;CTAN&lt;/a&gt;. Aqui, o detalhe de cada
 pacote é dado por cada autor.&lt;/p&gt;
 &lt;p&gt;Segue-se um pdf para uma lista mais abreviada de packages, habitualmente
-mostrados num exemplo e com o link para a package direta: &lt;a href="/content/LaTeX_packages.pdf"&gt;pdf
+mostrados num exemplo e com o link para a package direta: &lt;a href="/files/LaTeX_packages.pdf"&gt;pdf
 link&lt;/a&gt;
 - Créditos do &lt;em&gt;Bernardo Silva&lt;/em&gt; por fazer este pdf.&lt;/p&gt;
 &lt;p&gt;Exemplos de pacotes usados:&lt;/p&gt;
@@ -3686,6 +3686,11 @@ O interpretador vai ler esse ficheiro, converter o código para instruções que
 &lt;/div&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
 &lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;h1 id="Fun&amp;#231;&amp;#245;es"&gt;Fun&amp;#231;&amp;#245;es&lt;a class="anchor-link" href="#Fun&amp;#231;&amp;#245;es"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
 &lt;p&gt;Num contexto de programação, uma função tem um papel muito semelhante a uma função matemática. Se considerarmos a função $f(x) = ax + b$, $x$ é o argumento da função, $f$ é o nome da função, e  valor de $ax+b$ será o seu "resultado" ou valor retornado.&lt;/p&gt;
 &lt;p&gt;Em programação, mais especificamente em Python, podemos definir uma função da seguinte forma:&lt;/p&gt;
 
@@ -3710,7 +3715,7 @@ O interpretador vai ler esse ficheiro, converter o código para instruções que
 &lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;
 &lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
-&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
      &lt;div class="CodeMirror cm-s-jupyter"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;soma&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -3765,7 +3770,7 @@ O interpretador vai ler esse ficheiro, converter o código para instruções que
 &lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;
 &lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
-&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
      &lt;div class="CodeMirror cm-s-jupyter"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;inutil&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
@@ -3803,7 +3808,7 @@ O interpretador vai ler esse ficheiro, converter o código para instruções que
 &lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;
 &lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
-&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
      &lt;div class="CodeMirror cm-s-jupyter"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;quadrados&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -3851,13 +3856,217 @@ O interpretador vai ler esse ficheiro, converter o código para instruções que
 &lt;/div&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
 &lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;p&gt;DESAFIO&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Desafio&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Criar uma função que receba uma lista de números e retorne uma lista com os quadrados da lista recebida.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
 &lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
 &lt;hr&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;h1 id="Bibliotecas"&gt;Bibliotecas&lt;a class="anchor-link" href="#Bibliotecas"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;p&gt;Anteriormente usamos a função &lt;code&gt;print()&lt;/code&gt;, que permite imprimir no ecrã resultados. Esta função já está definida de raiz, ou seja, não necessitamos de a declarar, como fizemos para as funções anteriores.&lt;/p&gt;
+&lt;p&gt;Por vezes necessitamos de usar funções que ainda não estão implementadas de raiz, mas que se podem encontrar numa biblioteca. Por exemplo, se quisermos usar funções matemáticas mais avançadas, podemos usar a biblioteca &lt;code&gt;math&lt;/code&gt;. Isto é feito através da seguinte linha de código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import math&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Uma biblioteca é um conjunto de comandos e funções definidos fora do ficheiro atual que podem ser utilizados após a sua importação. De notar que para utilizar esse códigos, estes devem estar precedidos por &lt;code&gt;math.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Seguem alguns exemplo:&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;
+&lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
+&lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
+     &lt;div class="CodeMirror cm-s-jupyter"&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Importar a biblioteca&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;math&lt;/span&gt;
+
+&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt; 
+
+&lt;span class="c1"&gt;# Atuar nas variáveis com funções da biblioteca math&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Raiz Quadrada: math.sqrt(x) =&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Exponencial (e^x): math.exp(x) =&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Logaritmo de Base Natural: math.log(x) =&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Seno: math.sin(x) =&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Cosseno: math.cos(x) =&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="jp-Cell-outputWrapper"&gt;
+
+
+&lt;div class="jp-OutputArea jp-Cell-outputArea"&gt;
+
+&lt;div class="jp-OutputArea-child"&gt;
+
+    
+    &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain"&gt;
+&lt;pre&gt;Raiz Quadrada: math.sqrt(x) = 1.7724538509055159
+Exponencial (e^x): math.exp(x) = 23.140692632779267
+Logaritmo de Base Natural: math.log(x) = 1.1447298858494002
+Seno: math.sin(x) = 1.2246467991473532e-16
+Cosseno: math.cos(x) = -1.0
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;p&gt;Atenção que as funções trigonométricas usam todas os argumentos em radianos!&lt;/p&gt;
+&lt;p&gt;Esta biblioteca guarda também algumas constantes, como é exemplo π:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;math.pi&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Uma vez importada, não precisamos mais de a importar neste documento.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;p&gt;Neste caso, escrever &lt;code&gt;math.&lt;/code&gt; no início de cada função da biblioteca não é muito chato, uma vez que o nome da biblioteca até é pequeno. No entanto, para bibliotecas maiores, é usual usar uma opção de importação que altera o nome da biblioteca. Por exemplo, a biblioteca &lt;code&gt;numpy&lt;/code&gt; costuma ser abreviada para &lt;code&gt;np&lt;/code&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;
+&lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
+&lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
+     &lt;div class="CodeMirror cm-s-jupyter"&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="jp-Cell-outputWrapper"&gt;
+
+
+&lt;div class="jp-OutputArea jp-Cell-outputArea"&gt;
+
+&lt;div class="jp-OutputArea-child"&gt;
+
+    
+    &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain"&gt;
+&lt;pre&gt;3.141592653589793
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;p&gt;A sintaxe é, então, acrescentar &lt;code&gt;as {abreviatura}&lt;/code&gt; no final do import que já tínhamos visto anteriormente. Neste caso, a biblioteca &lt;code&gt;numpy&lt;/code&gt; também é uma biblioteca matemática, pelo que tem também a definição do valor de π.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;p&gt;Há ainda a possibilidade de importar uma única função de uma biblioteca, quando for apenas nisso que estivermos interessados.&lt;/p&gt;
+&lt;p&gt;Por exemplo, se apenas quiser usar a função &lt;code&gt;time()&lt;/code&gt; da biblioteca &lt;code&gt;time&lt;/code&gt;, basta fazer&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;
+&lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
+&lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
+     &lt;div class="CodeMirror cm-s-jupyter"&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;span class="c1"&gt;#Esta função devolve os segundos que passaram desde 1 de jan&lt;/span&gt;
+&lt;span class="c1"&gt;#de 1970 às 00:00:00 UTC&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="jp-Cell-outputWrapper"&gt;
+
+
+&lt;div class="jp-OutputArea jp-Cell-outputArea"&gt;
+
+&lt;div class="jp-OutputArea-child"&gt;
+
+    
+    &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain"&gt;
+&lt;pre&gt;1625781088.206219
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;p&gt;em vez de ter que escrever &lt;code&gt;time.time()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A sintaxe é&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from {biblioteca} import {funcao1}, {funcao2}, ...&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;p&gt;Neste caso já não é necessário escrever o nome da biblioteca antes da função.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
+&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
+&lt;p&gt;A utilização destas bibliotecas é fulcral, uma vez que nos permite expandir as funcionalidades do Python com um esforço muito reduzido. Caso tenhas interesse, deixamos aqui algumas das bibliotecas mais usadas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NumPy&lt;/li&gt;
+&lt;li&gt;Matplotlib&lt;/li&gt;
+&lt;li&gt;Scipy&lt;/li&gt;
+&lt;li&gt;Pandas&lt;/li&gt;
+&lt;li&gt;Pygame&lt;/li&gt;
+&lt;li&gt;Django&lt;/li&gt;
+&lt;li&gt;OpenCV&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Iremos, mais à frente, focar-nos na biblioteca Matplotlib, que permite a visualização gráfica de dados.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5225,64 +5434,39 @@ x é igual a 0 ou a 10
 &lt;/div&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
 &lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;h1 id="Vari&amp;#225;veis"&gt;Vari&amp;#225;veis&lt;a class="anchor-link" href="#Vari&amp;#225;veis"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Matplotlib"&gt;Matplotlib&lt;a class="anchor-link" href="#Matplotlib"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
 &lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;p&gt;Os blocos principais de todas as linguagens de programação são as &lt;strong&gt;variáveis&lt;/strong&gt;. Estas permitem guardar dados para serem posteriormente manipulados. Existem vários tipos de variáveis.&lt;/p&gt;
-&lt;p&gt;Os tipos de variáveis mais importantes são:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;int&lt;/code&gt; (integer): números inteiros&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;float&lt;/code&gt;: números reais&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;str&lt;/code&gt; (string): Texto&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;list&lt;/code&gt;: coleção de múltiplos items ordenados e editáveis&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tuple&lt;/code&gt;: coleção de múltiplos items ordenados e não editáveis&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bool&lt;/code&gt; (boolean): Verdadeiro ou falso&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;complex&lt;/code&gt;,&lt;code&gt;dict&lt;/code&gt;,&lt;code&gt;set&lt;/code&gt;, ...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Iremos apenas forcar-nos nos tipos que nos serão úteis mais à frente.&lt;/p&gt;
-&lt;p&gt;Podemos definir uma variável através de um nome e um valor:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;variavel = valor&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Quando queremos mudar o valor da mesma variável, podemos repetir esta operação para um novo valor:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;variavel = novo_valor&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Este novo valor pode também depender do valor anterior. Se quisermos mudar o valor de uma variável para o seu dobro, por exemplo, podemos simplesmente escrever:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;variavel = variavel*2&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Na linguagem de programação Python, não necessitamos de especificar o tipo de uma variável, uma vez que este é assumido de acordo com o seu conteúdo.&lt;/p&gt;
-&lt;p&gt;Vejamos agora em que consiste cada tipo de variável.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
-&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;h2 id="Integers-e-floats"&gt;&lt;em&gt;Integers&lt;/em&gt; e &lt;em&gt;floats&lt;/em&gt;&lt;a class="anchor-link" href="#Integers-e-floats"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Estas variáveis representam números, que podem, ou não, ser inteiros. No entanto, tirando algumas situações muito específicas, não existe grande diferença entre ambos, podendo ser tratados da mesma forma.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;inteiro = 10
-decimal = 3.14&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Vejamos como podemos manipular este tipo de variáveis.
-Comecemos por definir a variável &lt;code&gt;x&lt;/code&gt;, com o valor 2, e fazer algumas operações sobre a mesma.&lt;/p&gt;
+&lt;p&gt;Vimos, anteriormente, que podiamos importar bibliotecas que nos permitiam obter outras funcionalidades. Vamos aqui introduzir mais uma.&lt;/p&gt;
+&lt;p&gt;O &lt;em&gt;Matplotlib&lt;/em&gt; é um módulo bastante útil para a criação de gráficos e desenhos para representação de dados. Vamos ver alguns exemplos.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;
 &lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
-&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[10]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
      &lt;div class="CodeMirror cm-s-jupyter"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
 
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;#Soma &lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;#Diferença&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;#Produto&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;#Divisão&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;#Potência&lt;/span&gt;
+&lt;span class="c1"&gt;#Listas com dados que queremos representar&lt;/span&gt;
+&lt;span class="n"&gt;x1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;y1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;36&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;49&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;x2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;y2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;27&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;x3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;y3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;5.656854249492381&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;15.588457268119896&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;55.90169943749474&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;88.18163074019441&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
-&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;marker&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;o&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;orange&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;linestyle&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;--&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;linewidth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;x&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
      &lt;/div&gt;
@@ -5301,16 +5485,14 @@ Comecemos por definir a variável &lt;code&gt;x&lt;/code&gt;, com o valor 2, e f
     &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;&lt;/div&gt;
 
 
-&lt;div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain"&gt;
-&lt;pre&gt;2
-3
-0
-4
-0.5
-8
-4
-&lt;/pre&gt;
+
+
+&lt;div class="jp-RenderedImage jp-OutputArea-output "&gt;
+&lt;img src="data:image/png;base64,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
+"
+&gt;
 &lt;/div&gt;
+
 &lt;/div&gt;
 
 &lt;/div&gt;
@@ -5320,21 +5502,33 @@ Comecemos por definir a variável &lt;code&gt;x&lt;/code&gt;, com o valor 2, e f
 &lt;/div&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
 &lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;p&gt;Na linha 10, alteramos o valor de &lt;code&gt;x&lt;/code&gt;para ser o seu dobro. É importante não interpretar esta linha como uma equação matemática (que daria 0=2, sendo impossível). A operação deve ler-se da direita para a esquerda, assim "Guardar o valor &lt;code&gt;2*x&lt;/code&gt; na variável &lt;code&gt;x&lt;/code&gt;¨.&lt;/p&gt;
-&lt;p&gt;Podemos definir outras variáveis, onde guardamos o resultado destas operações&lt;/p&gt;
+&lt;p&gt;Como podemos observar, os dados, na forma de listas, são representados através da função &lt;code&gt;plot&lt;/code&gt;, cujos argumentos são, para além destas, definições relacionadas com o estilo do gráfico, como a cor e grossura da linha, ou o tipo de &lt;em&gt;marker&lt;/em&gt;.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;
 &lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
-&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[47]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
      &lt;div class="CodeMirror cm-s-jupyter"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;
-&lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;gold&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;300&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;marker&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;o&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;38&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;62&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;63&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;63&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;black&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;marker&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;o&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;scatter&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;38&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;62&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;63&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;63&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;marker&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;3&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lw&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mf"&gt;0.3&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;250&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;101&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.2&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;0.2&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;black&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;linewidth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.2&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;0.2&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;black&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;linewidth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;X2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mf"&gt;0.004&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;101&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+&lt;span class="n"&gt;Y2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mf"&gt;0.38&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="c1"&gt;# plt.plot(X2, Y2, c=&amp;#39;black&amp;#39;, linewidth=8)&lt;/span&gt;
+
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xlim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
      &lt;/div&gt;
@@ -5350,45 +5544,16 @@ Comecemos por definir a variável &lt;code&gt;x&lt;/code&gt;, com o valor 2, e f
 &lt;div class="jp-OutputArea-child"&gt;
 
     
-    &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;&lt;/div&gt;
+    &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;Out[47]:&lt;/div&gt;
 
 
-&lt;div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain"&gt;
-&lt;pre&gt;4 8 1.0 64
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 
+
+&lt;div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain"&gt;
+&lt;pre&gt;(0.0, 1.0)&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
-&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;p&gt;Agora que temos mais variáveis, podemos efetuar operações entre elas, mais ou menos complexas.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Nota: as operações seguem as regras matemáticas usiais da prioridade de parêntesis, multiplicações e divisões antes de somas e subtrações,...&lt;/em&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;
-&lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
-&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
-     &lt;div class="CodeMirror cm-s-jupyter"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;resultado&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;resultado&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-     &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="jp-Cell-outputWrapper"&gt;
-
-
-&lt;div class="jp-OutputArea jp-Cell-outputArea"&gt;
 
 &lt;div class="jp-OutputArea-child"&gt;
 
@@ -5396,10 +5561,12 @@ Comecemos por definir a variável &lt;code&gt;x&lt;/code&gt;, com o valor 2, e f
     &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;&lt;/div&gt;
 
 
-&lt;div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain"&gt;
-&lt;pre&gt;290.0
-&lt;/pre&gt;
-&lt;/div&gt;
+
+
+&lt;div class="jp-RenderedImage jp-OutputArea-output "&gt;
+&lt;img src="data:image/png;base64,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
+"
+&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
@@ -5407,42 +5574,14 @@ Comecemos por definir a variável &lt;code&gt;x&lt;/code&gt;, com o valor 2, e f
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
-&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;hr&gt;
-&lt;h4 id="Desafio"&gt;&lt;strong&gt;Desafio&lt;/strong&gt;&lt;a class="anchor-link" href="#Desafio"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Definir as variáveis $a$, $b$, $c$ e $d$ com valores 2, 3.5, 5 e 2.7, respetivamente;&lt;/li&gt;
-&lt;li&gt;Efetuar a operação $a \times (b + 2\times(c^2 + b\times d) - a)$ e guardar o resultado na variável com o nome $resultado$;&lt;/li&gt;
-&lt;li&gt;Imprimir a variável $resultado$ e verificar que se obteve 140.8&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
-&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;h3 id="Strings"&gt;Strings&lt;a class="anchor-link" href="#Strings"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Strings representam texto, sendo representadas entre aspas duplas, &lt;code&gt;"texto"&lt;/code&gt;, ou apóstrofos, &lt;code&gt;'texto'&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Vejamos como podemos manipular algumas strings.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
+&lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  "&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;
 &lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
 &lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
      &lt;div class="CodeMirror cm-s-jupyter"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;string1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Olá&amp;quot;&lt;/span&gt;
-&lt;span class="n"&gt;string2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Mundo&amp;quot;&lt;/span&gt;
-&lt;span class="n"&gt;ano&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2021&lt;/span&gt;
-
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c1"&gt;#Somar strings&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string1&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;, &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;string2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c1"&gt;#Formatar strings&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Estamos no ano &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;ano&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
      &lt;/div&gt;
@@ -5450,134 +5589,6 @@ Comecemos por definir a variável &lt;code&gt;x&lt;/code&gt;, com o valor 2, e f
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="jp-Cell-outputWrapper"&gt;
-
-
-&lt;div class="jp-OutputArea jp-Cell-outputArea"&gt;
-
-&lt;div class="jp-OutputArea-child"&gt;
-
-    
-    &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;&lt;/div&gt;
-
-
-&lt;div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain"&gt;
-&lt;pre&gt;Olá
-Mundo
-Olá, Mundo
-Estamos no ano 2021
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
-&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;p&gt;Na linha 9 somamos as duas strings definidas com uma terceira, que não guardamos em nenhuma variável, e o que se obtem é o esperado: o texto é concatenado pela ordem em que é somado.&lt;/p&gt;
-&lt;p&gt;Na linha 12 usamos um conceito chamado &lt;code&gt;f-string&lt;/code&gt;. Quando uma string é precedida de um &lt;code&gt;f&lt;/code&gt;, podemos no interior da mesma colocar, entre chavetas, uma variável, cujo valor será convertido para texto, nesse mesmo sítio.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
-&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;h2 id="Listas"&gt;Listas&lt;a class="anchor-link" href="#Listas"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Por vezes, é mais eficiente guardar muitas dados numa única variável. Para isso, usamos listas. Estas guardam &lt;code&gt;n&lt;/code&gt; variáveis em lugares numerados de 0 a &lt;code&gt;n-1&lt;/code&gt;. Para definirmos uma lista, devemos escrever dentro de parêntesis retos os seus elementos, sepearados de vírgulas.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;lista = [elemento_0, elemento_1, elemento_2, elemento_3, ...]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Os elementos de uma lista podem ser de qualquer tipo, podendo mesmo ser de tipos diferentes entre si (apesar de não ser muito aconselhado este tipo de utilização)&lt;/p&gt;
-&lt;p&gt;Se quisermos aceder a um elemento &lt;code&gt;i&lt;/code&gt; de uma lista, devemos escrever o nome da variável, seguido do valor de &lt;code&gt;i&lt;/code&gt; entre parêntesis retos.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;lista[i]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;É importante manter em mente que o primeiro elemento corresponde a &lt;code&gt;i=0&lt;/code&gt;, o segundo a &lt;code&gt;i = 1&lt;/code&gt; e assim sucessivamente.
-Se o índice for negativo, conta-se do fim (ex: &lt;code&gt;i = -1&lt;/code&gt;é o último elemento, &lt;code&gt;i = -2&lt;/code&gt; o penúltimo,...).&lt;/p&gt;
-&lt;p&gt;Analisemos o seguinte exemplo:&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;
-&lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
-&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
-     &lt;div class="CodeMirror cm-s-jupyter"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Inicialização da lista&lt;/span&gt;
-&lt;span class="n"&gt;lista&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;40&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Lista completa: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c1"&gt;# Aceder aos elementos&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;O elemento na posição 2 é:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-
-&lt;span class="c1"&gt;# Número de elementos da lista&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;O tamanho da lista pode ser obtido pelo comando len(lista):&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="c1"&gt;# Adicionar uma variável à lista&lt;/span&gt;
-&lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Foi adicionada uma variável à lista!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Lista completa:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Novo tamanho da lista:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="c1"&gt;# Alterar uma das entradas da lista&lt;/span&gt;
-&lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Foi somado 5 ao elemento 2 da lista.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Lista completa:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lista&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-     &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="jp-Cell-outputWrapper"&gt;
-
-
-&lt;div class="jp-OutputArea jp-Cell-outputArea"&gt;
-
-&lt;div class="jp-OutputArea-child"&gt;
-
-    
-    &lt;div class="jp-OutputPrompt jp-OutputArea-prompt"&gt;&lt;/div&gt;
-
-
-&lt;div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain"&gt;
-&lt;pre&gt;Lista completa:  [10, 20, 30, 40]
-O elemento na posição 2 é: 30
-O tamanho da lista pode ser obtido pelo comando len(lista): 4
-Foi adicionada uma variável à lista!
-Lista completa: [10, 20, 30, 40, 50]
-Novo tamanho da lista: 5
-Foi somado 5 ao elemento 2 da lista.
-Lista completa: [10, 20, 35, 40, 50]
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
-&lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;p&gt;Podemos então resumir algumas funcionalidades das listas utilizadas:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Linha 2: Definição inicial da lista (pode ou não começar vazia)
-&lt;pre&gt;&lt;code&gt;lista = []&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;Linha 7: Aceder a um elemento da lista (as posições começam a contar de 0)
-&lt;pre&gt;&lt;code&gt;lista[i]&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;Linha 13: Adicionar um elemento ao final da lista
-&lt;pre&gt;&lt;code&gt;lista.append(x)&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;Linhas 10 e 16: Obter o tamanho da lista
-&lt;pre&gt;&lt;code&gt;len(lista)&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;
 &lt;/div&gt;
 
 
@@ -6820,7 +6831,7 @@ Lista completa: [10, 20, 35, 40, 50]
 &lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;
 &lt;div class="jp-InputArea jp-Cell-inputArea"&gt;
-&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
+&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
      &lt;div class="CodeMirror cm-s-jupyter"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Física Computacional&amp;quot;&lt;/span&gt;
@@ -6917,7 +6928,7 @@ C
 &lt;/div&gt;
 &lt;div class="jp-Cell-inputWrapper"&gt;&lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;
 &lt;/div&gt;&lt;div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown"&gt;
-&lt;p&gt;Podemos ainda usar a operaçãoa &lt;code&gt;not&lt;/code&gt;, que faz a negação de um booleano.&lt;/p&gt;
+&lt;p&gt;Podemos ainda usar a operação &lt;code&gt;not&lt;/code&gt;, que faz a negação de um booleano.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;&lt;div class="jp-Cell jp-CodeCell jp-Notebook-cell   "&gt;
