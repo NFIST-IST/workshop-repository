@@ -15,5 +15,6 @@ Author: Bernardo Silva, Luís Lourenço
 Series: Workshop FC
 Series_index: {".".join([x for x in nb.split("_") if x.isnumeric()])}
 Summary:"""
+        print(f"Generated {nb}")
         with open(nb+".nbdata","w") as f:
             f.write(s)

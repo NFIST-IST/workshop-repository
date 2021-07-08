@@ -9,4 +9,2158 @@
 a
 a
 aa
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Workshop LaTeX</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex1" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex1</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;WorkShop de LaTeX (Overleaf) - página 1&lt;/h1&gt;
+&lt;h1&gt;I. LaTeX/Overleaf&lt;/h1&gt;
+&lt;h2&gt;LaTeX &lt;em&gt;vs&lt;/em&gt; Word&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="xkcd" src="https://i.imgur.com/cpt0Jks.png"&gt;&lt;/p&gt;
+&lt;p&gt;À primeira vista, pode parecer mais complicado do que o típico Word, mas
+torna-se mais natural e até fácil de usar, especialmente quando são comuns
+fórmulas complexas e física mais avançada, o que não é tão "palavreado",
+tornando o Word mais complicado. O LaTeX, sendo criado por cientistas, torna o
+documento de um físico com melhor aspeto e fácil de usar. &lt;/p&gt;
+&lt;p&gt;Assim, o LaTeX irá permitir uma maior flexibilidade e foco no conteúdo ao
+escrever relatórios, papers, entre outros. Não são precisas preocupações com a
+aparência - o LaTeX trata disso automaticamente com os templates default.&lt;/p&gt;
+&lt;h2&gt;Web Application - Overleaf&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Permite colaborar e comunicar com outras pessoas em equipa rapidamente e sem problemas.&lt;/li&gt;
+&lt;li&gt;Permite salvar e recuperar facilmente versões antigas do LaTeX.&lt;/li&gt;
+&lt;li&gt;Permite compilar o LaTeX automaticamente, mostrando logo os resultados.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="alert alert-info"&gt;
+ Devem tentar colocar o código à medida que mostramos para treinar!
+&lt;/div&gt;
+
+&lt;h3&gt;1º Documento no Overleaf&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Um novo documento é criado em &lt;code&gt;New Project&lt;/code&gt;. Estão disponíveis vários
+ &lt;em&gt;templates&lt;/em&gt;. Pode também fazer-se o &lt;em&gt;upload&lt;/em&gt; de um projeto anterior, em
+ formato zip.&lt;/li&gt;
+&lt;li&gt;Escolhendo a opção &lt;strong&gt;Blank Project&lt;/strong&gt;, é automaticamente criado um ficheiro
+ &lt;strong&gt;main.text&lt;/strong&gt;, onde vamos desenvolver o documento. Para compilar o que
+ escrevemos, seleciona-se &lt;code&gt;Recompile&lt;/code&gt;, atualizando-se o ficheiro em formato
+ pdf.&lt;/li&gt;
+&lt;li&gt;Na ferramenta à direita de &lt;code&gt;Recompile&lt;/code&gt;, podemos ler os avisos de erro e fazer
+ o &lt;em&gt;download&lt;/em&gt; de vários ficheiros correspondentes ao projeto. Mais à direita,
+ extrai-se diretamente o documento em formato pdf.&lt;/li&gt;
+&lt;li&gt;A partilha do projeto, útil para edição comum, faz-se em &lt;code&gt;Share&lt;/code&gt;. Em
+ &lt;code&gt;History&lt;/code&gt; podemos aceder às versões anteriores do projeto e fazer o seu
+ &lt;em&gt;download&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;II. Estrutura/Sintaxe&lt;/h1&gt;
+&lt;p&gt;Primeiramente, comecemos por criar um novo documento dos mais simples:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\documentclass&lt;/span&gt;&lt;span class="na"&gt;[12pt]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;article&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+Hello World! &lt;span class="c"&gt;% o contéudo fica dentro do document ...&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Todos os documentos começam com o commando &lt;code&gt;\documentclass&lt;/code&gt;, sendo que o que
+aparece dentro de &lt;code&gt;\{ \}&lt;/code&gt; é o tipo de documento (colocar &lt;em&gt;beamer&lt;/em&gt; para
+apresentações, por exemplo) e &lt;code&gt;\[ \]&lt;/code&gt; é o argumento opcional, neste caso para
+dizer o tamanho das letras. Os argumentos de um comando serão melhor explicados
+nas packages. Mas os argumentos típicos na &lt;code&gt;documentclass&lt;/code&gt; serão o tamanho de
+letra e o tipo de folha: a4paper, twocolumn, etc.&lt;/p&gt;
+&lt;p&gt;Escrever o texto simples é igual ao que se faz no Word. Resta ver os comandos,
+blocos e environments integrados no meio do texto para descrever a estrutura
+que se pretende e como deve aparecer.&lt;/p&gt;
+&lt;p&gt;Há quatro tipos fundamentais de escrita/estrutura em LaTeX no Overleaf:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Objeto&lt;/th&gt;
+&lt;th&gt;Função&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;\&lt;/td&gt;
+&lt;td&gt;Comando e parâmetros&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;%&lt;/td&gt;
+&lt;td&gt;Comentário&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;$&lt;/td&gt;
+&lt;td&gt;Modo matemático&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;---&lt;/td&gt;
+&lt;td&gt;Blocos e Environment&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1&gt;III. Typesetting 1&lt;/h1&gt;
+&lt;p&gt;!Tal como referimos antes, o texto estará dentro do &lt;code&gt;\\begin{document}&lt;/code&gt; e &lt;code&gt;\\end{document}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Tal como no Word, é possível editar o texto, seja o estilo, a fonte, o tamanho
+da letra ou os espaços entre linhas. Estes não são mais difíceis de mudar em
+LaTeX, apenas é preciso habituação.&lt;/p&gt;
+&lt;p&gt;Relembrar que quando aparecem erros, devemos tentar resolvê-los e nao deixar
+acumular, excepto se forem os a azul e a amarelo, continuando a tentar
+evitá-los!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.overleaf.com/docs?snip_uri=https://raw.github.com/jdleesmiller/latex-course/master/en/basics-exercise-1.tex\&amp;amp;splash=none"&gt;basics-exercise-1.tex&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Estilo de letra - Comandos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Negrito, Itálico, código:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Os Estilos normalmente vêm em variadíssimas formas e tamanhos, tal como
+&lt;em&gt;itálico&lt;/em&gt; ou &lt;strong&gt;negrito&lt;/strong&gt;. Em seguida, temos uma lista de todos os comandos
+habitualmente usados e que estão disponíveis sem acesso a outras packages.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tabela dos diferentes Estilos Disponíveis" src="https://i.imgur.com/HFirmei.png"&gt;&lt;/p&gt;
+&lt;p&gt;O próprio Overleaf dá uma lista mais pequena de consulta:
+&lt;a href="https://pt.overleaf.com/learn/latex/Font_sizes,_families,_and_styles#Font_styles"&gt;Link para o Overleaf&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HotKeys do Overleaf:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Existe uma série de hotkeys, a.k.a. atalhos para escrever no Overleaf. Por
+exemplo, uns dos mais comuns são colocar em bold: &lt;code&gt;Ctrl+B&lt;/code&gt;, colocar linhas
+selecionadas em comentário &lt;code&gt;Ctrl+/&lt;/code&gt;, entre outros. Para aceder, ir ao menu no
+topo superior esquerdo, e no final aparece, "Show Hotkeys":&lt;/p&gt;
+&lt;p&gt;&lt;img align="center" src="https://i.imgur.com/YlRbfAp.png" width="500"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;IV. Modo Matemática&lt;/h1&gt;
+&lt;h2&gt;Inline Equations&lt;/h2&gt;
+&lt;p&gt;O &lt;code&gt;$&lt;/code&gt; serve para iniciar o modo Matemática no meio do texto. Não esquecer: os
+&lt;code&gt;$&lt;/code&gt;'s vêm sempre em pares — um para começar e outro para acabar. Muitas das
+vezes, os erros aparecem por não se fechar o modo Matemática ou por falta
+deles.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;In physics, the mass-energy equivalence is stated by the equation &lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;E&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;mc^&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;, discovered in 1905 by Albert Einstein.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Existem outras maneiras de introduzir modo Matemática no meio do texto: &lt;code&gt;\( \)&lt;/code&gt;,
+&lt;code&gt;$ $&lt;/code&gt; ou &lt;code&gt;\\begin{math} \\end{math}&lt;/code&gt;. Todos estes fazem o mesmo, depende do gosto
+pessoal.&lt;/p&gt;
+&lt;h2&gt;Display equations:&lt;/h2&gt;
+&lt;p&gt;Também podemos colocar equações numeradas e não numeradas sem ser no meio do
+texto. Para o fazer, normalmente usam-se os seguintes comandos: &lt;code&gt;\[ \]&lt;/code&gt;,
+&lt;code&gt;\\begin{displaymath} \\end{displaymath}&lt;/code&gt; or &lt;code&gt;\\begin{equation} \\end{equation}&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;The mass-energy equivalence is described by the famous equation
+
+&lt;span class="sb"&gt;\[&lt;/span&gt;&lt;span class="nb"&gt;E&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;mc^&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="s"&gt;\]&lt;/span&gt;
+
+discovered in 1905 by Albert Einstein. 
+In natural units (&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;c&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt; = 1), the formula expresses the identity
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;equation&lt;span class="nb"&gt;}&lt;/span&gt;
+E=m
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;equation&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="einstein_example" src="https://i.imgur.com/uUaipGK.png"&gt;&lt;/p&gt;
+&lt;p&gt;Dentro dos Environments, existem diferentes tipos, melhor explicados no seu
+tópico. No modo Matemática, para colocar equações grandes na sua própria linha,
+sem ser no meio do texto: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;equation&lt;/strong&gt; e &lt;strong&gt;equation&lt;/strong&gt;*:  Para colocar uma equação numerada e centrada ou não numerada;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;align&lt;/strong&gt; e &lt;strong&gt;align&lt;/strong&gt;*: Para colocar várias equações em várias linhas
+ seguidas, mas alinhadas de um certo modo, por exemplo, tudo a seguir ao =;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;gather&lt;/strong&gt; e &lt;strong&gt;gather&lt;/strong&gt;*: Para colocar várias equações em várias linhas
+ seguidas, todas centradas, e todas numeradas ou nenhuma.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No site do Overleaf, há estes comandos e outros para situações mais
+específicas, neste
+&lt;a href="https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath"&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="alert alert-warning"&gt;
+Neste tipo de Environment, é necessário colocar uma package externa que é
+habitualmente usada para equações; consultar o artigo
+&lt;a href=https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath&gt;amsmath&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;h2&gt;Espaçamento no modo Matemática&lt;/h2&gt;
+&lt;p&gt;É de referir que o modo Matemática ignora os espaços colocados no meio do
+código. Ele reconhece todos os carateres como uma única palavra. Para colocar
+espaço entre símbolos, existe uma lista de comandos para vários tamanhos de
+espaço disponível: &lt;/p&gt;
+&lt;p&gt;Spaces in mathematical mode:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;align*&lt;span class="nb"&gt;}&lt;/span&gt;
+f(x) &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;= x&lt;span class="nb"&gt;^&lt;/span&gt;2&lt;span class="k"&gt;\!&lt;/span&gt; +3x&lt;span class="k"&gt;\!&lt;/span&gt; +2 &lt;span class="k"&gt;\\&lt;/span&gt;
+f(x) &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;= x&lt;span class="nb"&gt;^&lt;/span&gt;2+3x+2 &lt;span class="k"&gt;\\&lt;/span&gt;
+f(x) &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;= x&lt;span class="nb"&gt;^&lt;/span&gt;2&lt;span class="k"&gt;\,&lt;/span&gt; +3x&lt;span class="k"&gt;\,&lt;/span&gt; +2 &lt;span class="k"&gt;\\&lt;/span&gt;
+f(x) &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;= x&lt;span class="nb"&gt;^&lt;/span&gt;2&lt;span class="k"&gt;\:&lt;/span&gt; +3x&lt;span class="k"&gt;\:&lt;/span&gt; +2 &lt;span class="k"&gt;\\&lt;/span&gt;
+f(x) &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;= x&lt;span class="nb"&gt;^&lt;/span&gt;2&lt;span class="k"&gt;\;&lt;/span&gt; +3x&lt;span class="k"&gt;\;&lt;/span&gt; +2 &lt;span class="k"&gt;\\&lt;/span&gt;
+f(x) &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;= x&lt;span class="nb"&gt;^&lt;/span&gt;2&lt;span class="k"&gt;\ &lt;/span&gt;+3x&lt;span class="k"&gt;\ &lt;/span&gt;+2 &lt;span class="k"&gt;\\&lt;/span&gt;
+f(x) &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;= x&lt;span class="nb"&gt;^&lt;/span&gt;2&lt;span class="k"&gt;\quad&lt;/span&gt; +3x&lt;span class="k"&gt;\quad&lt;/span&gt; +2 &lt;span class="k"&gt;\\&lt;/span&gt;
+f(x) &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;= x&lt;span class="nb"&gt;^&lt;/span&gt;2&lt;span class="k"&gt;\qquad&lt;/span&gt; +3x&lt;span class="k"&gt;\qquad&lt;/span&gt; +2
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;align*&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="math"&gt;\begin{align*}
+f(x) &amp;amp;= x^2\! +3x\! +2 \\
+f(x) &amp;amp;= x^2+3x+2 \\
+f(x) &amp;amp;= x^2\, +3x\, +2 \\
+f(x) &amp;amp;= x^2\: +3x\: +2 \\
+f(x) &amp;amp;= x^2\; +3x\; +2 \\
+f(x) &amp;amp;= x^2\ +3x\ +2 \\
+f(x) &amp;amp;= x^2\quad +3x\quad +2 \\
+f(x) &amp;amp;= x^2\qquad +3x\qquad +2
+\end{align*}&lt;/div&gt;
+&lt;p&gt;Em termos de tamanho específico:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;LaTeX code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\quad&lt;/td&gt;
+&lt;td&gt;space equal to the current font size (= 18 mu)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\,&lt;/td&gt;
+&lt;td&gt;3/18 of \quad (= 3 mu)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\:&lt;/td&gt;
+&lt;td&gt;4/18 of \quad (= 4 mu)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\;&lt;/td&gt;
+&lt;td&gt;5/18 of \quad (= 5 mu)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\!&lt;/td&gt;
+&lt;td&gt;-3/18 of \quad (= -3 mu)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\&lt;/td&gt;
+&lt;td&gt;equivalent of space in normal text&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\qquad&lt;/td&gt;
+&lt;td&gt;twice of \quad (= 36 mu)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Notação e Lista de Símbolos:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Usar o caráter &lt;code&gt;^&lt;/code&gt; para sobrescrito e &lt;code&gt;_&lt;/code&gt; para subescrito. Usar { } para colocar mais do que uma letra em sub/sobrescrito.&lt;/li&gt;
+&lt;li&gt;Para colocar letras gregas e outra notação comum, como frações e raiz
+quadrada, são usados comandos, normalmente intuitivos, como &lt;code&gt;\sqrt{}&lt;/code&gt; para
+raiz quadrada. Pesquisar na internet o comando matemático/físico necessário
+costuma resultar. Na subseção seguinte disponibilizaremos links para essas
+listas.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;&lt;a href="http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/physics/physics.pdf"&gt;package physics&lt;/a&gt;&lt;/strong&gt;
+ contém muitos comandos usados para escrever fórmulas físicas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="alert alert-success"&gt;
+De qualquer das formas, apresentamos uma lista de muitos comandos habitualmente
+usados pelo
+&lt;a href=https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols&gt; link&lt;/a&gt;
+do Overleaf ou deste
+&lt;a href=https://en.wikibooks.org/wiki/LaTeX/Mathematics#List_of_mathematical_symbols&gt; site&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Por fim, este é um link para uma lista de artigos do Overleaf com vários
+aspetos não mencionados aqui que eventualmetne poderão dar jeito:
+&lt;a href="https://www.overleaf.com/learn/latex/Mathematical_expressions#Further_Reading"&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;V. Parágrafos e Indentações&lt;/h1&gt;
+&lt;p&gt;Muitas das informações podem ser vistas no seguinte &lt;a href="https://www.overleaf.com/learn/latex/Paragraph_formatting"&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Começar um novo parágrafo&lt;/h2&gt;
+&lt;p&gt;Para começar um novo parágrfo em LaTeX, aquele tem de ter uma linha em branco entre linhas. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;This is the text in first paragraph.
+
+This is the text in second paragraph.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Outra maneira é escrevendo um &lt;code&gt;\par&lt;/code&gt; quando for nencessário fazer um parágrafo, não sendo necessária a linha extra:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;This is the text in first paragraph. &lt;span class="k"&gt;\par&lt;/span&gt;
+This is the text in second paragraph.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Indentação e Espaçamento entre parágrafos&lt;/h2&gt;
+&lt;p&gt;Por defeito, o LaTeX identa todos os parágrafos, com a excepção do 1º parágrafo
+a seguir a uma secção. Para mudar o tamanho desta indentação, é necesseário, no
+&lt;strong&gt;preamble&lt;/strong&gt;, mudar o tamanho do &lt;code&gt;\parindent&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;%Tamanho da identação&lt;/span&gt;
+&lt;span class="k"&gt;\setlength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\parindent&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;4em&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="c"&gt;%Espaço entre parágrafos&lt;/span&gt;
+&lt;span class="k"&gt;\setlength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\parskip&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;1em&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;No final do código, mostramos, também, como se muda o espaço entre parágrafos, característica esta definida pelo &lt;code&gt;*\parskip*&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Por defeito, estes tamanhos são definidos pela &lt;em&gt;document class&lt;/em&gt; usada. Estes
+podem ser usados no meio do texto para mudar a estrutura do texto que segue o
+código, ou colocar entre &lt;code&gt;{ }&lt;/code&gt; para apenas afetar essa parte do código:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\setlength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\parindent&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;4em&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\par&lt;/span&gt; This is the text in first paragraph.
+&lt;span class="k"&gt;\par&lt;/span&gt; This is the text in second paragraph.
+&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\par&lt;/span&gt; This is the text in third paragraph.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Identação do 1ºParagrafo&lt;/h3&gt;
+&lt;p&gt;Para contornar o facto de que o LaTeX não indenta automaticamente o 1º
+parágrafo a seguir a uma secção, é necessário incluir um &lt;code&gt;package&lt;/code&gt; no
+&lt;strong&gt;preamble&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;indentfirst&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Todos os parágrafos iniciais terão o mesmo tamanho que os outros.&lt;/p&gt;
+&lt;h3&gt;Não Identar Parágrafo&lt;/h3&gt;
+&lt;p&gt;Se não se quiser indentar um certo parágrafo, basta usar o comando &lt;code&gt;\noindent&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;This is the first paragraph.
+
+&lt;span class="k"&gt;\noindent&lt;/span&gt; This is the second paragraph with no indentation.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Para ter um documento não indentado, apenas colocar no &lt;strong&gt;preamble&lt;/strong&gt; o tamanho da indentação a zero: &lt;code&gt;\setlength{\parindent}{0pt}&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Espaçamento entre linhas&lt;/h2&gt;
+&lt;p&gt;Para controlar o espaçamento entre linhas de um parágrafo temos 3 comandos.&lt;/p&gt;
+&lt;p&gt;O comando: &lt;code&gt;\renewcommand{\baselinestretch}{1.5}&lt;/code&gt; muda o espaço entre linhas 1.5 do valor padrão.&lt;/p&gt;
+&lt;p&gt;Usando &lt;em&gt;\baselineskip&lt;/em&gt;, determina-se o espaço mínimo entre 2 linhas sucessivas num parágrafo. Para mudar, colocar no preamble: &lt;code&gt;\setlength{\baselineskip}{value}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Ou ainda usando &lt;code&gt;\linespread{value}&lt;/code&gt;, onde o valor é dado desta maneira:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Value&lt;/th&gt;
+&lt;th align="center"&gt;Line spacing&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;1.0&lt;/td&gt;
+&lt;td align="center"&gt;single spacing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;1.3&lt;/td&gt;
+&lt;td align="center"&gt;one-and-a-half spacing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;1.6&lt;/td&gt;
+&lt;td align="center"&gt;double spacing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;VII. Breaks ans Spaces&lt;/h1&gt;
+&lt;p&gt;Por fim, colocamos um tabela, deste
+&lt;a href="https://en.wikibooks.org/wiki/LaTeX/Paragraph_Formatting"&gt;link&lt;/a&gt;, para fazer um
+breve resumo dos vários tipos de parágrafos e breaks que se podem fazer no
+LaTeX.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="table_format" src="https://i.imgur.com/YJdBmN5.png"&gt;&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Parte 2</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex2" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex2</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;VIII. Secções&lt;/h1&gt;
+&lt;p&gt;O LaTeX está organizado numerando, por capítulos e secções, o documento. Existem 7 níveis de dependência, em função da &lt;em&gt;document class&lt;/em&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Nível&lt;/th&gt;
+&lt;th&gt;Nome&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;-1&lt;/td&gt;
+&lt;td&gt;\part{part}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;\chapter{chapter}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;\section{section}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;\subsection{subsection}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;\subsubsection{subsubsection}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;\paragraph{paragraph}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;\subparagraph{subparagraph}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Normalmente, as secções são o principal nível usado, as partes e capítulos são mais para, e.g., livros.&lt;/p&gt;
+&lt;h2&gt;Numeração&lt;/h2&gt;
+&lt;p&gt;Por defeito, a numeração das secções, etc., é feita automaticamente. Para alterar o modo de numeração, veremos mais à frente, em &lt;strong&gt;&lt;em&gt;Layout&lt;/em&gt;&lt;/strong&gt;. Para retirar simplesmente a numeração, basta adicionar um asterisco antes dos { }, tal como acontecia no modo Matemática. Estes não serão adicionados no Índice.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\section*&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Introduction&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Table of Content - Índice&lt;/h2&gt;
+&lt;p&gt;Não iremos entrar em detalhe sobre a construção do Índice, dado não ser um tema
+muito utilizado, mas colocaremos o
+&lt;a href="https://www.overleaf.com/learn/latex/Table_of_contents"&gt;link&lt;/a&gt;, que redireciona
+para o site do Overleaf.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;IX. Preamble e Packages&lt;/h1&gt;
+&lt;p&gt;Já foi mencionado várias vezes o &lt;strong&gt;Preamble&lt;/strong&gt;; este é a primeira coisa que
+aparece no ficheiro a seguir à &lt;em&gt;document class&lt;/em&gt;, antes do texto do documento.
+Este dará informações extra ao LaTeX de como formatar e incluir texto no
+documento.&lt;/p&gt;
+&lt;p&gt;Neste incluir-se-ão, muitas vezes, packages. Muitos dos comandos e environments
+aqui falados já estão incluídos no LaTeX (excepto os do modo Matemática, onde
+já está incluindo um pacote, &lt;em&gt;amsmath&lt;/em&gt;). 
+&lt;strong&gt;Packages&lt;/strong&gt; são bibliotecas de comandos e environments extra. Existem milhares disponíveis.&lt;/p&gt;
+&lt;p&gt;Incluir uma package - incluir no &lt;strong&gt;&lt;em&gt;preamble&lt;/em&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;% Document class&lt;/span&gt;
+&lt;span class="k"&gt;\documentclass&lt;/span&gt;&lt;span class="na"&gt;[12pt,a4paper]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;article&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="c"&gt;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&lt;/span&gt;
+
+&lt;span class="c"&gt;% &amp;gt;&amp;gt;&amp;gt; Preamble&lt;/span&gt;
+&lt;span class="c"&gt;% Packages&lt;/span&gt;
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="na"&gt;[setting1, setting2,...]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;package&lt;span class="nb"&gt;_&lt;/span&gt;name&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="c"&gt;%preamble&lt;/span&gt;
+
+&lt;span class="c"&gt;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&lt;/span&gt;
+&lt;span class="c"&gt;% &amp;gt;&amp;gt;&amp;gt; Main body&lt;/span&gt;
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+
+Hello World!
+&lt;span class="c"&gt;% now we can use commands from package_name here...&lt;/span&gt;
+
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Cada package tem o seu objetivo, como por exemplo incluir imagens, cores, entre outros, que o LaTeX não disponibiliza por si automaticamente.&lt;/p&gt;
+&lt;p&gt;Vemos também que algumas packages têm opções para incluir definições especiais do pacote.&lt;/p&gt;
+&lt;h2&gt;Lista de Packages&lt;/h2&gt;
+&lt;p&gt;A lista de todas as packages disponíveis pode ser encontrada na &lt;em&gt;Comprehensive
+TEX Archive Network&lt;/em&gt;: &lt;a href="http://www.ctan.org"&gt;CTAN&lt;/a&gt;. Aqui, o detalhe de cada
+pacote é dado por cada autor.&lt;/p&gt;
+&lt;p&gt;Segue-se um pdf para uma lista mais abreviada de packages, habitualmente
+mostrados num exemplo e com o link para a package direta: &lt;a href="/content/LaTeX_packages.pdf"&gt;pdf
+link&lt;/a&gt;
+- Créditos do &lt;em&gt;Bernardo Silva&lt;/em&gt; por fazer este pdf.&lt;/p&gt;
+&lt;p&gt;Exemplos de pacotes usados:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Package&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;amsmath&lt;/td&gt;
+&lt;td&gt;AMS mathematical facilities&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;amsfonts&lt;/td&gt;
+&lt;td&gt;TeX fonts from the American Mathematical Society&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;babel&lt;/td&gt;
+&lt;td&gt;Multilingual support for plain TEX or LaTeX&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;color&lt;/td&gt;
+&lt;td&gt;Color control for LaTeX documents&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fancyhdr&lt;/td&gt;
+&lt;td&gt;Extensive control of page headers and footers in LaTeX&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;graphicx&lt;/td&gt;
+&lt;td&gt;Enhanced support for graphics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hyperref&lt;/td&gt;
+&lt;td&gt;Extensive support for hypertext in LaTeX&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;natbib&lt;/td&gt;
+&lt;td&gt;Flexible bibliography support&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TikZ&lt;/td&gt;
+&lt;td&gt;Create PostScript and PDF graphics in TeX&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xcolor&lt;/td&gt;
+&lt;td&gt;Driver-independent color extensions for LaTeX and pdfLaTeX&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Criar Packages&lt;/h2&gt;
+&lt;p&gt;Também dá para criar os nossos próprios Packages, sendo este processo mais
+complicado, de forma a personalizar o documento - &lt;a href="https://www.overleaf.com/learn/latex/Writing_your_own_package"&gt;link para
+overleaf&lt;/a&gt; ou
+&lt;a href="https://en.wikibooks.org/wiki/LaTeX/Creating_Packages"&gt;link para wikibooks&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;X. Layout&lt;/h1&gt;
+&lt;h2&gt;Títulos, Subtítulos, Autores, Data&lt;/h2&gt;
+&lt;p&gt;Para declarar o título e outras informações de um documento, existem comandos específicos.
+Estes comandos podem ser incluídos no &lt;em&gt;preamble&lt;/em&gt; do documento e são "chamados" pelo comando &lt;code&gt;\maketitle&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Comando&lt;/th&gt;
+&lt;th&gt;Utilidade&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\title{First document}&lt;/td&gt;
+&lt;td&gt;Título&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\author{A. Author \and B. Author}&lt;/td&gt;
+&lt;td&gt;Nome(s) do(s) autor(es)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\thanks{C. Author}&lt;/td&gt;
+&lt;td&gt;Adicionar à frente do(s) autor(es) dentro dos { }. Sobrescrito com uma footnote com os agradecimentos.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\affil{IST}&lt;/td&gt;
+&lt;td&gt;Filiação&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\date{\today}&lt;/td&gt;
+&lt;td&gt;Data manualmente ou usar comando &lt;strong&gt;\today&lt;/strong&gt; para ser automático à data de compilação&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\documentclass&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;article&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\title&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;The Title&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\author&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;A. Author &lt;span class="k"&gt;\and&lt;/span&gt; B. Author &lt;span class="k"&gt;\thanks&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;C. Author&lt;span class="nb"&gt;}}&lt;/span&gt;
+&lt;span class="k"&gt;\date&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\today&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;titlepage&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\maketitle&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;titlepage&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\par&lt;/span&gt; Hello World
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Para colocar o subtítulo depois dos autores, basta redefinir o comando &lt;em&gt;\subtitle&lt;/em&gt; da forma:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\newcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\subtitle&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;[1]&lt;span class="nb"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;\postauthor&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;&lt;span class="k"&gt;\par\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;center&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;center&lt;span class="nb"&gt;}&lt;/span&gt;&lt;span class="k"&gt;\large&lt;/span&gt;#1&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;center&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Title Page&lt;/h3&gt;
+&lt;p&gt;É possível colocar o título numa só página, como foi feito no exemplo, usando o
+environment &lt;em&gt;titlepage&lt;/em&gt;. Este bloco terá um comportamento dependente do tipo de
+documento em causa.&lt;/p&gt;
+&lt;h2&gt;Cabeçalho e Rodapé&lt;/h2&gt;
+&lt;p&gt;A maneira mais simples de colocar um certo estilo para os cabeçalhos e rodapés é usando o comando: &lt;code&gt;\pagestyle{''style''}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Com 3 estilos:
+- empty: Both the header and footer are cleared (blank) in this page style.
+- plain: This is the default style. The header is empty and the footer contains page numbers in the centre.
+- myheadings: As shown in the introduction,The footer is empty in this page
+ style. The header contains the page number on right side (on even pages) or
+ on left side (on odd pages) along with other user-supplied information; there
+ is an exception for the first page of each chapter, where the footer contains
+ centred page number while the header is blank.&lt;/p&gt;
+&lt;p&gt;Mas estilos podem ser modificados em relação ao básico com o package
+&lt;a href="https://mirrors.up.pt/pub/CTAN/macros/latex/contrib/fancyhdr/fancyhdr.pdf"&gt;&lt;strong&gt;&lt;em&gt;fancyhdr&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;.
+Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fancyhdr&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\pagestyle&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fancy&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\fancyhf&lt;/span&gt;&lt;span class="nb"&gt;{}&lt;/span&gt;
+&lt;span class="k"&gt;\rhead&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Overleaf&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\lhead&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Guides and tutorials&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\rfoot&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Page &lt;span class="k"&gt;\thepage&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Aqui temos o seguinte: 
+Depois do estilo "fancy" ser defenido por &lt;code&gt;\pagestyle{fancy}&lt;/code&gt;. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O comando &lt;code&gt;\fancyhf{}&lt;/code&gt; apaga o estilo existente, para não haver sobreposições dos elementos novos com os padrões falados anteriormente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Comando&lt;/th&gt;
+&lt;th align="left"&gt;Utilidade&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\rhead{Right Text}&lt;/td&gt;
+&lt;td align="left"&gt;Texto entre parênteses à direita no cabeçalho&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\lhead{Left Text}&lt;/td&gt;
+&lt;td align="left"&gt;Texto entre parênteses à esquerda no cabeçalho&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\chead{Center Text}&lt;/td&gt;
+&lt;td align="left"&gt;Texto entre parênteses no centro no cabeçalho&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\rfoot{Right Text}&lt;/td&gt;
+&lt;td align="left"&gt;Texto entre parênteses à direita no rodapé&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\lfoot{Left Text}&lt;/td&gt;
+&lt;td align="left"&gt;Texto entre parênteses à esquerda no rodapé&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;\cfoot{Page \thepage }&lt;/td&gt;
+&lt;td align="left"&gt;Texto entre parênteses no centro no rodapé. O comando &lt;code&gt;*\thepage*&lt;/code&gt;  irá criar automaticamente a paginação no centro&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Linhas&lt;/h3&gt;
+&lt;p&gt;Para além do texto, ainda temos duas linhas "decorativas" no cabeçalho e
+rodapé. Por default, são de &lt;em&gt;0pt&lt;/em&gt; de espessura, dai estarem invisíveis. Para
+mudar, é fácil:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\renewcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\headrulewidth&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;1pt&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\renewcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\footrulewidth&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;1pt&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Finalmente, existem uns outros comandos, não tão usados, referidos no site do
+Overleaf,
+&lt;a href="https://www.overleaf.com/learn/latex/Headers_and_footers#Reference_guide"&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Last Page&lt;/h3&gt;
+&lt;p&gt;Também podemos referenciar a última página do documento usando o package &lt;code&gt;lastpage&lt;/code&gt;. Exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fancyhdr,lastpage&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\cfoot&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\thepage\ &lt;/span&gt;de &lt;span class="k"&gt;\pageref&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;LastPage&lt;span class="nb"&gt;}}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Section Modifier&lt;/h2&gt;
+&lt;p&gt;Com a package
+&lt;a href="https://ftp.eq.uc.pt/software/TeX/macros/latex/contrib/titlesec/titlesec.pdf"&gt;titlesec&lt;/a&gt;,
+é possível personalizar as secções, subsecções, etc., de forma fácil:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;titlesec&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\titleformat&lt;/span&gt;
+&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\section&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="c"&gt;% command&lt;/span&gt;
+[hang] &lt;span class="c"&gt;% shape&lt;/span&gt;
+&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\bfseries\Large&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="c"&gt;% format&lt;/span&gt;
+&lt;span class="nb"&gt;{&lt;/span&gt;Roman&lt;span class="nb"&gt;{&lt;/span&gt;section&lt;span class="nb"&gt;}&lt;/span&gt;.&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="c"&gt;% label&lt;/span&gt;
+&lt;span class="nb"&gt;{&lt;/span&gt;2mm&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="c"&gt;% sep&lt;/span&gt;
+&lt;span class="nb"&gt;{}&lt;/span&gt; &lt;span class="c"&gt;% before-code&lt;/span&gt;
+[] &lt;span class="c"&gt;% after-code&lt;/span&gt;
+
+&lt;span class="k"&gt;\titleformat&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\subsection&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;[hang]
+&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\large\bfseries&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;&lt;span class="k"&gt;\thesection&lt;/span&gt;.&lt;span class="k"&gt;\arabic&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;subsection&lt;span class="nb"&gt;}&lt;/span&gt;.&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="nb"&gt;{&lt;/span&gt;1.5mm&lt;span class="nb"&gt;}{}&lt;/span&gt;[]
+
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Este exemplo segue o seguinte formato:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;\titleformat{"command"}["shape"]{"format"}{"label"}{"sep"}{"before-code"}["after-code"]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;onde &lt;em&gt;["shape"]&lt;/em&gt; e &lt;em&gt;["after-code"]&lt;/em&gt; são parâmetros opcionais. E temos as seguintes definições:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;\&amp;lt;command&gt;&lt;/strong&gt; é o comando da seção em questão a ser mo dificado: \part, \chapter, \section, \subsection, \subsubsection, \paragraph or \subparagraph.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\&amp;lt;shape&gt;&lt;/strong&gt; é a forma do parágrafo a seguir à seção, valores possíveis: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\&amp;lt;format&gt;&lt;/strong&gt; é o formato a ser aplicado ao título e ao texto, e.g.: \normalfont\Large\bfseries.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\&amp;lt;label&gt;&lt;/strong&gt; especificar a label/números antes do texto.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\&amp;lt;sep&gt;&lt;/strong&gt; tamanho da separação horizontal entre o &lt;em&gt;label&lt;/em&gt; e o &lt;em&gt;texto&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\&amp;lt;before-code&gt;&lt;/strong&gt; código que precede a seção.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\&amp;lt;after-code&gt;&lt;/strong&gt; código que sucede a seção.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Esta informação, incluindo ainda os espaços antes e depois da secção, pode ser vista neste &lt;a href="https://www.overleaf.com/learn/latex/Sections_and_chapters"&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Margens, Geometry&lt;/h2&gt;
+&lt;p&gt;Falta saber como definir o tamanho e as margens de um documento. Para tal, com
+o &lt;strong&gt;package&lt;/strong&gt;
+&lt;a href="https://mirrors.up.pt/pub/CTAN/macros/latex/contrib/geometry/geometry.pdf"&gt;geometry&lt;/a&gt;,
+é fácil personalizar o documento acrescentando no &lt;strong&gt;preamble&lt;/strong&gt; o necessário.
+&lt;em&gt;Exemplo:&lt;/em&gt; Criar uma folha A4 com texto que não exceda 6in de largura e 8in de altura:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;```latex
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Os parâmetros colocados entre os parênteses [ ] determinaram o layout.&lt;/p&gt;
+&lt;p&gt;O tamanho do papel, a orientação e as margens são os elementos mais usados
+deste pacote. Outra maneira será definir os parâmetros no preamble fora do
+package:&lt;/p&gt;
+&lt;p&gt;Exemplo: criar um paper A4, portrait orientation e 2cm de margem, 2cm no topo e 1.5cm em baixo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="na"&gt;[a4paper,portrait,margin=2cm,top=2cm,bottom=1.5cm]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;geometry&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;OU&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;geometry&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\geometry&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;a4paper,portrait,margin=2cm,top=2cm,bottom=1.5cm&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Dimensões Específicas das Margens&lt;/h3&gt;
+&lt;p&gt;Por padrão, o LaTeX coloca as seguintes dimensões (com uma imagem
+representativa retirada do Overleaf)
+(&lt;a href="https://www.overleaf.com/learn/latex/Page_size_and_margins#Fine_tuning_your_LaTeX_page_dimensions"&gt;link&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="layout" src="https://i.imgur.com/BqUjM5X.png"&gt;&lt;/p&gt;
+&lt;p&gt;Com o pacote &lt;strong&gt;geometry&lt;/strong&gt;, é intuitivo mudar o layout da página.
+Segue-se uma lista de elemento do documento cuja tamanho é alterável:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parâmetro&lt;/th&gt;
+&lt;th align="left"&gt;Alteração&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;textwidth&lt;/td&gt;
+&lt;td align="left"&gt;Elemento 8 da figura&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;textheight&lt;/td&gt;
+&lt;td align="left"&gt;Elemento 7 da figura&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;total&lt;/td&gt;
+&lt;td align="left"&gt;Por defeito, as dimensões do corpo dependem de outros, mas é combinação dos comandos includehead, includefoot, includeheadfoot and includemp, mudando o tamanho do cabeçalho, corpo e rodapé e margens todos juntos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;left, lmargin, inner&lt;/td&gt;
+&lt;td align="left"&gt;Estes três alteram o tamanho da margem esquerda, elementos 1 e 3 em conjunto da figura&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;right, rmargin, outer&lt;/td&gt;
+&lt;td align="left"&gt;Estes três alteram o tamanho da margem esquerda, elementos 9 e 10 em conjunto da figura&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;top, tmargin&lt;/td&gt;
+&lt;td align="left"&gt;Elementos 2 e 6 em conjunto da figura&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bottom, bmargin&lt;/td&gt;
+&lt;td align="left"&gt;Estes representam a distância da parte debaixo do documento à &lt;em&gt;baseline&lt;/em&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;headheight&lt;/td&gt;
+&lt;td align="left"&gt;Altura do Cabeçalho, elemento 5 da figura&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;headsep&lt;/td&gt;
+&lt;td align="left"&gt;Separação entre o cabeçalho (baseline) e o texto, elemento 6 da figura.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;footnotesep&lt;/td&gt;
+&lt;td align="left"&gt;Separação entre a parte de baixo do texto (baseline) e o topo das footnotes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;footskip&lt;/td&gt;
+&lt;td align="left"&gt;Separação ente a baseline da última linha do texto e do rodapé&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;marginparwidth, marginpar&lt;/td&gt;
+&lt;td align="left"&gt;Largura das notas de margens, elemento 10 da figura&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Para alterar estes parâmetros é necessário escrever na forma:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;```latex
+%parameter = value_units
+\headheight = 20pt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Nota: usar as unidades &lt;em&gt;standard&lt;/em&gt; do LaTeX (mm, cm, pt, in)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;XI. Typesetting 2&lt;/h1&gt;
+&lt;h2&gt;Tipos de Fontes&lt;/h2&gt;
+&lt;h3&gt;Font Families&lt;/h3&gt;
+&lt;p&gt;Existe uma grande diversidade de famílias de fontes, tal como no Word. Alguns exemplos comuns incluem a Times, Courier, ou Helvetica.
+As fontes são geralmente agrupadas em 3 categorias: &lt;em&gt;serif&lt;/em&gt;, &lt;em&gt;sans serif&lt;/em&gt;, e &lt;em&gt;monospaced&lt;/em&gt;, abreviadas em LaTeX para rm, sf, e tt, respetivamente.&lt;/p&gt;
+&lt;p&gt;O texto em documentos de LaTeX está, por defeito, em &lt;em&gt;Roman&lt;/em&gt; (serif). Para mudar, colocar no &lt;em&gt;preamble&lt;/em&gt;, antes do início do documento&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\renewcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\familydefault&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;&amp;lt;family&amp;gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Onde a &amp;lt;&lt;span style="color:green"&gt;family&lt;/span&gt;&amp;gt; pode assumir os diferentes tipos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\rmdefault&lt;/li&gt;
+&lt;li&gt;\sfdefault&lt;/li&gt;
+&lt;li&gt;\ttdefault&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Catálogo de Fontes:&lt;/h3&gt;
+&lt;p&gt;Para uma maior variedade, existe um site que mostra todos os estilos existentes
+nos diferentes modos, e como aplicar no LaTeX:
+&lt;a href="https://tug.org/FontCatalogue/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;O próprio Overleaf dá um catálogo mais simples e fácil de utilizar, mas mais pequeno:
+&lt;a href="https://pt.overleaf.com/learn/latex/Font_typefaces"&gt;Link para o Overleaf&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Size&lt;/h2&gt;
+&lt;p&gt;Para reescalar o tamanho do texto em relação ao predefinido, usar os seguintes comandos:&lt;/p&gt;
+&lt;p&gt;&lt;img align="center" src="https://i.imgur.com/v4Fecow.png" width="250"&gt;&lt;/p&gt;
+&lt;p&gt;A seguinte sintaxe muda-o no meio do texto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;In this example the &lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\huge&lt;/span&gt; huge font size&lt;span class="nb"&gt;}&lt;/span&gt; is set and 
+the &lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\footnotesize&lt;/span&gt; Foot note size also&lt;span class="nb"&gt;}&lt;/span&gt;. There&amp;#39;s a fairly 
+large set of font sizes.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Existe um site do Overleaf que tem uma lista com estes comandos:
+&lt;a href="https://pt.overleaf.com/learn/latex/Font_sizes,_families,_and_styles#Font_sizes"&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Por defeito, &lt;code&gt;\normalsize&lt;/code&gt; tem 10 points, mas podemos mudar isto, como
+referimos no início, na declaração da &lt;code&gt;\documentclass&lt;/code&gt;, e.g.
+&lt;code&gt;\documentclass[12pt]{article}&lt;/code&gt;.&lt;/p&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Parte 3</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex3" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex3</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;XII. Environment - Items, Tabelas e Figuras&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Environments&lt;/code&gt; são usados para formatar blocos de texto. Iremos explicar e mostrar como definir e usar environments.&lt;/p&gt;
+&lt;p&gt;Já introduzimos alguns Environments no modo Matemática com as equações, e logo no início com o &lt;code&gt;\begin{document}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;span style="color:red"&gt; &lt;em&gt;\begin&lt;/em&gt; &lt;/span&gt; e o &lt;span style="color:red"&gt; &lt;em&gt;\end&lt;/em&gt;
+&lt;/span&gt; são usados para criar diversos Environments, tais como listas de
+pontos, números, figuras, tabelas e muitos outros.&lt;/p&gt;
+&lt;p&gt;Em baixo, temos um exemplo simples de como usar um Environment.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;center&lt;span class="nb"&gt;}&lt;/span&gt;
+This text will be centred since it is inside a special 
+environment. Environments provide a efficient way of modifying 
+blocks of text within your document.
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;center&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Seguem-se os Environments mais usados:&lt;/p&gt;
+&lt;h2&gt;Items&lt;/h2&gt;
+&lt;p&gt;Para fazer listas em forma de itens, números ou outro, é usado Environments.
+Dentro destas listas, o comando de &lt;code&gt;\item&lt;/code&gt; é usado para identificar um item na
+lista.&lt;/p&gt;
+&lt;p&gt;Colocando o Environment dentro do próprio Environment, cria-se uma sublista associada.&lt;/p&gt;
+&lt;h3&gt;Itemize&lt;/h3&gt;
+&lt;p&gt;O famoso &lt;strong&gt;&lt;em&gt;itemize environment&lt;/em&gt;&lt;/strong&gt; cria listas não numeradas, normalmente chamado de "bulleted" list.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\item&lt;/span&gt; First item
+&lt;span class="k"&gt;\item&lt;/span&gt; Second item
+...
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Os níveis associados ao &lt;em&gt;itemize&lt;/em&gt; são quatro:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="itemize" src="https://i.imgur.com/M49iXpe.png"&gt;&lt;/p&gt;
+&lt;p&gt;Por padrão, os níveis assumem o seguinte esquema:
+- Nível 1 é &lt;strong&gt;\textbullet&lt;/strong&gt; (•),
+- Nível 2 é &lt;strong&gt;\textendash&lt;/strong&gt; (–) ,
+- Nível 3 é &lt;strong&gt;\textasteriskcentered&lt;/strong&gt; (&lt;em&gt;)
+- Nível 4 é &lt;/em&gt;&lt;em&gt;\textperiodcentered&lt;/em&gt;* (·).&lt;/p&gt;
+&lt;h4&gt;Mudar o estilo das listas&lt;/h4&gt;
+&lt;p&gt;Este esquema é alterável, redefinindo o comando do tipo de número ou letra do nível da lista. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;amssymb&lt;span class="nb"&gt;}&lt;/span&gt;
+...
+
+&lt;span class="k"&gt;\renewcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\labelitemi&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;\blacksquare&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\renewcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\labelitemii&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;\square&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\item&lt;/span&gt;  First Level
+  &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\item&lt;/span&gt;  Second Level
+    &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+      &lt;span class="k"&gt;\item&lt;/span&gt;  Third Level
+      &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+        &lt;span class="k"&gt;\item&lt;/span&gt;  Fourth Level
+      &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="itemize2" src="https://i.imgur.com/svq2sLm.png"&gt;&lt;/p&gt;
+&lt;p&gt;Os símbolos matemáticos do exemplo usam o &lt;strong&gt;&lt;em&gt;amssymb package&lt;/em&gt;&lt;/strong&gt;, daí adicionar-se &lt;code&gt;\usepackage{amssymb}&lt;/code&gt; ao &lt;strong&gt;preamble&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;O comando &lt;code&gt;\renewcommand{\labelitem...}{;;;}&lt;/code&gt; muda o marcador do ... nível para outro marcador(;;;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;\labelitemi&lt;/strong&gt; for Level 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\labelitemii&lt;/strong&gt; for Level 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\labelitemiii&lt;/strong&gt; for Level 3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\labelitemiv&lt;/strong&gt; for Level 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para mudar um item em específico, usar (com o respetivo package):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\item&lt;/span&gt;  Default item label for entry one
+  &lt;span class="k"&gt;\item&lt;/span&gt;  Default item label for entry two
+  &lt;span class="k"&gt;\item&lt;/span&gt;&lt;span class="na"&gt;[$\square$]&lt;/span&gt;  Custom item label for entry three
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Enumerações&lt;/h3&gt;
+&lt;p&gt;O &lt;strong&gt;&lt;em&gt;enumerate environment&lt;/em&gt;&lt;/strong&gt; produz listas numeradas. A lista numerada gera automaticamente os números de cada item.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\item&lt;/span&gt; First item
+  &lt;span class="k"&gt;\item&lt;/span&gt; Second item
+    ...
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Os níveis associados ao &lt;em&gt;enumerate&lt;/em&gt; são quatro:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="enumerate" src="https://i.imgur.com/MLryvUY.png"&gt;&lt;/p&gt;
+&lt;p&gt;Por padrão, os níveis assumem o seguinte esquema:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Arabic number (1, 2, 3, ...) para o nível 1;&lt;/li&gt;
+&lt;li&gt;Lowercase letter (a, b, c, ...) para o nível 2;&lt;/li&gt;
+&lt;li&gt;Lowercase Roman numeral (i, ii, iii, ...) para o nível 3;&lt;/li&gt;
+&lt;li&gt;Uppercase letter (A, B, C, ...) para o nível 4.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Mudar estilo dos números&lt;/h4&gt;
+&lt;p&gt;Este esquema é alterável redefinindo o comando do tipo de número ou letra do nível da lista. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt; &lt;span class="k"&gt;\renewcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\labelenumii&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;&lt;span class="k"&gt;\Roman&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumii&lt;span class="nb"&gt;}}&lt;/span&gt;
+ &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+   &lt;span class="k"&gt;\item&lt;/span&gt; item 1 on level 1
+   &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+     &lt;span class="k"&gt;\item&lt;/span&gt; item 1 on level 2
+     &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+       &lt;span class="k"&gt;\item&lt;/span&gt; item 1 on level 3
+       &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+         &lt;span class="k"&gt;\item&lt;/span&gt; item 1 on level 4
+         &lt;span class="k"&gt;\item&lt;/span&gt; item 2 on level 4
+       &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+       &lt;span class="k"&gt;\item&lt;/span&gt; item 2 on level 3
+     &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+     &lt;span class="k"&gt;\item&lt;/span&gt; item 2 on level 2
+   &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+   &lt;span class="k"&gt;\item&lt;/span&gt; item 2 on level 1
+ &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="enumerate2" src="https://i.imgur.com/miYh24e.png"&gt;&lt;/p&gt;
+&lt;p&gt;O comando &lt;code&gt;\renewcommand{\labelenumii}{\Roman{enumii}}&lt;/code&gt; muda o segundo nível
+para números romanos maiúsculos. Colocar &lt;strong&gt;\labelenum_&lt;/strong&gt; em vez do
+&lt;strong&gt;\theenum_&lt;/strong&gt; resulta em mudar a label do mesmo, por exemplo tirar os () do
+nível existentes por defeito.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;\theenumi&lt;/strong&gt; for Level 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\theenumii&lt;/strong&gt; for Level 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\theenumiii&lt;/strong&gt; for Level 3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\theenumiv&lt;/strong&gt; for Level 4&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Tabela de estilos de listas numeradas:&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\alph&lt;/td&gt;
+&lt;td&gt;Lowercase letter (a, b, c, ...)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\Alph&lt;/td&gt;
+&lt;td&gt;Uppercase letter (A, B, C, ...)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\arabic&lt;/td&gt;
+&lt;td&gt;Arabic number (1, 2, 3, ...)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\roman&lt;/td&gt;
+&lt;td&gt;Lowercase Roman numeral (i, ii, iii, ...)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\Roman&lt;/td&gt;
+&lt;td&gt;Uppercase Roman numeral (I, II, III, ...)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Mudar contador dos números&lt;/h4&gt;
+&lt;p&gt;Os contadores das listas que incrementam os &lt;em&gt;\item&lt;/em&gt; começam sempre pelo
+primeiro número ou letra: 1,a,i,A,I. Isto pode ser mudado com o
+&lt;code&gt;*\setcounter{enum_}*&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\setcounter&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumi&lt;span class="nb"&gt;}{&lt;/span&gt;4&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\item&lt;/span&gt; item 5 on level 1
+  &lt;span class="k"&gt;\item&lt;/span&gt; item 6 on level 1
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="enumerate3" src="https://i.imgur.com/NgHMXwI.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Descrição&lt;/h3&gt;
+&lt;p&gt;O &lt;strong&gt;&lt;em&gt;description environment&lt;/em&gt;&lt;/strong&gt; produz uma lista com uma certa label. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;description&lt;span class="nb"&gt;}&lt;/span&gt;
+   &lt;span class="k"&gt;\item&lt;/span&gt; [label 1] First item
+   &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;description&lt;span class="nb"&gt;}&lt;/span&gt;
+      &lt;span class="k"&gt;\item&lt;/span&gt; [label 1.1] Second item
+   &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;description&lt;span class="nb"&gt;}&lt;/span&gt;
+      ...
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;description&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="description" src="https://i.imgur.com/dhPZtLa.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Misturar&lt;/h3&gt;
+&lt;p&gt;No LaTeX é possível colocar diferente tipos de listas dentro de outras listas, até quatro níveis.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+   &lt;span class="k"&gt;\item&lt;/span&gt; The labels consists of sequential numbers.
+   &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+     &lt;span class="k"&gt;\item&lt;/span&gt; The individual entries are indicated with a black dot, a so-called bullet.
+     &lt;span class="k"&gt;\item&lt;/span&gt; The text in the entries may be of any length.
+   &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+   &lt;span class="k"&gt;\item&lt;/span&gt; The numbers starts at 1 with every call to the enumerate environment.
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;enumerate&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="misturar" src="https://i.imgur.com/xOcsjFY.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Formatar espaços das listas&lt;/h3&gt;
+&lt;p&gt;Existe uma série de comandos de espaçamentos para as listas, que podem ser mudados:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\itemsep&lt;/td&gt;
+&lt;td&gt;\labelsep&lt;/td&gt;
+&lt;td&gt;\labelwidth&lt;/td&gt;
+&lt;td&gt;\leftmargin&lt;/td&gt;
+&lt;td&gt;\listparindent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\parsep&lt;/td&gt;
+&lt;td&gt;\parskip&lt;/td&gt;
+&lt;td&gt;\partopsep&lt;/td&gt;
+&lt;td&gt;\rightmargin&lt;/td&gt;
+&lt;td&gt;\topsep&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Exemplo para Separação entre Items&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\addtolength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\itemsep&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;-0.5&lt;span class="k"&gt;\baselineskip&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\item&lt;/span&gt; Item 1
+&lt;span class="k"&gt;\item&lt;/span&gt; Item 2
+&lt;span class="k"&gt;\item&lt;/span&gt; Item 3
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\setlength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\itemsep&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;0pt&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\item&lt;/span&gt; Item 1
+&lt;span class="k"&gt;\item&lt;/span&gt; Item 2
+&lt;span class="k"&gt;\item&lt;/span&gt; Item 3
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;itemize&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="listsep" src="https://i.imgur.com/B1t2avI.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Tabelas&lt;/h2&gt;
+&lt;p&gt;Inserir tabelas é uma das coisas mais essenciais a fazer num documento. O LaTeX
+permite personalizar as tabelas em tamanho, combinar células, mudar a cor, etc. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table&lt;span class="nb"&gt;}&lt;/span&gt;[&amp;lt;placement&amp;gt;]
+   &lt;span class="c"&gt;% table body&lt;/span&gt;
+   &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;[pos]&lt;span class="nb"&gt;{&lt;/span&gt;cols&lt;span class="nb"&gt;}&lt;/span&gt;
+      column 1 entry &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; column 2 entry ... &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; column n entry &lt;span class="k"&gt;\\&lt;/span&gt;
+      ...
+   &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;
+   &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&amp;lt;table title&amp;gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;O posicionamento da tabela, &lt;strong&gt;&lt;em&gt;placement&lt;/em&gt;&lt;/strong&gt;, será explicado melhor na próxima secção.&lt;/p&gt;
+&lt;p&gt;A legenda, &lt;strong&gt;&lt;em&gt;\caption&lt;/em&gt;&lt;/strong&gt; da tabela pode ser colocado tanto em baixo como no
+topo da tabela; dependerá onde o comando aparece, antes ou depois do corpo da
+tabela.&lt;/p&gt;
+&lt;p&gt;No corpo da tabela, &lt;em&gt;table body&lt;/em&gt;, é normalmente usado o &lt;strong&gt;tabular
+environment&lt;/strong&gt;. Este recebe dois parâmetros, um opcional, [pos], e outro
+obrigatório, {cols}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[pos]&lt;/strong&gt; define a posição vertical, pode tomar os seguintes valores: t, b,
+ c, significando linha do topo alinhada com o texto, linha debaixo alinhado
+ com o texto, tabela centrada no texto, respetivamente.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;{cols}&lt;/strong&gt; define o número, o alinhamento e as fronteiras das colunas, que podem assumir os seguintes valores:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parâmetro&lt;/th&gt;
+&lt;th&gt;Significado&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;l&lt;/td&gt;
+&lt;td&gt;alinhar o texto à esquerda&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;c&lt;/td&gt;
+&lt;td&gt;alinhar o texto ao centro&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;r&lt;/td&gt;
+&lt;td&gt;alinhar o texto à direita&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;p{\&amp;lt;width&gt;}&lt;/td&gt;
+&lt;td&gt;Fixar largura da coluna com texto alinhado no topo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;m{\&amp;lt;width&gt;}&lt;/td&gt;
+&lt;td&gt;Fixar largura da coluna com texto alinhado no centro *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;b{\&amp;lt;width&gt;}&lt;/td&gt;
+&lt;td&gt;Fixar largura da coluna com texto alinhado em baixo *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;|&lt;/td&gt;
+&lt;td&gt;linha vertical&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;||&lt;/td&gt;
+&lt;td&gt;linha vertical dupla&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*{num}{form}&lt;/td&gt;
+&lt;td&gt;formata a forma com &lt;em&gt;num&lt;/em&gt; nº de vezes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Aqui está um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}{&lt;/span&gt; |c|c|c| &lt;span class="nb"&gt;}&lt;/span&gt; 
+ &lt;span class="k"&gt;\hline&lt;/span&gt;
+ cell1 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell2 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell3 &lt;span class="k"&gt;\\&lt;/span&gt; 
+ cell4 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell5 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell6 &lt;span class="k"&gt;\\&lt;/span&gt; 
+ cell7 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell8 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell9 &lt;span class="k"&gt;\\&lt;/span&gt; 
+ &lt;span class="k"&gt;\hline&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="table" src="https://i.imgur.com/tlfZMiX.png"&gt;&lt;/p&gt;
+&lt;p&gt;Para entender alguns pormenores deste exmplo, vejamos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;{ |c|c|c| }&lt;/strong&gt;: 
+Declara as 3 colunas separadas por linhas verticais. Cada c significa que o conteúdo está centrado, &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\hline&lt;/strong&gt;:
+Linha horizontal entres duas linhas. Na secção seguinte mostramos mais.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cell1 &amp;amp; cell2 &amp;amp; cell3 \\&lt;/strong&gt;:
+Cada célula é separada pelo &amp;amp;, e com \\ para separar linhas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Separação entre células:&lt;/h3&gt;
+&lt;p&gt;Para separar as células temos os seguintes comandos:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Comando&lt;/th&gt;
+&lt;th&gt;Descrição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;Separar colunas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\&lt;/td&gt;
+&lt;td&gt;Começar nova linha (adicionar mais espaço, e.g. \\[6pt])&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\hline&lt;/td&gt;
+&lt;td&gt;linha horizontal entre linhas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\newline&lt;/td&gt;
+&lt;td&gt;começar nova linha dentro de uma célula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\cline{i-j}&lt;/td&gt;
+&lt;td&gt;linha parcial horizontal da coluna i à coluna j&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Temos aqui um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}{&lt;/span&gt;|r|c|l|&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\hline&lt;/span&gt;
+&lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; col 1 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; col 2 &lt;span class="k"&gt;\\&lt;/span&gt;
+&lt;span class="k"&gt;\hline&lt;/span&gt;
+row 1 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; entry A1 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; entry B1 &lt;span class="k"&gt;\\&lt;/span&gt;
+row 2 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; entry A2 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; entry B2 &lt;span class="k"&gt;\\&lt;/span&gt;
+&lt;span class="k"&gt;\hline&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="table2" src="https://i.imgur.com/bHeKySc.png"&gt;&lt;/p&gt;
+&lt;h4&gt;Tamanhos fixos&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table&lt;span class="nb"&gt;}&lt;/span&gt;&lt;span class="k"&gt;\centering&lt;/span&gt;
+  &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}{&lt;/span&gt; | m&lt;span class="nb"&gt;{&lt;/span&gt;5em&lt;span class="nb"&gt;}&lt;/span&gt; | m&lt;span class="nb"&gt;{&lt;/span&gt;1cm&lt;span class="nb"&gt;}&lt;/span&gt;| m&lt;span class="nb"&gt;{&lt;/span&gt;1cm&lt;span class="nb"&gt;}&lt;/span&gt; | &lt;span class="nb"&gt;}&lt;/span&gt; 
+     &lt;span class="k"&gt;\hline&lt;/span&gt;
+     cell1 dummy text dummy text dummy text&lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell2 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell3 &lt;span class="k"&gt;\\&lt;/span&gt;    
+     &lt;span class="k"&gt;\hline&lt;/span&gt;
+     cell1 dummy text dummy text dummy text &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell5 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell6 &lt;span class="k"&gt;\\&lt;/span&gt; 
+     &lt;span class="k"&gt;\hline&lt;/span&gt;
+     cell7 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell8 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell9 &lt;span class="k"&gt;\\&lt;/span&gt; 
+     &lt;span class="k"&gt;\hline&lt;/span&gt;
+     &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="table33" src="https://i.imgur.com/9tyPT7H.png"&gt;&lt;/p&gt;
+&lt;p&gt;Primeiro, para usar estes parâmetros é necessário ter no &lt;strong&gt;preamble&lt;/strong&gt; o &lt;em&gt;package array&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;array&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Na &lt;em&gt;tabular&lt;/em&gt;, o parâmetro &lt;strong&gt;&lt;em&gt;m{5em}&lt;/em&gt;&lt;/strong&gt; coloca a primeira coluna com um tamanho de 5em e centra o texto no meio da célula.&lt;/p&gt;
+&lt;h3&gt;Posição&lt;/h3&gt;
+&lt;p&gt;Para colocar a tabela num certo sítio da página, o environment &lt;strong&gt;&lt;em&gt;table&lt;/em&gt;&lt;/strong&gt; recebe um parâmtro que explicita como a colocar. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table&lt;span class="nb"&gt;}&lt;/span&gt;[h!]
+  &lt;span class="k"&gt;\centering&lt;/span&gt;
+  &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}{&lt;/span&gt;||c c c||&lt;span class="nb"&gt;}&lt;/span&gt; 
+    &lt;span class="k"&gt;\hline&lt;/span&gt;
+    Col1 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; Col2 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; Col2  &lt;span class="k"&gt;\\&lt;/span&gt; [0.5ex] 
+    &lt;span class="k"&gt;\hline\hline&lt;/span&gt;
+    1 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; 6 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; 87837  &lt;span class="k"&gt;\\&lt;/span&gt; 
+    2 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; 7 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; 78  &lt;span class="k"&gt;\\&lt;/span&gt;
+    3 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; 88 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; 788 &lt;span class="k"&gt;\\&lt;/span&gt; [1ex] 
+    &lt;span class="k"&gt;\hline&lt;/span&gt;
+  &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="table4" src="https://i.imgur.com/CNGIrcD.png"&gt;&lt;/p&gt;
+&lt;p&gt;Este exemplo também mostra linhas duplas e espaço entre 2 linhas.&lt;/p&gt;
+&lt;p&gt;O parâmetro adicional &lt;code&gt;*\[h!\]*&lt;/code&gt; determina a posição da tabela no local do código. Em baixo está uma tabela com as várias opções disponíveis:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parâmetro&lt;/th&gt;
+&lt;th&gt;Position&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;h&lt;/td&gt;
+&lt;td&gt;Coloca a imagem, aqui (here), i.e., aproximadamente no local onde está o código fonte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;Coloca no topo da página.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;b&lt;/td&gt;
+&lt;td&gt;Coloca em baixo da página.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;p&lt;/td&gt;
+&lt;td&gt;Coloca numa página especial só para imagens e outros floats.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;!&lt;/td&gt;
+&lt;td&gt;Sobrepõem-se ao parâmetro do LaTeX que consideram um "bom" local.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;H&lt;/td&gt;
+&lt;td&gt;Coloca no local específico onde está o código. Necessita do &lt;code&gt;*\usepackage{float}*&lt;/code&gt;. É equivalente a usar h!.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;No exemplo acima, o comando &lt;code&gt;\centering&lt;/code&gt; centra a imagem; por defeito, é alinhada à esquerda.&lt;/p&gt;
+&lt;h3&gt;Juntar/Merge colunas e linhas&lt;/h3&gt;
+&lt;p&gt;É possível juntar colunas, usando o comando 
+&lt;code&gt;\multicolumn&lt;/code&gt;, e linhas, com o comando &lt;code&gt;**multirow**&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;Colunas&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}{&lt;/span&gt; |p&lt;span class="nb"&gt;{&lt;/span&gt;3cm&lt;span class="nb"&gt;}&lt;/span&gt;||p&lt;span class="nb"&gt;{&lt;/span&gt;2cm&lt;span class="nb"&gt;}&lt;/span&gt;|p&lt;span class="nb"&gt;{&lt;/span&gt;2cm&lt;span class="nb"&gt;}&lt;/span&gt;|p&lt;span class="nb"&gt;{&lt;/span&gt;2cm&lt;span class="nb"&gt;}&lt;/span&gt;|  &lt;span class="nb"&gt;}&lt;/span&gt;
+ &lt;span class="k"&gt;\hline&lt;/span&gt;
+ &lt;span class="k"&gt;\multicolumn&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;4&lt;span class="nb"&gt;}{&lt;/span&gt;|c|&lt;span class="nb"&gt;}{&lt;/span&gt;Country List&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\\&lt;/span&gt;
+ &lt;span class="k"&gt;\hline&lt;/span&gt;
+ Afghanistan   &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; AF    &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;AFG&lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;   004&lt;span class="k"&gt;\\&lt;/span&gt;
+ &lt;span class="k"&gt;\hline&lt;/span&gt;
+ Aland Islands&lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;   AX  &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; ALA   &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;248&lt;span class="k"&gt;\\&lt;/span&gt;
+ Albania &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;AL &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; ALB&lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;  008&lt;span class="k"&gt;\\&lt;/span&gt;
+ &lt;span class="k"&gt;\hline&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="table5" src="https://i.imgur.com/QJsNQ2Y.png"&gt;&lt;/p&gt;
+&lt;p&gt;Vemos os vários parâmetros do comando &lt;code&gt;\multicolumn\{4\}\{|c|\}\{Country List\}&lt;/code&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;{4}
+O número de colunas em conjunto, neste caso 4.&lt;/li&gt;
+&lt;li&gt;{|c|}
+Delimitadores e alinhamento da célula juntos, neste caso centrada e com linha vertical.&lt;/li&gt;
+&lt;li&gt;{Country List}
+Texto a ser mostrado na célula.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Linhas:&lt;/h4&gt;
+&lt;p&gt;Para combinar linhas, é necessário o &lt;code&gt;**package multirow**&lt;/code&gt; no &lt;strong&gt;preamble&lt;/strong&gt; 
+    :::latex
+    \usepackage{multirow}&lt;/p&gt;
+&lt;p&gt;Exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table&lt;span class="nb"&gt;}&lt;/span&gt;&lt;span class="k"&gt;\centering&lt;/span&gt;
+  &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}{&lt;/span&gt; |c|c|c|c| &lt;span class="nb"&gt;}&lt;/span&gt; 
+    &lt;span class="k"&gt;\hline&lt;/span&gt;
+    col1 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; col2 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; col3 &lt;span class="k"&gt;\\&lt;/span&gt;
+    &lt;span class="k"&gt;\hline&lt;/span&gt;
+    &lt;span class="k"&gt;\multirow&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;3&lt;span class="nb"&gt;}{&lt;/span&gt;4em&lt;span class="nb"&gt;}{&lt;/span&gt;Multiple row&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell2 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell3 &lt;span class="k"&gt;\\&lt;/span&gt; 
+    &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell5 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell6 &lt;span class="k"&gt;\\&lt;/span&gt; 
+    &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell8 &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt; cell9 &lt;span class="k"&gt;\\&lt;/span&gt; 
+    &lt;span class="k"&gt;\hline&lt;/span&gt;
+  &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="table6" src="https://i.imgur.com/SnGaG0G.png"&gt;&lt;/p&gt;
+&lt;p&gt;O comando &lt;strong&gt;multirow&lt;/strong&gt; recebe 3 parâmetros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;{3}: 1º&lt;/strong&gt; - nº de linhas a juntar&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;{4em}: 2º&lt;/strong&gt; - largura da coluna; 4em por exemplo. Caso seja o tamanho da coluna inicialmente declarada, colocar {!}&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;{Multiple row}: 3º&lt;/strong&gt; - conteúdo da célula&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Tabelas de múltiplas páginas&lt;/h3&gt;
+&lt;p&gt;Para inserir tabelas muito grandes que ocupam mais de uma página do documento, é necessário usar o &lt;code&gt;**longtable package**&lt;/code&gt; ao &lt;strong&gt;preamble&lt;/strong&gt;.
+    :::latex
+    \usepackage{longtable}&lt;/p&gt;
+&lt;p&gt;Ver &lt;a href="https://www.overleaf.com/learn/latex/Tables#Multi-page_tables"&gt;link&lt;/a&gt; do Overleaf para exemplo.&lt;/p&gt;
+&lt;p&gt;De seguida, referimos alguns dos comandos e o seu significado (que também aparece no link):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Comando&lt;/th&gt;
+&lt;th&gt;Significado&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\endfirsthead&lt;/td&gt;
+&lt;td&gt;Everything above this command will appear at the beginning of the table, in the first page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\endhead&lt;/td&gt;
+&lt;td&gt;Whatever you put before this command and below endfirsthead will be displayed at the top of the table in every page except the first one.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\endfoot&lt;/td&gt;
+&lt;td&gt;Similar to \endhead, what you put after \endhead and before this command will appear at the bottom of the table in every page except the last one.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\endlastfoot&lt;/td&gt;
+&lt;td&gt;Similar to endfisthead. The elements after \endfoot and before this command will be displayed at the bottom of the table but only in the last page where the table appears.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Formatar, Estilo&lt;/h3&gt;
+&lt;p&gt;Não se irá entrar em detalhe sobre como mudar a grossura das linhas, a cor das
+células, etc., mas aqui
+&lt;a href="https://www.overleaf.com/learn/latex/Tables#Changing_the_appearance_of_a_table"&gt;link&lt;/a&gt;
+pode ver-se como fazê-lo.&lt;/p&gt;
+&lt;h3&gt;Tabelas ao lado de texto&lt;/h3&gt;
+&lt;p&gt;Para colocar uma tabela no meio do texto, é necessário primeiro colocar no &lt;strong&gt;preamble&lt;/strong&gt; o seguinte package:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;wrapfig&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;E agora é possível usar o &lt;code&gt;environment wraptable&lt;/code&gt;, que recebe dois parâmetros:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Um para alinhar o bloco da tabela, que pode assumir l, r, c, i ou o, para esquerda, direita, centro, inner e outer, respetivamente.&lt;/li&gt;
+&lt;li&gt;Um para a largura do bloco com a tabela, relembrando que não é a mesma coisa que o tamanho da própria tabela.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer 
+adipiscing elit.
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;wraptable&lt;span class="nb"&gt;}{&lt;/span&gt;r&lt;span class="nb"&gt;}{&lt;/span&gt;10em&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\centering&lt;/span&gt;
+  &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}{&lt;/span&gt; |c|c|  &lt;span class="nb"&gt;}&lt;/span&gt;
+     &lt;span class="k"&gt;\hline&lt;/span&gt;
+     Country Name &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;   &lt;span class="k"&gt;\\&lt;/span&gt;
+     &lt;span class="k"&gt;\hline&lt;/span&gt;
+     Albania    &lt;span class="nb"&gt;&amp;amp;&lt;/span&gt;AL  &lt;span class="k"&gt;\\&lt;/span&gt;
+     &lt;span class="k"&gt;\hline&lt;/span&gt;
+  &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Table inside a wraptable&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;table:ta2&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;wraptable&lt;span class="nb"&gt;}&lt;/span&gt;
+
+Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer 
+adipiscing elit. Duis fringilla tristique neque. Sed interdum 
+libero ut metus. Pellentesque placerat. Nam rutrum augue a leo. 
+Morbi sed elit sit amet ante lobortis sollicitudin...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="table7" src="https://i.imgur.com/5iIPVpK.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Figuras&lt;/h2&gt;
+&lt;p&gt;Inserir imagens é uma das coisa mais habituais a fazer num documento.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;graphicx&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\graphicspath&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt; &lt;span class="nb"&gt;{&lt;/span&gt;./images/&lt;span class="nb"&gt;}}&lt;/span&gt;
+...
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;[&amp;lt;placement&amp;gt;]
+   &lt;span class="c"&gt;% figure body&lt;/span&gt;
+   &lt;span class="k"&gt;\centering&lt;/span&gt;
+   &lt;span class="k"&gt;\includegraphics&lt;/span&gt;&lt;span class="na"&gt;[&amp;lt;options&amp;gt;]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&amp;lt;path to file&amp;gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+   &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&amp;lt;figure title&amp;gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;O comando &lt;strong&gt;\graphicspath{ {./images/} }&lt;/strong&gt; diz ao LaTeX a diretoria, a pasta,
+onde as imagens estão. Esta também pode ser adicionada apenas no \&amp;lt;path to
+file&gt;, caso tenham imagens em diferentes pastas.&lt;/p&gt;
+&lt;p&gt;O posicionamento da figura, &lt;strong&gt;&lt;em&gt;placement&lt;/em&gt;&lt;/strong&gt;, será falado melhor na próxima secção.&lt;/p&gt;
+&lt;p&gt;A legenda, &lt;strong&gt;&lt;em&gt;\caption&lt;/em&gt;&lt;/strong&gt;, da imagem pode ser colocada tanto em baixo como no
+topo da imagem; dependerá onde o comando aparece, antes ou depois,
+respetivamente, do corpo da imagem.&lt;/p&gt;
+&lt;p&gt;No corpo da imagem, &lt;em&gt;figure body&lt;/em&gt;, é normalmente usado o &lt;code&gt;includegraphics
+environment&lt;/code&gt;. As opções &lt;strong&gt;&lt;em&gt;options&lt;/em&gt;&lt;/strong&gt; é uma lista que contém informação sobre
+a figura: &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;options&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;angle&lt;/td&gt;
+&lt;td&gt;rotating angle (CCW)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;scale&lt;/td&gt;
+&lt;td&gt;scaling factor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;width&lt;/td&gt;
+&lt;td&gt;width of image&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;height&lt;/td&gt;
+&lt;td&gt;height of image&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="alert alert-warning"&gt;
+Não esquecer de colocar o tipo de ficheiro .png, .pdf, .jpg, .jpeg, etc.
+Não esquecer de colocar no &lt;b&gt;preamble&lt;/b&gt; o package associado \usepackage{graphicx}
+&lt;/div&gt;
+
+&lt;h3&gt;Tamanho da imagem&lt;/h3&gt;
+&lt;p&gt;Existem algumas macros em LaTeX para especificar quantidades do documento, para posteriormente usar no tamanho da imagem. As mais úteis são:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;\pagewidth&lt;/strong&gt; largura da página, incluindo margens;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\textwidth&lt;/strong&gt; largura da corpo de texto; &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\linewidth&lt;/strong&gt; largura do parágrafo atual do código, e.g. se tivermos em 2 colunas será o tamanho de uma coluna - &lt;code&gt;*recomendado*&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Eis um exemplo para colocar uma imagem centrada com o tamanho de matade de página, usando &lt;code&gt;width=0.5\textwidth&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;[!htb]
+  &lt;span class="k"&gt;\centering&lt;/span&gt;
+  &lt;span class="k"&gt;\includegraphics&lt;/span&gt;&lt;span class="na"&gt;[width=0.5\textwidth]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;./images/IST&lt;span class="nb"&gt;_&lt;/span&gt;Logo.png&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Logo do IST!&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Existem outros comandos para escalar a imagem em relação ao tamanho real da imagem: &lt;code&gt;*\includegraphics\[scale=1.5\]{./images/IST_Logo.png}*&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;includegraphics: para importar imagens, ajustar tamanho.&lt;/li&gt;
+&lt;li&gt;begin{figure}: para criar numeração, legenda e referência.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Posição&lt;/h3&gt;
+&lt;p&gt;Para colocar a imagem num certo sítio da página, o environment &lt;strong&gt;&lt;em&gt;figure&lt;/em&gt;&lt;/strong&gt; recebe um parâmetro para esse efeito. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;In the next example the figure will be positioned 
+right below this sentence.
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;[h]
+   &lt;span class="k"&gt;\includegraphics&lt;/span&gt;&lt;span class="na"&gt;[width=8cm]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Plot&lt;span class="nb"&gt;}&lt;/span&gt;
+   &lt;span class="k"&gt;\centering&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;O parâmetro adicional &lt;code&gt;*\[h\]*&lt;/code&gt; determina a posição da figura no local do código. Em baixo está uma tabela com as várias opções dispoívies:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parâmetro&lt;/th&gt;
+&lt;th&gt;Position&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;h&lt;/td&gt;
+&lt;td&gt;Coloca a imagem, aqui (here), i.e., aproximadamente no local onde está o código fonte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;Coloca no topo da página.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;b&lt;/td&gt;
+&lt;td&gt;Coloca em baixo da página.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;p&lt;/td&gt;
+&lt;td&gt;Coloca numa página especial só para imagens e outros floats.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;!&lt;/td&gt;
+&lt;td&gt;Sobrepõem-se ao parâmetro do LaTeX que consideram um "bom" local.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;H&lt;/td&gt;
+&lt;td&gt;Coloca na local específico onde está o código. Necessita do &lt;code&gt;*\usepackage{float}*&lt;/code&gt;. É equivalente a usar h!.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;No exemplo acima, o comando &lt;code&gt;\centering&lt;/code&gt; centra a imagem; por defeito é alinhada à esquerda.&lt;/p&gt;
+&lt;h3&gt;Wrap Images - Texto ao lado de imagem&lt;/h3&gt;
+&lt;p&gt;Também é possível colocar imagens ao lado de texto, para caso de figuras pequenas.
+O &lt;code&gt;**package wrapfig**&lt;/code&gt; é o que fornece as ferramentas para tal. Exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer 
+adipiscing elit. Duis fringilla tristique neque. Sed interdum 
+libero ut metus. Pellentesque placerat.
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;wrapfigure&lt;span class="nb"&gt;}{&lt;/span&gt;l&lt;span class="nb"&gt;}{&lt;/span&gt;0.25&lt;span class="k"&gt;\textwidth&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\includegraphics&lt;/span&gt;&lt;span class="na"&gt;[width=0.9\linewidth]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;overleaf-logo&lt;span class="nb"&gt;}&lt;/span&gt; 
+&lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Caption1&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fig:wrapfig&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;wrapfigure&lt;span class="nb"&gt;}&lt;/span&gt;
+
+Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer 
+adipiscing elit. Duis fringilla tristique neque. Sed interdum
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="fig" src="https://i.imgur.com/Jvg6GxP.png"&gt;&lt;/p&gt;
+&lt;p&gt;Primeiro, importar o pacote, adicionando ao &lt;strong&gt;preamble&lt;/strong&gt; o seguinte:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;wrapfig&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Agora definimos um environment de wrapfigure com o comando &lt;code&gt;\begin{wrapfigure}{l}{0.25\textwidth} \\end{wrapfigure}&lt;/code&gt;. Notamos que este aceita 2 argumentos dentro dos parêntesis { }. Expliquemos o que cada um significa:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;{l}:
+Definie o alinhamento da figura. Pode ser definido como &lt;strong&gt;l, r, c, i ou o&lt;/strong&gt;, que significam esquerda, direita, centro, inner e outer. Estes últimos dois costumam ser usados em two-sided documents, e.g., livros.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;{0.25\textwidth}
+Define a largura da caixa da figura, não necessariamente a imagem em si; se quisermos tal, mudar no comando &lt;em&gt;\includegraphics&lt;/em&gt; para o espaço alocado à imagem no meio do texto. Unidades habituais de usar: cm, in, mm, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Várias imagens numa figura&lt;/h3&gt;
+&lt;p&gt;É ainda possível colocar mais que uma imagem numa só imagem, cada uma delas tendo a sua referência. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Duis fringilla tristique neque...
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;[H]
+
+  &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;subfigure&lt;span class="nb"&gt;}{&lt;/span&gt;0.5&lt;span class="k"&gt;\textwidth&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\includegraphics&lt;/span&gt;&lt;span class="na"&gt;[width=0.9\linewidth, height=6cm]&lt;/span&gt;  &lt;span class="nb"&gt;{&lt;/span&gt;overleaf-logo&lt;span class="nb"&gt;}&lt;/span&gt; 
+    &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Caption1&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fig:subim1&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;subfigure&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;subfigure&lt;span class="nb"&gt;}{&lt;/span&gt;0.5&lt;span class="k"&gt;\textwidth&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\includegraphics&lt;/span&gt;&lt;span class="na"&gt;[width=0.9\linewidth, height=6cm]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;mesh&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Caption 2&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fig:subim2&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;subfigure&lt;span class="nb"&gt;}&lt;/span&gt;
+
+  &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Caption for this figure with two images&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fig:image2&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;
+
+Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, 
+luctus a, egestas a, turpis. Mauris lacinia lorem sit amet ipsum. 
+Nunc quis urna dictum turpis accumsan semper.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="fig2" src="https://i.imgur.com/US9i6vf.png"&gt;&lt;/p&gt;
+&lt;p&gt;Primeiro, importar o pacote, adicionando ao &lt;strong&gt;preamble&lt;/strong&gt; o seguinte:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;subcaption&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;O environment &lt;code&gt;*\subfigure*&lt;/code&gt; pede só um parâmetro, que corresponde à largura da
+figura. Este environment tem de ser usado dentro da &lt;strong&gt;figure environment&lt;/strong&gt;.
+Tanto a legenda como a label podem ser definidas para cada subfigura.&lt;/p&gt;
+&lt;h3&gt;Legendas aos lados&lt;/h3&gt;
+&lt;p&gt;Podemos ainda colocar figuras com a legenda de lado. O &lt;code&gt;**package sidecap**&lt;/code&gt; tem as ferramentas para tal.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="na"&gt;[rightcaption]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;sidecap&lt;span class="nb"&gt;}&lt;/span&gt;
+
+...
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;SCfigure&lt;span class="nb"&gt;}&lt;/span&gt;[0.5][h]
+&lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Using again the picture of the universe.
+This caption will be on the right&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\includegraphics&lt;/span&gt;&lt;span class="na"&gt;[width=0.6\textwidth]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;universe&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;SCfigure&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="fig3" src="https://i.imgur.com/5Tu5OG9.png"&gt;&lt;/p&gt;
+&lt;p&gt;Temos dois novos comandos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;\usepackage[rightcaption]{sidecap}&lt;/strong&gt;
+Importa-se o pacote sidecap. Com o parâmetro adicional &lt;code&gt;rightcaption&lt;/code&gt;,
+estabelece-se a posição da legenda à direita da imagem (também é possível usar
+&lt;code&gt;leftcaption&lt;/code&gt;). Para livros, outercaption e innercaption também estão
+disponíveis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;div class="math"&gt;\begin{SCfigure}\[0.5\][h] \\end{SCfigure}&lt;/div&gt;&lt;/strong&gt;
+É um environment parecido com o &lt;em&gt;figure&lt;/em&gt;. O &lt;code&gt;primeiro parâmetro&lt;/code&gt; representa a
+&lt;strong&gt;largura da legenda&lt;/strong&gt; relativamente ao tamanho da imagem declarado no
+&lt;em&gt;\includegraphics&lt;/em&gt;. O &lt;code&gt;segundo parãmetro&lt;/code&gt; funciona de forma exatamente igual à
+&lt;strong&gt;posição da figura&lt;/strong&gt; como no &lt;em&gt;figure environment&lt;/em&gt;. Ver a secção de
+Posicionamento para mais informações.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Definir novos Environments&lt;/h2&gt;
+&lt;p&gt;Pode-se ainda criar novos environments que dêem jeito. Para tal usa-se o comando &lt;strong&gt;&lt;em&gt;\newenvironment&lt;/em&gt;&lt;/strong&gt; no &lt;em&gt;Preamble&lt;/em&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;% ------ Preable:&lt;/span&gt;
+&lt;span class="k"&gt;\newenvironment&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;boxed&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;center&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}{&lt;/span&gt;|p&lt;span class="nb"&gt;{&lt;/span&gt;0.9&lt;span class="k"&gt;\textwidth&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;|&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\hline\\&lt;/span&gt;
+    &lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="nb"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;\\\\\hline&lt;/span&gt;
+    &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;tabular&lt;span class="nb"&gt;}&lt;/span&gt; 
+    &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;center&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="c"&gt;%--------------------------------------------------&lt;/span&gt;
+
+Below this line a boxed environment is used
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;boxed&lt;span class="nb"&gt;}&lt;/span&gt;
+This is the text formatted by the boxed environment
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;boxed&lt;span class="nb"&gt;}&lt;/span&gt;
+
+This text is again outside the environment
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="env" src="https://i.imgur.com/lNr8fU2.png"&gt;&lt;/p&gt;
+&lt;p&gt;Neste exemplo temos a criação de um environment que desenha uma caixa à volta de texto.&lt;/p&gt;
+&lt;p&gt;A seguir ao &lt;em&gt;\newenvironment&lt;/em&gt; temos o nome do novo environment, &lt;strong&gt;boxed&lt;/strong&gt;. Por
+baixo temos outros &lt;strong&gt;dois&lt;/strong&gt; parentêsis. O &lt;strong&gt;1º&lt;/strong&gt; coloca o código antes do
+texto, e o &lt;strong&gt;2º&lt;/strong&gt; tem dentro o que aparece depois do texto.&lt;/p&gt;
+&lt;p&gt;Finalmente ainda é possível criar environments que recebem argumentos e muito
+mais. Segue-se um
+&lt;strong&gt;&lt;a href="https://www.overleaf.com/learn/latex/Environments#Defining_a_new_environment"&gt;link&lt;/a&gt;&lt;/strong&gt;
+com mais informação sobre tal.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Workshop LaTeX</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex4" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex4</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;WorkShop de LaTeX (Overleaf) - página 4&lt;/h1&gt;
+&lt;p&gt;Índice:
+[TOC]&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;XIII. Paper Layout&lt;/h1&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Em documentos científicos, é costume colocar um breve resumo do documento. em LaTeX, o ==&lt;strong&gt;&lt;em&gt;abstract environment&lt;/em&gt;&lt;/strong&gt;== serve para isso. Eis um exemplo:&lt;/p&gt;
+&lt;p&gt;```latex=
+\hrule
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{abstract}
+This is a simple paragraph at the beginning of the document.
+A brief introduction to the main subject.
+\end{abstract}&lt;/div&gt;
+&lt;p&gt;
+\hrule\vspace{5mm}&lt;/p&gt;
+&lt;p&gt;This is the document&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/Xa2PIWZ.png)
+
+
+Outra forma para colocar o Abstract será:
+
+```latex=
+% Preamble
+\usepackage{abstract}
+\setlength{\absleftindent}{4mm}
+\setlength{\absrightindent}{4mm}
+\setlength{\abstitleskip}{-4mm}
+...
+
+\hrule\begin{abstract}
+  % text
+\end{abstract}
+\hrule\vspace{5mm}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pode-se personalizar alguns dos espaços do Abstract no &lt;strong&gt;preamble&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Documento em colunas&lt;/h2&gt;
+&lt;p&gt;Para criar um documento de duas colunas, basta colocar um parâmetro na &lt;em&gt;document class&lt;/em&gt;: ==&lt;strong&gt;&lt;em&gt;\twocolumn&lt;/em&gt;&lt;/strong&gt;==.&lt;/p&gt;
+&lt;p&gt;Para maior flexibilidade, podemos simplesmente criar um &lt;em&gt;article&lt;/em&gt; com múltiplas colunas. O ==&lt;strong&gt;&lt;em&gt;package multicol&lt;/em&gt;&lt;/strong&gt;== fornece os comandos para isso. Eis um exemplo:&lt;/p&gt;
+&lt;p&gt;```latex=
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{multicol}&lt;/p&gt;
+&lt;p&gt;\begin{document}&lt;/p&gt;
+&lt;div class="math"&gt;\begin{multicols}{3}
+[
+\section{First Section}
+All human things are subject to decay. And when fate summons, Monarchs must obey.
+]
+\blindtext\blindtext
+\end{multicols}&lt;/div&gt;
+&lt;p&gt;\end{document}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/AxYmdc3.png)
+
+Primeiro, importar o seguinte package no *preamble*: ***\usepackage{multicol}***
+
+Agora, podemos usar o environment ==**multicols**==, que recebe como argumento o ++número de colunas++, 3 neste caso. Eventualmente, pode receber um segundo argumento para inserir um texto antes das colunas no topo, tal como no exemplo.
+
+O texto das colunas insere-se dentro do** \\begin{multicols}** e **\\end{multicols}**.
+
+### Separador de colunas
+
+Para colocar um separador entre as colunas, basta definir o ==***\columnsep***== com um certo tamanho no **preamble**
+
+```latex=
+\setlength{\columnsep}{1cm}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;\columnbreak&lt;/strong&gt;: Este comando insere uma quebra de coluna em causa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Segue-se o &lt;a href="https://ftp.eq.uc.pt/software/TeX/macros/latex/required/tools/multicol.pdf"&gt;link&lt;/a&gt; para a documentação do package multicol.&lt;/p&gt;
+&lt;h2&gt;Índice - Table of Content&lt;/h2&gt;
+&lt;p&gt;Não iremos entrar em detalhe sobre a construção do Índice, dado não ser muito utilizado em relatórios, mas este &lt;a href="https://www.overleaf.com/learn/latex/Table_of_contents"&gt;link&lt;/a&gt; redireciona para o site do Overleaf que explica o procedimento.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;XIV. Label Cross-References&lt;/h1&gt;
+&lt;p&gt;Informações retiradas do &lt;a href="https://www.overleaf.com/learn/latex/Cross_referencing_sections,_equations_and_floats"&gt;link&lt;/a&gt; do Overleaf.&lt;/p&gt;
+&lt;p&gt;If you need to insert cross-references to numbered elements in the document, (like equations, sections and figures) there are commands to automate it in LATEX. This article explains how.&lt;/p&gt;
+&lt;p&gt;O comando ==&lt;strong&gt;&lt;em&gt;\label{ }&lt;/em&gt;&lt;/strong&gt;== é usado para identificar um número/letra, seja uma secção, equação ou tabela. Isto para depois ser referenciada com o comando ==&lt;strong&gt;&lt;em&gt;\ref{ }&lt;/em&gt;&lt;/strong&gt;=, ou referenciando a sua página, ==&lt;strong&gt;&lt;em&gt;\pageref{ }&lt;/em&gt;&lt;/strong&gt;==.&lt;/p&gt;
+&lt;h2&gt;Secções&lt;/h2&gt;
+&lt;p&gt;Exemplo:&lt;/p&gt;
+&lt;p&gt;```latex=
+\section{Introduction} \label{introduction}
+This is an introductory paragraph with some dummy text. This section will be referenced later.&lt;/p&gt;
+&lt;div class="math"&gt;\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\linewidth]{overleaf-logo}
+\caption{This image will be referenced below.}
+\label{fig:leaf}
+\end{figure}&lt;/div&gt;
+&lt;p&gt;You can reference images; for instance, Figure \ref{fig:leaf} shows the \textit{Overleaf} logo.
+\vspace{0.5cm}&lt;/p&gt;
+&lt;p&gt;\section{Math references} \label{mathrefs}
+As mentioned in section \ref{introduction}, different elements can be referenced within a document.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/p4xTSca.png)
+
+A ++label++ é colocada depois do código **\section**. Isto também resulta para subsections e subsubsections.
+
+## Equações
+
+Exemplo:
+```latex=
+section{Math references} \label{mathrefs}
+As mentioned in section \ref{introduction}, different elements can be referenced within a document.
+
+\subsection{Powers series} \label{subsection}
+
+\begin{equation} \label{eq:1}
+\sum_{i=0}^{\infty} a_i x^i
+\end{equation}
+
+Equation \ref{eq:1} is a typical power series.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://i.imgur.com/IbnxULU.png"&gt;&lt;/p&gt;
+&lt;p&gt;E de igual modo para as tabelas&lt;/p&gt;
+&lt;h2&gt;Referenciar página&lt;/h2&gt;
+&lt;p&gt;```latex=
+\section{Last section}
+In subsection \ref{subsection} on page \pageref{eq:1} an example of a power series was presented.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/uvBLzoy.png)
+
+O comando **\pageref** irá inserir a página onde o elemento referenciado aparece. No exemplo, a página da equação 1 do exemplo anterior a este.
+
+---
+
+# XV. Bibliografia
+
+Uma bibliografia standard usa comandos semelhantes às listas.
+
+```latex=
+\begin{thebibliography}{9}
+  \bibitem{latexcompanion} 
+  Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+  \textit{The \LaTeX\ Companion}. 
+  Addison-Wesley, Reading, Massachusetts, 1993.
+\end{thebibliography}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://i.imgur.com/leXc3gj.png"&gt;&lt;/p&gt;
+&lt;p&gt;The environment thebibliography produces a list of references; such list will be titled "References" in a article document class, and "Bibliography" in book and report document classes. A parameter inside braces, 9 in the example, indicates the number of entries to be added; this parameter can not be greater than 99.&lt;/p&gt;
+&lt;p&gt;To create a bibliography entry the command \bibitem is used. A parameter inside braces is set to label this entry and can later be used as identifier for this reference. After the closing brace the text with the name of the author, the book title, publisher and so on is entered.&lt;/p&gt;
+&lt;h2&gt;Citar&lt;/h2&gt;
+&lt;p&gt;The command \cite insert the number corresponding to the bibliography entry whose label is passed inside braces. For example, the output of \cite{latexcompanion} is [1].&lt;/p&gt;
+&lt;p&gt;The information printed by the command \cite{} depends on the bibliography style used. See Bibtex bibliography styles.&lt;/p&gt;
+&lt;p&gt;```latex=
+\section{First section}&lt;/p&gt;
+&lt;p&gt;This document is an example of \texttt{thebibliography} environment using 
+in bibliography management, cited: \textit{The \LaTeX\ Companion} 
+book \cite{latexcompanion}. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;## Bibliografia com o Bibtex
+
+Outra maneira de fazer uma bibliografia é usar o ==***BibTeX***==. A bibliografia é colocada num ficheiro separado e depois importado na *main*.
+
+```latex=
+\bibliographystyle{unsrt}
+\bibliography{sample}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Este usa os seguintes comandos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;\bibliography{sample}&lt;/strong&gt;:
+Importa o ++ficheiro "sample.bib"++ em Bibtex.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;\bibliographystyle{unsrt}&lt;/strong&gt;:
+Coloca um certo estilo para a bibliografia. A informação mostrada depende do estilo usado. 
+Ver o &lt;a href="https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles"&gt;Bibtex bibliography styles&lt;/a&gt;, que contém os vários estilos da bibliografia disponíveis no LaTeX.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ficheiro .bib&lt;/h2&gt;
+&lt;p&gt;Como foi dito anteriormente, as referêncicas bibliográficas estão usualmente num ficheiro separado com a extensão ==&lt;strong&gt;&lt;em&gt;.bib&lt;/em&gt;&lt;/strong&gt;==. Este ficheiro consiste numa lista das referências, em que cada um tem as informações relativas à entrada. Exemplo de um artigo:&lt;/p&gt;
+&lt;p&gt;```latex=
+@article{einstein,
+    author =       "Albert Einstein",
+    title =        "{Zur Elektrodynamik bewegter K{\"o}rper}. ({German})
+        [{On} the electrodynamics of moving bodies]",
+    journal =      "Annalen der Physik",
+    volume =       "322",
+    number =       "10",
+    pages =        "891--921",
+    year =         "1905",
+    DOI =          "http://dx.doi.org/10.1002/andp.19053221004"
+}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Este ficheiro tem a informção sobre um certo elemento, que primeiro é definido por:
+
+- @article{...}:
+Descreve o **tipo de referência** bibliográfica. O *BibTeX* sabe o tipo de informação que recebe e dispõe-na de acordo com as normas associadas. Neste caso, será um artigo - mostrar-se-á o autor, o título, etc. do artigo. Ver o [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide) para mais estilos.
+- einstein:
+É o label para a referência que é identificada. Sempre que se quer citar no documento esta referência bibliográfica, usa-se este nome.
+- author = &amp;quot;Albert Einstein&amp;quot;,
+O autor do artigo é uma das muitas informações que pode ser colocada na entradao. Existem muitas mais informações, separadas entre vírgulas com a seguinte sintaxe: key = value. Ver o [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide) para mais possibilidades de informações que ultilizadas, e este [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide) para uma lista mais detalhada.
+
+
+Existem vários sites na internet que criam as entradas descritas com base num url ou o nome do artigo ou livro em causa.
+
+
+## XVI. Bibliografia com o Biblatex
+
+Finalmente, outra maneira de fazer uma bibliografia é usar o ==***Biblatex***==. Eis um exemplo simples de como o fazer:
+
+```latex=
+\usepackage{biblatex}
+\addbibresource{sample.bib}
+
+\begin{document}
+Lets cite! The Einsteins journal paper \cite{einstein} and the Dirac&amp;#39;s 
+book \cite{dirac} are physics related items. 
+
+\printbibliography
+
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://i.imgur.com/sLn64Vb.png"&gt;&lt;/p&gt;
+&lt;p&gt;Com os seguintes comandos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;\usepackage{biblatex}&lt;/strong&gt;
+Para importar o ==&lt;strong&gt;package biblatex&lt;/strong&gt;==.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\addbibresource{sample.bib}&lt;/strong&gt;
+++Importar o ficheiro bibtex++, sample.bib, com as referências que contêm as informações de cada referência. Ver secção anterior sobre este ficheiro.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\cite{einstein}&lt;/strong&gt;
+Este comando insere a citação da referência no documento - [1], neste caso, que corresponde ao elemento bibliográfico "einstein".&lt;/li&gt;
+&lt;li&gt;\printbibliography
+Imprime a lista de citações referenciadas, com o título "References" ou "Referências", dependendo da língua usada.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::info
+O Overleaf fornece uma série de templates com diferentes estilos de bibliografia. Ver exemplo neste &lt;a href="https://www.overleaf.com/latex/templates/tagged/bibliography"&gt;link&lt;/a&gt;.
+:::&lt;/p&gt;
+&lt;h3&gt;Package Biblatex&lt;/h3&gt;
+&lt;p&gt;Muitos parâmetros podem ser colocados ao importar o pacote biblatex. Eis um exemplo:
+```latex=
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{sample.bib}
+...&lt;/p&gt;
+&lt;p&gt;\begin{document}&lt;/p&gt;
+&lt;p&gt;\maketitle&lt;/p&gt;
+&lt;p&gt;Using \texttt{biblatex} you can display bibliography divided into sections, 
+depending of citation type. 
+...
+Knuth's items \cite{knuth-fa,knuth-acp} are dedicated to programming. &lt;/p&gt;
+&lt;p&gt;\medskip&lt;/p&gt;
+&lt;p&gt;\printbibliography&lt;/p&gt;
+&lt;p&gt;\end{document}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/DIf8qpt.png)
+Segue-se o significado de cada parâmetro:
+- **backend=biber**:
+Define o *backend* para ordenar a bibliografia, **biber** é o padrão recomendado, mas pode-se mudar para bibtex.
+- **style=alphabetic**
+Define o estilo da bibliografia e das citações; neste caso está *alphabetic*, mas podemos colocar *numeric*, que é mais usual. Mais estilos estão disponíveis. Ver [bibliography styles](https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles) e [citation styles](https://www.overleaf.com/learn/latex/Natbib_citation_styles) para mais informações sobre estilos e citações, respetivamente.
+- **sorting=ynt**
+Determinar o ordenamento de informações, neste caso ordenadar por ano, nome e título; *none* também é usual usar. Ver a lista de possibilidade no seguinte [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide)
+
+
+### Personalizar Bibliografia
+
+Não iremos entrar em detalhe, mas deixamos um [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Customizing_the_bibliography) do Overleaf que pode ajudar.
+
+
+## Exemplo 
+```latex=
+\usepackage{csquotes}
+\usepackage[
+backend=biber,
+% style=alphabetic,
+style=numeric,
+sorting=none
+]{biblatex}
+
+\addbibresource{Bibliography.bib}
+...
+
+\printbibliography
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h1&gt;XVII. Macros e Helpers&lt;/h1&gt;
+&lt;h2&gt;Comandos&lt;/h2&gt;
+&lt;p&gt;Até aqui usámos vários comandos definidos pelo LaTeX ou por packages. Veremos agora como criar os nossos próprios comandos.&lt;/p&gt;
+&lt;p&gt;Novos comandos são definidos por ==&lt;strong&gt;&lt;em&gt;\newcommand&lt;/em&gt;&lt;/strong&gt;==. Vejamos um exemplo simples:&lt;/p&gt;
+&lt;p&gt;```latex=
+\newcommand{\R}{\mathbb{R}}
+...&lt;/p&gt;
+&lt;p&gt;The set of real numbers are usually represented 
+by a blackboard bold capital r: ( \R ).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/doUJrki.png)
+
+O código recebe 2 parâmetros:
+
+- **\R**: Este será o nome do novo comando. Isto de modo a declará-lo no meio do texto.
+- **\mathbb{R}**: Isto é o que o novo comando faz. Neste caso, escreve os números reais $\mathbb{R}$ (comando *\mathbb* necessita do *package amssymb*).
+
+
+Também é possível criar **comando com parâmetros**. Eis um exemplo:
+```latex=
+\newcommand{\bb}[1]{\mathbb{#1}}
+
+Other numerical systems have similar notations. 
+The complex numbers \( \bb{C} \), the rational 
+numbers \( \bb{Q} \) and the integer numbers \( \bb{Z} \).
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Na linha ==\newcommand{\bb}[1]{\mathbb{#1}}== define o comando anterior, mas desta vez recebe um argumento que será o texto a colocar em modo &lt;em&gt;\mathbb{}&lt;/em&gt; 
+- &lt;strong&gt;[1]&lt;/strong&gt;: número de prâmetros a receber.
+- &lt;strong&gt;\mathbb{#1}&lt;/strong&gt;: Este comando referencia o parâmetro 1 - irá substituir o texto que recebe em 1º lugar no lugar do #1. Estes podem ir até 9 parâmetros, #1, #2, etc.&lt;/p&gt;
+&lt;p&gt;Também é possível criar comandos com parâmetros opcionais. Exemplo:
+```latex=
+\newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}&lt;/p&gt;
+&lt;p&gt;To save some time when writing too many expressions 
+with exponents is by defining a new command to make simpler:&lt;/p&gt;
+&lt;p&gt;[ \plusbinomial{x}{y} ]&lt;/p&gt;
+&lt;p&gt;And even the exponent can be changed&lt;/p&gt;
+&lt;p&gt;[ \plusbinomial[4]{y}{y} ]&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/wgjHUke.png)
+
+Expliquemos a sintaxe da linha ==\newcommand{\plusbinomial}\[3\]\[2\]{(#2 + #3)^#1}==
+
+- **\plusbinomial**: Nome do novo comando
+- **\[3\]**: número de parâmetros, no caso de receber os parâmetros adicionais.
+- **\[2\]**: Este é o valor padrão para o primeiro parâmetro, que será opcional. Neste caso, temos 1 parâmetro opcional, que será logo o primeiro, o #1. 
+- **(#2 + #3)^#1**: É o que o comando faz. Neste caso, coloca um 2 no parãmetro 1 caso nao seja colocado nada dentro dos parênteses retos. Os parâmetros opcionais vêm sempre primeiro, antes dos obrigatórios.
+- \newcomand: como criar e utilidade
+
+Também podemos definir ou mudar comandos existentes, usando o código ==***\renewcommand***==. Eis um exemplo:
+```latex=
+\renewcommand{\S}{\mathbb{S}}
+
+The Riemann sphere (the complex numbers plus $\infty$) is 
+sometimes represented by \( \S \)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://i.imgur.com/b5Lzfxf.png"&gt;&lt;/p&gt;
+&lt;p&gt;Neste exemplo, o comando \S, &lt;span class="math"&gt;\(\S\)&lt;/span&gt;, é reescrito para escrever um &lt;em&gt;blackboard bold&lt;/em&gt; S, &lt;span class="math"&gt;\(\mathbb{S}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;:::info
+&lt;strong&gt;\renewcommand&lt;/strong&gt; usa a mesma sintaxe do &lt;strong&gt;\newcommand&lt;/strong&gt;, definida anteriormente.
+:::&lt;/p&gt;
+&lt;h2&gt;Tratar Erros&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Erros acontecem. Quando acontecerem, ter o mesmo "mindset" de programação - tentar fazer um debug das linhas de código que originaram o erro. Em LaTeX, os típicos &lt;strong&gt;erros a vermelho&lt;/strong&gt; que se têm são falta de parênteses e erros ortográficos nos comandos, entre outros.&lt;/li&gt;
+&lt;li&gt;Alguns &lt;strong&gt;erros a amarelo&lt;/strong&gt; não são muito relevantes e não há muito problema em deixá-los, mas devemos evitá-los. Repeticões de label e falta de referenciação são exemplos destes erros.&lt;/li&gt;
+&lt;li&gt;Quanto aos &lt;strong&gt;erros a azul&lt;/strong&gt;, normalmente ocorrem por falta de espaço e sobreposição de &lt;em&gt;floats&lt;/em&gt;; não são preocupantes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Em casos graves, ir ao histórico e reaver o último documento que esteja bem:
+&lt;img alt="" src="https://i.imgur.com/rTvbxxa.png"&gt;&lt;/p&gt;
+&lt;p&gt;Também é possível comparar várias versões do documento para ver as modificações que ocorreram, muitas das vezes para encontrar erros:
+&lt;img alt="" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/3d/History-compare-view.gif"&gt;&lt;/p&gt;
+&lt;h2&gt;Spread-LaTeX&lt;/h2&gt;
+&lt;p&gt;Este é uma ==&lt;strong&gt;&lt;em&gt;extensão, add-on,&lt;/em&gt;&lt;/strong&gt;== para converter tabelas de excel no &lt;a href="https://docs.google.com/spreadsheets/"&gt;Google Spreadsheet&lt;/a&gt; para tabela de LaTeX e vice versa. Isto porque &lt;em&gt;it's a pain in the ass&lt;/em&gt; para fazer estar transições.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://workspace.google.com/marketplace/app/spreadlatex/218144906748"&gt;Spread-LaTeX Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry></feed>

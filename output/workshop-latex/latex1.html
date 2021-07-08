@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Workshop LaTeX - workshops</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../images/favicon.png" rel="icon">
+
+<link rel="canonical" href="../workshop-latex/latex1">
+
+        <meta name="author" content="NFIST" />
+        <meta name="keywords" content="LaTeX,Documentos" />
+        <meta name="description" content="\LaTeX" />
+
+        <meta property="og:site_name" content="workshops" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Workshop LaTeX"/>
+        <meta property="og:url" content="../workshop-latex/latex1"/>
+        <meta property="og:description" content="\LaTeX"/>
+        <meta property="article:published_time" content="2021-07-13" />
+            <meta property="article:section" content="Workshop LaTeX" />
+            <meta property="article:tag" content="LaTeX" />
+            <meta property="article:tag" content="Documentos" />
+            <meta property="article:author" content="NFIST" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops ATOM Feed"/>
+
+        <link href="../feeds/workshop-latex.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops Workshop LaTeX ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+<img class="img-responsive pull-left" style="margin-right:2px" src="../images/logo.png" width="100"/> workshops            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="../category/workshop-fc.html">Workshop fc</a>
+                        </li>
+                        <li class="active">
+                            <a href="../category/workshop-latex.html">Workshop latex</a>
+                        </li>
+                        <li >
+                            <a href="../category/workshop-mathematica.html">Workshop mathematica</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../workshop-latex/latex1"
+                       rel="bookmark"
+                       title="Permalink to Workshop LaTeX">
+                        Workshop LaTeX - Workshop LaTeX
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Data</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2021-07-13T00:00:00+01:00"> ter 13 julho 2021</time>
+    </span>
+
+            <span class="label label-default">Workshop</span>
+            Parte 2 de 5 do Workshop LaTeX
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="../tag/latex.html">LaTeX</a>
+        /
+	<a href="../tag/documentos.html">Documentos</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>WorkShop de LaTeX (Overleaf) - página 1</h1>
+<h1>I. LaTeX/Overleaf</h1>
+<h2>LaTeX <em>vs</em> Word</h2>
+<p><img alt="xkcd" src="https://i.imgur.com/cpt0Jks.png"></p>
+<p>À primeira vista, pode parecer mais complicado do que o típico Word, mas
+torna-se mais natural e até fácil de usar, especialmente quando são comuns
+fórmulas complexas e física mais avançada, o que não é tão "palavreado",
+tornando o Word mais complicado. O LaTeX, sendo criado por cientistas, torna o
+documento de um físico com melhor aspeto e fácil de usar. </p>
+<p>Assim, o LaTeX irá permitir uma maior flexibilidade e foco no conteúdo ao
+escrever relatórios, papers, entre outros. Não são precisas preocupações com a
+aparência - o LaTeX trata disso automaticamente com os templates default.</p>
+<h2>Web Application - Overleaf</h2>
+<ul>
+<li>Permite colaborar e comunicar com outras pessoas em equipa rapidamente e sem problemas.</li>
+<li>Permite salvar e recuperar facilmente versões antigas do LaTeX.</li>
+<li>Permite compilar o LaTeX automaticamente, mostrando logo os resultados.</li>
+</ul>
+<div class="alert alert-info">
+ Devem tentar colocar o código à medida que mostramos para treinar!
+</div>
+
+<h3>1º Documento no Overleaf</h3>
+<ul>
+<li>Um novo documento é criado em <code>New Project</code>. Estão disponíveis vários
+ <em>templates</em>. Pode também fazer-se o <em>upload</em> de um projeto anterior, em
+ formato zip.</li>
+<li>Escolhendo a opção <strong>Blank Project</strong>, é automaticamente criado um ficheiro
+ <strong>main.text</strong>, onde vamos desenvolver o documento. Para compilar o que
+ escrevemos, seleciona-se <code>Recompile</code>, atualizando-se o ficheiro em formato
+ pdf.</li>
+<li>Na ferramenta à direita de <code>Recompile</code>, podemos ler os avisos de erro e fazer
+ o <em>download</em> de vários ficheiros correspondentes ao projeto. Mais à direita,
+ extrai-se diretamente o documento em formato pdf.</li>
+<li>A partilha do projeto, útil para edição comum, faz-se em <code>Share</code>. Em
+ <code>History</code> podemos aceder às versões anteriores do projeto e fazer o seu
+ <em>download</em>.</li>
+</ul>
+<hr>
+<h1>II. Estrutura/Sintaxe</h1>
+<p>Primeiramente, comecemos por criar um novo documento dos mais simples:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\documentclass</span><span class="na">[12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Hello World! <span class="c">% o contéudo fica dentro do document ...</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div>
+
+<p>Todos os documentos começam com o commando <code>\documentclass</code>, sendo que o que
+aparece dentro de <code>\{ \}</code> é o tipo de documento (colocar <em>beamer</em> para
+apresentações, por exemplo) e <code>\[ \]</code> é o argumento opcional, neste caso para
+dizer o tamanho das letras. Os argumentos de um comando serão melhor explicados
+nas packages. Mas os argumentos típicos na <code>documentclass</code> serão o tamanho de
+letra e o tipo de folha: a4paper, twocolumn, etc.</p>
+<p>Escrever o texto simples é igual ao que se faz no Word. Resta ver os comandos,
+blocos e environments integrados no meio do texto para descrever a estrutura
+que se pretende e como deve aparecer.</p>
+<p>Há quatro tipos fundamentais de escrita/estrutura em LaTeX no Overleaf:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Objeto</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">\</td>
+<td>Comando e parâmetros</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td>Comentário</td>
+</tr>
+<tr>
+<td align="center">$</td>
+<td>Modo matemático</td>
+</tr>
+<tr>
+<td align="center">---</td>
+<td>Blocos e Environment</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1>III. Typesetting 1</h1>
+<p>!Tal como referimos antes, o texto estará dentro do <code>\\begin{document}</code> e <code>\\end{document}</code>.</p>
+<p>Tal como no Word, é possível editar o texto, seja o estilo, a fonte, o tamanho
+da letra ou os espaços entre linhas. Estes não são mais difíceis de mudar em
+LaTeX, apenas é preciso habituação.</p>
+<p>Relembrar que quando aparecem erros, devemos tentar resolvê-los e nao deixar
+acumular, excepto se forem os a azul e a amarelo, continuando a tentar
+evitá-los!</p>
+<p><a href="https://www.overleaf.com/docs?snip_uri=https://raw.github.com/jdleesmiller/latex-course/master/en/basics-exercise-1.tex\&amp;splash=none">basics-exercise-1.tex</a></p>
+<h2>Estilo de letra - Comandos</h2>
+<ul>
+<li>Negrito, Itálico, código:</li>
+</ul>
+<p>Os Estilos normalmente vêm em variadíssimas formas e tamanhos, tal como
+<em>itálico</em> ou <strong>negrito</strong>. Em seguida, temos uma lista de todos os comandos
+habitualmente usados e que estão disponíveis sem acesso a outras packages.</p>
+<p><img alt="Tabela dos diferentes Estilos Disponíveis" src="https://i.imgur.com/HFirmei.png"></p>
+<p>O próprio Overleaf dá uma lista mais pequena de consulta:
+<a href="https://pt.overleaf.com/learn/latex/Font_sizes,_families,_and_styles#Font_styles">Link para o Overleaf</a></p>
+<ul>
+<li>HotKeys do Overleaf:</li>
+</ul>
+<p>Existe uma série de hotkeys, a.k.a. atalhos para escrever no Overleaf. Por
+exemplo, uns dos mais comuns são colocar em bold: <code>Ctrl+B</code>, colocar linhas
+selecionadas em comentário <code>Ctrl+/</code>, entre outros. Para aceder, ir ao menu no
+topo superior esquerdo, e no final aparece, "Show Hotkeys":</p>
+<p><img align="center" src="https://i.imgur.com/YlRbfAp.png" width="500"></p>
+<hr>
+<h1>IV. Modo Matemática</h1>
+<h2>Inline Equations</h2>
+<p>O <code>$</code> serve para iniciar o modo Matemática no meio do texto. Não esquecer: os
+<code>$</code>'s vêm sempre em pares — um para começar e outro para acabar. Muitas das
+vezes, os erros aparecem por não se fechar o modo Matemática ou por falta
+deles.</p>
+<div class="highlight"><pre><span></span><code>In physics, the mass-energy equivalence is stated by the equation <span class="s">$</span><span class="nb">E</span><span class="o">=</span><span class="nb">mc^</span><span class="m">2</span><span class="s">$</span>, discovered in 1905 by Albert Einstein.
+</code></pre></div>
+
+<p>Existem outras maneiras de introduzir modo Matemática no meio do texto: <code>\( \)</code>,
+<code>$ $</code> ou <code>\\begin{math} \\end{math}</code>. Todos estes fazem o mesmo, depende do gosto
+pessoal.</p>
+<h2>Display equations:</h2>
+<p>Também podemos colocar equações numeradas e não numeradas sem ser no meio do
+texto. Para o fazer, normalmente usam-se os seguintes comandos: <code>\[ \]</code>,
+<code>\\begin{displaymath} \\end{displaymath}</code> or <code>\\begin{equation} \\end{equation}</code>:</p>
+<div class="highlight"><pre><span></span><code>The mass-energy equivalence is described by the famous equation
+
+<span class="sb">\[</span><span class="nb">E</span><span class="o">=</span><span class="nb">mc^</span><span class="m">2</span><span class="s">\]</span>
+
+discovered in 1905 by Albert Einstein. 
+In natural units (<span class="s">$</span><span class="nb">c</span><span class="s">$</span> = 1), the formula expresses the identity
+
+<span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+E=m
+<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="einstein_example" src="https://i.imgur.com/uUaipGK.png"></p>
+<p>Dentro dos Environments, existem diferentes tipos, melhor explicados no seu
+tópico. No modo Matemática, para colocar equações grandes na sua própria linha,
+sem ser no meio do texto: </p>
+<ul>
+<li><strong>equation</strong> e <strong>equation</strong>*:  Para colocar uma equação numerada e centrada ou não numerada;</li>
+<li><strong>align</strong> e <strong>align</strong>*: Para colocar várias equações em várias linhas
+ seguidas, mas alinhadas de um certo modo, por exemplo, tudo a seguir ao =;</li>
+<li><strong>gather</strong> e <strong>gather</strong>*: Para colocar várias equações em várias linhas
+ seguidas, todas centradas, e todas numeradas ou nenhuma.</li>
+</ul>
+<p>No site do Overleaf, há estes comandos e outros para situações mais
+específicas, neste
+<a href="https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath">link</a>.</p>
+<div class="alert alert-warning">
+Neste tipo de Environment, é necessário colocar uma package externa que é
+habitualmente usada para equações; consultar o artigo
+<a href=https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath>amsmath</a>.
+</div>
+
+<h2>Espaçamento no modo Matemática</h2>
+<p>É de referir que o modo Matemática ignora os espaços colocados no meio do
+código. Ele reconhece todos os carateres como uma única palavra. Para colocar
+espaço entre símbolos, existe uma lista de comandos para vários tamanhos de
+espaço disponível: </p>
+<p>Spaces in mathematical mode:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>align*<span class="nb">}</span>
+f(x) <span class="nb">&amp;</span>= x<span class="nb">^</span>2<span class="k">\!</span> +3x<span class="k">\!</span> +2 <span class="k">\\</span>
+f(x) <span class="nb">&amp;</span>= x<span class="nb">^</span>2+3x+2 <span class="k">\\</span>
+f(x) <span class="nb">&amp;</span>= x<span class="nb">^</span>2<span class="k">\,</span> +3x<span class="k">\,</span> +2 <span class="k">\\</span>
+f(x) <span class="nb">&amp;</span>= x<span class="nb">^</span>2<span class="k">\:</span> +3x<span class="k">\:</span> +2 <span class="k">\\</span>
+f(x) <span class="nb">&amp;</span>= x<span class="nb">^</span>2<span class="k">\;</span> +3x<span class="k">\;</span> +2 <span class="k">\\</span>
+f(x) <span class="nb">&amp;</span>= x<span class="nb">^</span>2<span class="k">\ </span>+3x<span class="k">\ </span>+2 <span class="k">\\</span>
+f(x) <span class="nb">&amp;</span>= x<span class="nb">^</span>2<span class="k">\quad</span> +3x<span class="k">\quad</span> +2 <span class="k">\\</span>
+f(x) <span class="nb">&amp;</span>= x<span class="nb">^</span>2<span class="k">\qquad</span> +3x<span class="k">\qquad</span> +2
+<span class="k">\end</span><span class="nb">{</span>align*<span class="nb">}</span>
+</code></pre></div>
+
+<div class="math">\begin{align*}
+f(x) &amp;= x^2\! +3x\! +2 \\
+f(x) &amp;= x^2+3x+2 \\
+f(x) &amp;= x^2\, +3x\, +2 \\
+f(x) &amp;= x^2\: +3x\: +2 \\
+f(x) &amp;= x^2\; +3x\; +2 \\
+f(x) &amp;= x^2\ +3x\ +2 \\
+f(x) &amp;= x^2\quad +3x\quad +2 \\
+f(x) &amp;= x^2\qquad +3x\qquad +2
+\end{align*}</div>
+<p>Em termos de tamanho específico:</p>
+<table>
+<thead>
+<tr>
+<th align="left">LaTeX code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">\quad</td>
+<td>space equal to the current font size (= 18 mu)</td>
+</tr>
+<tr>
+<td align="left">\,</td>
+<td>3/18 of \quad (= 3 mu)</td>
+</tr>
+<tr>
+<td align="left">\:</td>
+<td>4/18 of \quad (= 4 mu)</td>
+</tr>
+<tr>
+<td align="left">\;</td>
+<td>5/18 of \quad (= 5 mu)</td>
+</tr>
+<tr>
+<td align="left">\!</td>
+<td>-3/18 of \quad (= -3 mu)</td>
+</tr>
+<tr>
+<td align="left">\</td>
+<td>equivalent of space in normal text</td>
+</tr>
+<tr>
+<td align="left">\qquad</td>
+<td>twice of \quad (= 36 mu)</td>
+</tr>
+</tbody>
+</table>
+<h2>Notação e Lista de Símbolos:</h2>
+<ul>
+<li>Usar o caráter <code>^</code> para sobrescrito e <code>_</code> para subescrito. Usar { } para colocar mais do que uma letra em sub/sobrescrito.</li>
+<li>Para colocar letras gregas e outra notação comum, como frações e raiz
+quadrada, são usados comandos, normalmente intuitivos, como <code>\sqrt{}</code> para
+raiz quadrada. Pesquisar na internet o comando matemático/físico necessário
+costuma resultar. Na subseção seguinte disponibilizaremos links para essas
+listas.</li>
+<li>A <strong><a href="http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/physics/physics.pdf">package physics</a></strong>
+ contém muitos comandos usados para escrever fórmulas físicas.</li>
+</ul>
+<div class="alert alert-success">
+De qualquer das formas, apresentamos uma lista de muitos comandos habitualmente
+usados pelo
+<a href=https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols> link</a>
+do Overleaf ou deste
+<a href=https://en.wikibooks.org/wiki/LaTeX/Mathematics#List_of_mathematical_symbols> site</a>
+</div>
+
+<p>Por fim, este é um link para uma lista de artigos do Overleaf com vários
+aspetos não mencionados aqui que eventualmetne poderão dar jeito:
+<a href="https://www.overleaf.com/learn/latex/Mathematical_expressions#Further_Reading">link</a></p>
+<hr>
+<h1>V. Parágrafos e Indentações</h1>
+<p>Muitas das informações podem ser vistas no seguinte <a href="https://www.overleaf.com/learn/latex/Paragraph_formatting">link</a></p>
+<h2>Começar um novo parágrafo</h2>
+<p>Para começar um novo parágrfo em LaTeX, aquele tem de ter uma linha em branco entre linhas. </p>
+<div class="highlight"><pre><span></span><code>This is the text in first paragraph.
+
+This is the text in second paragraph.
+</code></pre></div>
+
+<p>Outra maneira é escrevendo um <code>\par</code> quando for nencessário fazer um parágrafo, não sendo necessária a linha extra:</p>
+<div class="highlight"><pre><span></span><code>This is the text in first paragraph. <span class="k">\par</span>
+This is the text in second paragraph.
+</code></pre></div>
+
+<h2>Indentação e Espaçamento entre parágrafos</h2>
+<p>Por defeito, o LaTeX identa todos os parágrafos, com a excepção do 1º parágrafo
+a seguir a uma secção. Para mudar o tamanho desta indentação, é necesseário, no
+<strong>preamble</strong>, mudar o tamanho do <code>\parindent</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c">%Tamanho da identação</span>
+<span class="k">\setlength</span><span class="nb">{</span><span class="k">\parindent</span><span class="nb">}{</span>4em<span class="nb">}</span>
+
+<span class="c">%Espaço entre parágrafos</span>
+<span class="k">\setlength</span><span class="nb">{</span><span class="k">\parskip</span><span class="nb">}{</span>1em<span class="nb">}</span>
+</code></pre></div>
+
+<p>No final do código, mostramos, também, como se muda o espaço entre parágrafos, característica esta definida pelo <code>*\parskip*</code>.</p>
+<p>Por defeito, estes tamanhos são definidos pela <em>document class</em> usada. Estes
+podem ser usados no meio do texto para mudar a estrutura do texto que segue o
+código, ou colocar entre <code>{ }</code> para apenas afetar essa parte do código:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">{</span><span class="k">\setlength</span><span class="nb">{</span><span class="k">\parindent</span><span class="nb">}{</span>4em<span class="nb">}</span>
+<span class="k">\par</span> This is the text in first paragraph.
+<span class="k">\par</span> This is the text in second paragraph.
+<span class="nb">}</span>
+<span class="k">\par</span> This is the text in third paragraph.
+</code></pre></div>
+
+<h3>Identação do 1ºParagrafo</h3>
+<p>Para contornar o facto de que o LaTeX não indenta automaticamente o 1º
+parágrafo a seguir a uma secção, é necessário incluir um <code>package</code> no
+<strong>preamble</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>indentfirst<span class="nb">}</span>
+</code></pre></div>
+
+<p>Todos os parágrafos iniciais terão o mesmo tamanho que os outros.</p>
+<h3>Não Identar Parágrafo</h3>
+<p>Se não se quiser indentar um certo parágrafo, basta usar o comando <code>\noindent</code>:</p>
+<div class="highlight"><pre><span></span><code>This is the first paragraph.
+
+<span class="k">\noindent</span> This is the second paragraph with no indentation.
+</code></pre></div>
+
+<p>Para ter um documento não indentado, apenas colocar no <strong>preamble</strong> o tamanho da indentação a zero: <code>\setlength{\parindent}{0pt}</code></p>
+<h2>Espaçamento entre linhas</h2>
+<p>Para controlar o espaçamento entre linhas de um parágrafo temos 3 comandos.</p>
+<p>O comando: <code>\renewcommand{\baselinestretch}{1.5}</code> muda o espaço entre linhas 1.5 do valor padrão.</p>
+<p>Usando <em>\baselineskip</em>, determina-se o espaço mínimo entre 2 linhas sucessivas num parágrafo. Para mudar, colocar no preamble: <code>\setlength{\baselineskip}{value}</code></p>
+<p>Ou ainda usando <code>\linespread{value}</code>, onde o valor é dado desta maneira:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Value</th>
+<th align="center">Line spacing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1.0</td>
+<td align="center">single spacing</td>
+</tr>
+<tr>
+<td align="left">1.3</td>
+<td align="center">one-and-a-half spacing</td>
+</tr>
+<tr>
+<td align="left">1.6</td>
+<td align="center">double spacing</td>
+</tr>
+</tbody>
+</table>
+<h1>VII. Breaks ans Spaces</h1>
+<p>Por fim, colocamos um tabela, deste
+<a href="https://en.wikibooks.org/wiki/LaTeX/Paragraph_Formatting">link</a>, para fazer um
+breve resumo dos vários tipos de parágrafos e breaks que se podem fazer no
+LaTeX.</p>
+<p><img alt="table_format" src="https://i.imgur.com/YJdBmN5.png"></p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Workshop LaTeX - Parte 2</h4>
+       <h5>Anteriores:</h5>
+       <ul>
+           <li><a href="../workshop-latex/latex">1. Workshop LaTeX</a></li>
+       </ul>
+       <h5>Seguintes:</h5>
+       <ul>
+           <li><a href="../workshop-latex/latex2">2. Parte 2</a></li>
+           <li><a href="../workshop-latex/latex3">3. Parte 3</a></li>
+           <li><a href="../workshop-latex/latex4">4. Workshop LaTeX</a></li>
+       </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item" style="padding: 8px 10px">
+  <h4><i class="fa fa-user fa-lg"></i><span class="icon-label">Segue-nos</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://www.facebook.com/NucleoFisicaIST"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+    <li class="list-group-item"><a href="https://www.instagram.com/nfist_/"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+    <li class="list-group-item"><a href="https://www.nfist.pt"><i class="fa fa-link fa-lg"></i> Website</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Series -->
+<li class="list-group-item">
+  <h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Workshop LaTeX</span></h4>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h5></i>Anterior:</h5>
+      <a href="../workshop-latex/latex">  • Workshop LaTeX</a>
+    </li>
+    <li class="list-group-item">
+      <h5>Seguinte:</h5>
+      <a href="../workshop-latex/latex2">  • Parte 2</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Series -->
+
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container-fluid">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2021 NFIST
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Voltar ao início</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+
+    <script src="../theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>

@@ -103,7 +103,7 @@
     </span>
 
             <span class="label label-default">Workshop</span>
-            Parte 7 de 10 do Workshop FC
+            Parte 7 de 20 do Workshop FC
 
 
 
@@ -182,7 +182,162 @@
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>A declaração de uma função começa com <code>def</code> (definir), seguido do nome que queremos dar à função (sem espaços e, boa prática, sem acentos ou cedilhas), dentro de parêntesis os argumentos desejados com os respetivos nomes e, por fim, <code>:</code>.</p>
+<p>A declaração de uma função começa com <code>def</code> (definir), seguido do nome que queremos dar à função (segue as mesmas regras relativas ao nome de variáveis), dentro de parêntesis os argumentos desejados com os respetivos nomes e, por fim, <code>:</code>.</p>
+<p>A seguir à declaração do nome e dos argumentos, podemos efetuar todas as operações que desejarmos, e, por fim, quando tivermos o resultado, podemos retorná-lo usando a expressão <code>return</code> (o retorno de um valor é opcional). Mais uma vez, é muito importante ter em conta a indentação que define o que está a ser escrito dentro ou fora da função.</p>
+<p>Vejamos um exemplo.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">soma</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">resultado</span>
+
+
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">soma</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>7
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>A função definida tem o nome <code>soma</code>, recebe dois argumentos <code>x</code> e <code>y</code> e retorna o valor da soma dos dois argumentos.</p>
+<p>Depois da declaração da função, podemos "chamá-la" (usar a função, dando-lhe valores nos argumentos) escrevendo o nome da função seguido dos argumentos dentre de parêntesis.</p>
+<p>Neste caso, estamos a chamar a função <code>soma</code> com os argumentos <code>5</code> e <code>2</code> e a guardar o valor retornado pela função na variável <code>resultado</code>. Como era de esperar, obteve-se o valor 7.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>As operações efetuadas numa função podem ser muito mais complicadas que uma soma, os argumentos podem ser de qualquer tipo e o retorno pode ser de nenhum ou múltiplos valores. Deixamos mais alguns exemplos.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">inutil</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Esta função não faz nada&quot;</span><span class="p">)</span>
+
+<span class="n">inutil</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Esta função não faz nada
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">quadrados</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+  <span class="n">quadrados</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+    <span class="n">quadrados</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">quadrados</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">quadrados</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>DESAFIO</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
 
 </div>
 </div>
@@ -229,13 +384,23 @@
            <li><a href="../workshop-fc/funcionamento">1.2. Funcionamento</a></li>
            <li><a href="../workshop-fc/programacaopython">2. Introdução à Programação em Python</a></li>
            <li><a href="../workshop-fc/variaveis">2.1. Variáveis</a></li>
-           <li><a href="../workshop-fc/ifs">2.2. Condições If</a></li>
+           <li><a href="../workshop-fc/ifs">2.2. Condições if</a></li>
        </ul>
        <h5>Seguintes:</h5>
        <ul>
            <li><a href="../workshop-fc/ciclos">2.4. Ciclos</a></li>
            <li><a href="../workshop-fc/matplotlib">2.5. A Biblioteca Matplotlib</a></li>
-           <li><a href="../workshop-fc/bit_of_mafs">3.1. Matemática</a></li>
+           <li><a href="../workshop-fc/matematica_fisica">3. Conceitos Físicos e Matemáticos</a></li>
+           <li><a href="../workshop-fc/matematica_ano">3.1. Equações do Movimento</a></li>
+           <li><a href="../workshop-fc/matematica_ano_derivadas">3.2. Equações do Movimento (12° ano)</a></li>
+           <li><a href="../workshop-fc/exemplos_fisicos">4. Exemplos Físicos</a></li>
+           <li><a href="../workshop-fc/massa_mola">4.1. Sistema Massa Mola</a></li>
+           <li><a href="../workshop-fc/pendulo">4.2. O Pêndulo</a></li>
+           <li><a href="../workshop-fc/conclusao">5. Conclusão</a></li>
+           <li><a href="../workshop-fc/erros_comuns">5.1. Erros Comuns</a></li>
+           <li><a href="../workshop-fc/solucoes_desafios">5.2. Soluções dos Desafios</a></li>
+           <li><a href="../workshop-fc/faqs">5.3. FAQ's</a></li>
+           <li><a href="../workshop-fc/showcase">5.4. Showcase Projetos</a></li>
        </ul>
 </section>
         </article>
@@ -265,7 +430,7 @@
   <ul class="list-group">
     <li class="list-group-item">
       <h5></i>Anterior:</h5>
-      <a href="../workshop-fc/ifs">  • Condições If</a>
+      <a href="../workshop-fc/ifs">  • Condições if</a>
     </li>
     <li class="list-group-item">
       <h5>Seguinte:</h5>

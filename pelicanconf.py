@@ -51,6 +51,7 @@ MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {'css_class': 'highlight',
             'linenums':None,'guess_lang':False},
+        'markdown.extensions.tables': {},
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
     },
