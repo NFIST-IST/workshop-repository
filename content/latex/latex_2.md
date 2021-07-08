@@ -5,7 +5,7 @@ Category: Workshop LaTeX
 Date:13
 Series: Workshop LaTeX
 Series_index: 2
-Summary: \LaTeX
+Summary: 
 Tags: LaTeX, Documentos
 
 
@@ -89,7 +89,7 @@ pacote é dado por cada autor.
 
 Segue-se um pdf para uma lista mais abreviada de packages, habitualmente
 mostrados num exemplo e com o link para a package direta: [pdf
-link](/content/LaTeX_packages.pdf)
+link](/files/LaTeX_packages.pdf)
 - Créditos do *Bernardo Silva* por fazer este pdf.
 
 Exemplos de pacotes usados:

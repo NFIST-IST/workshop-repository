@@ -1,5 +1,6 @@
 {% if article.series %}
 <section class="well" id="related-posts">
+        <h3>Ficaste com dúvidas? Contacta-nos através das redes sociais ou de nfist.ist@gmail.com</h3>
    {% set text = SERIES_TEXT|default('%(name)s - Parte %(index)s') %}
     <h4>{{ text|format(index=article.series.index, name=article.series.name) }}</h4>
     {% if article.series.all_previous %}

@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>workshops</title><link href="https://nfist-ist.github.io/workshop-repository/" rel="alternate"></link><link href="https://nfist-ist.github.io/workshop-repository/feeds/all.atom.xml" rel="self"></link><id>https://nfist-ist.github.io/workshop-repository/</id><updated>2021-07-13T00:00:00+01:00</updated><entry><title>Workshop LaTeX</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Isto é um Workshop de LaTeX&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
-
-&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;a
-a
-a
-aa
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Workshop LaTeX</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex1" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex1</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;WorkShop de LaTeX (Overleaf) - página 1&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>workshops</title><link href="https://nfist-ist.github.io/workshop-repository/" rel="alternate"></link><link href="https://nfist-ist.github.io/workshop-repository/feeds/all.atom.xml" rel="self"></link><id>https://nfist-ist.github.io/workshop-repository/</id><updated>2021-07-13T00:00:00+01:00</updated><entry><title>Parte 1</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex1" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex1</id><summary type="html"></summary><content type="html">&lt;h1&gt;WorkShop de LaTeX (Overleaf) - página 1&lt;/h1&gt;
 &lt;h1&gt;I. LaTeX/Overleaf&lt;/h1&gt;
 &lt;h2&gt;LaTeX &lt;em&gt;vs&lt;/em&gt; Word&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="xkcd" src="https://i.imgur.com/cpt0Jks.png"&gt;&lt;/p&gt;
@@ -405,7 +395,7 @@ LaTeX.&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Parte 2</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex2" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex2</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;VIII. Secções&lt;/h1&gt;
+&lt;/script&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Parte 2</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex2" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex2</id><summary type="html"></summary><content type="html">&lt;h1&gt;VIII. Secções&lt;/h1&gt;
 &lt;p&gt;O LaTeX está organizado numerando, por capítulos e secções, o documento. Existem 7 níveis de dependência, em função da &lt;em&gt;document class&lt;/em&gt;:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -862,7 +852,7 @@ large set of font sizes.
 &lt;a href="https://pt.overleaf.com/learn/latex/Font_sizes,_families,_and_styles#Font_sizes"&gt;Link&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Por defeito, &lt;code&gt;\normalsize&lt;/code&gt; tem 10 points, mas podemos mudar isto, como
 referimos no início, na declaração da &lt;code&gt;\documentclass&lt;/code&gt;, e.g.
-&lt;code&gt;\documentclass[12pt]{article}&lt;/code&gt;.&lt;/p&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Parte 3</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex3" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex3</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;XII. Environment - Items, Tabelas e Figuras&lt;/h1&gt;
+&lt;code&gt;\documentclass[12pt]{article}&lt;/code&gt;.&lt;/p&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Parte 3</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex3" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex3</id><summary type="html"></summary><content type="html">&lt;h1&gt;XII. Environment - Items, Tabelas e Figuras&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;Environments&lt;/code&gt; são usados para formatar blocos de texto. Iremos explicar e mostrar como definir e usar environments.&lt;/p&gt;
 &lt;p&gt;Já introduzimos alguns Environments no modo Matemática com as equações, e logo no início com o &lt;code&gt;\begin{document}&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;O &lt;span style="color:red"&gt; &lt;em&gt;\begin&lt;/em&gt; &lt;/span&gt; e o &lt;span style="color:red"&gt; &lt;em&gt;\end&lt;/em&gt;
@@ -1745,73 +1735,65 @@ com mais informação sobre tal.&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Workshop LaTeX</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex4" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex4</id><summary type="html">&lt;p&gt;\LaTeX&lt;/p&gt;</summary><content type="html">&lt;h1&gt;WorkShop de LaTeX (Overleaf) - página 4&lt;/h1&gt;
-&lt;p&gt;Índice:
-[TOC]&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1&gt;XIII. Paper Layout&lt;/h1&gt;
+&lt;/script&gt;</content><category term="Workshop LaTeX"></category><category term="LaTeX"></category><category term="Documentos"></category></entry><entry><title>Parte 4</title><link href="https://nfist-ist.github.io/workshop-repository/workshop-latex/latex4" rel="alternate"></link><published>2021-07-13T00:00:00+01:00</published><updated>2021-07-13T00:00:00+01:00</updated><author><name>NFIST</name></author><id>tag:nfist-ist.github.io,2021-07-13:/workshop-repository/workshop-latex/latex4</id><summary type="html"></summary><content type="html">&lt;h1&gt;XIII. Paper Layout&lt;/h1&gt;
 &lt;h2&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Em documentos científicos, é costume colocar um breve resumo do documento. em LaTeX, o ==&lt;strong&gt;&lt;em&gt;abstract environment&lt;/em&gt;&lt;/strong&gt;== serve para isso. Eis um exemplo:&lt;/p&gt;
-&lt;p&gt;```latex=
-\hrule
-&lt;/p&gt;
-&lt;div class="math"&gt;\begin{abstract}
+&lt;p&gt;Em documentos científicos, é costume colocar um breve resumo do documento. em LaTeX, o &lt;code&gt;abstract environment&lt;/code&gt; serve para isso. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\hrule&lt;/span&gt;
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;abstract&lt;span class="nb"&gt;}&lt;/span&gt;
 This is a simple paragraph at the beginning of the document.
 A brief introduction to the main subject.
-\end{abstract}&lt;/div&gt;
-&lt;p&gt;
-\hrule\vspace{5mm}&lt;/p&gt;
-&lt;p&gt;This is the document&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/Xa2PIWZ.png)
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;abstract&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\hrule\vspace&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;5mm&lt;span class="nb"&gt;}&lt;/span&gt;
 
+This is the document
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-Outra forma para colocar o Abstract será:
-
-```latex=
-% Preamble
-\usepackage{abstract}
-\setlength{\absleftindent}{4mm}
-\setlength{\absrightindent}{4mm}
-\setlength{\abstitleskip}{-4mm}
+&lt;p&gt;&lt;img alt="abstract" src="https://i.imgur.com/Xa2PIWZ.png"&gt;&lt;/p&gt;
+&lt;p&gt;Outra forma para colocar o Abstract será:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;% Preamble&lt;/span&gt;
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;abstract&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\setlength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\absleftindent&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;4mm&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\setlength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\absrightindent&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;4mm&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\setlength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\abstitleskip&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;-4mm&lt;span class="nb"&gt;}&lt;/span&gt;
 ...
 
-\hrule\begin{abstract}
-  % text
-\end{abstract}
-\hrule\vspace{5mm}
+&lt;span class="k"&gt;\hrule\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;abstract&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="c"&gt;% text&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;abstract&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\hrule\vspace&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;5mm&lt;span class="nb"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pode-se personalizar alguns dos espaços do Abstract no &lt;strong&gt;preamble&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2&gt;Documento em colunas&lt;/h2&gt;
-&lt;p&gt;Para criar um documento de duas colunas, basta colocar um parâmetro na &lt;em&gt;document class&lt;/em&gt;: ==&lt;strong&gt;&lt;em&gt;\twocolumn&lt;/em&gt;&lt;/strong&gt;==.&lt;/p&gt;
-&lt;p&gt;Para maior flexibilidade, podemos simplesmente criar um &lt;em&gt;article&lt;/em&gt; com múltiplas colunas. O ==&lt;strong&gt;&lt;em&gt;package multicol&lt;/em&gt;&lt;/strong&gt;== fornece os comandos para isso. Eis um exemplo:&lt;/p&gt;
-&lt;p&gt;```latex=
-\documentclass{article}
-\usepackage{blindtext}
-\usepackage{multicol}&lt;/p&gt;
-&lt;p&gt;\begin{document}&lt;/p&gt;
-&lt;div class="math"&gt;\begin{multicols}{3}
+&lt;p&gt;Para criar um documento de duas colunas, basta colocar um parâmetro na &lt;em&gt;document class&lt;/em&gt;: &lt;code&gt;\twocolumn&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para maior flexibilidade, podemos simplesmente criar um &lt;em&gt;article&lt;/em&gt; com múltiplas
+colunas. O package &lt;code&gt;multicol&lt;/code&gt; fornece os comandos para isso. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\documentclass&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;article&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;blindtext&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;multicol&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;multicols&lt;span class="nb"&gt;}{&lt;/span&gt;3&lt;span class="nb"&gt;}&lt;/span&gt;
 [
-\section{First Section}
+&lt;span class="k"&gt;\section&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;First Section&lt;span class="nb"&gt;}&lt;/span&gt;
 All human things are subject to decay. And when fate summons, Monarchs must obey.
 ]
-\blindtext\blindtext
-\end{multicols}&lt;/div&gt;
-&lt;p&gt;\end{document}&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/AxYmdc3.png)
+&lt;span class="k"&gt;\blindtext\blindtext&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;multicols&lt;span class="nb"&gt;}&lt;/span&gt;
 
-Primeiro, importar o seguinte package no *preamble*: ***\usepackage{multicol}***
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-Agora, podemos usar o environment ==**multicols**==, que recebe como argumento o ++número de colunas++, 3 neste caso. Eventualmente, pode receber um segundo argumento para inserir um texto antes das colunas no topo, tal como no exemplo.
-
-O texto das colunas insere-se dentro do** \\begin{multicols}** e **\\end{multicols}**.
-
-### Separador de colunas
-
-Para colocar um separador entre as colunas, basta definir o ==***\columnsep***== com um certo tamanho no **preamble**
-
-```latex=
-\setlength{\columnsep}{1cm}
+&lt;p&gt;&lt;img alt="column" src="https://i.imgur.com/AxYmdc3.png"&gt;&lt;/p&gt;
+&lt;p&gt;Primeiro, importar o seguinte package no &lt;em&gt;preamble&lt;/em&gt;: &lt;code&gt;\usepackage{multicol}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Agora, podemos usar o environment &lt;code&gt;multicols&lt;/code&gt;, que recebe como argumento o
+&lt;strong&gt;número de colunas&lt;/strong&gt;, 3 neste caso. Eventualmente, pode receber um segundo
+argumento para inserir um texto antes das colunas no topo, tal como no exemplo.&lt;/p&gt;
+&lt;p&gt;O texto das colunas insere-se dentro do &lt;code&gt;\begin{multicols}&lt;/code&gt; e &lt;code&gt;\end{multicols}&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Separador de colunas&lt;/h3&gt;
+&lt;p&gt;Para colocar um separador entre as colunas, basta definir o &lt;code&gt;\columnsep&lt;/code&gt; com um certo tamanho no &lt;strong&gt;preamble&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\setlength&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\columnsep&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;1cm&lt;span class="nb"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -1819,97 +1801,98 @@ Para colocar um separador entre as colunas, basta definir o ==***\columnsep***==
 &lt;/ul&gt;
 &lt;p&gt;Segue-se o &lt;a href="https://ftp.eq.uc.pt/software/TeX/macros/latex/required/tools/multicol.pdf"&gt;link&lt;/a&gt; para a documentação do package multicol.&lt;/p&gt;
 &lt;h2&gt;Índice - Table of Content&lt;/h2&gt;
-&lt;p&gt;Não iremos entrar em detalhe sobre a construção do Índice, dado não ser muito utilizado em relatórios, mas este &lt;a href="https://www.overleaf.com/learn/latex/Table_of_contents"&gt;link&lt;/a&gt; redireciona para o site do Overleaf que explica o procedimento.&lt;/p&gt;
+&lt;p&gt;Não iremos entrar em detalhe sobre a construção do Índice, dado não ser muito
+utilizado em relatórios, mas este
+&lt;a href="https://www.overleaf.com/learn/latex/Table_of_contents"&gt;link&lt;/a&gt; redireciona para
+o site do Overleaf que explica o procedimento.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1&gt;XIV. Label Cross-References&lt;/h1&gt;
 &lt;p&gt;Informações retiradas do &lt;a href="https://www.overleaf.com/learn/latex/Cross_referencing_sections,_equations_and_floats"&gt;link&lt;/a&gt; do Overleaf.&lt;/p&gt;
-&lt;p&gt;If you need to insert cross-references to numbered elements in the document, (like equations, sections and figures) there are commands to automate it in LATEX. This article explains how.&lt;/p&gt;
-&lt;p&gt;O comando ==&lt;strong&gt;&lt;em&gt;\label{ }&lt;/em&gt;&lt;/strong&gt;== é usado para identificar um número/letra, seja uma secção, equação ou tabela. Isto para depois ser referenciada com o comando ==&lt;strong&gt;&lt;em&gt;\ref{ }&lt;/em&gt;&lt;/strong&gt;=, ou referenciando a sua página, ==&lt;strong&gt;&lt;em&gt;\pageref{ }&lt;/em&gt;&lt;/strong&gt;==.&lt;/p&gt;
+&lt;p&gt;If you need to insert cross-references to numbered elements in the document,
+(like equations, sections and figures) there are commands to automate it in
+LATEX. This article explains how.&lt;/p&gt;
+&lt;p&gt;O comando &lt;code&gt;\label{ }&lt;/code&gt; é usado para identificar um número/letra, seja uma
+secção, equação ou tabela. Isto para depois ser referenciada com o comando
+&lt;code&gt;\ref{ }&lt;/code&gt;, ou referenciando a sua página, &lt;code&gt;\pageref{ }&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Secções&lt;/h2&gt;
 &lt;p&gt;Exemplo:&lt;/p&gt;
-&lt;p&gt;```latex=
-\section{Introduction} \label{introduction}
-This is an introductory paragraph with some dummy text. This section will be referenced later.&lt;/p&gt;
-&lt;div class="math"&gt;\begin{figure}[h]
-\centering
-\includegraphics[width=0.3\linewidth]{overleaf-logo}
-\caption{This image will be referenced below.}
-\label{fig:leaf}
-\end{figure}&lt;/div&gt;
-&lt;p&gt;You can reference images; for instance, Figure \ref{fig:leaf} shows the \textit{Overleaf} logo.
-\vspace{0.5cm}&lt;/p&gt;
-&lt;p&gt;\section{Math references} \label{mathrefs}
-As mentioned in section \ref{introduction}, different elements can be referenced within a document.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/p4xTSca.png)
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\section&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Introduction&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;introduction&lt;span class="nb"&gt;}&lt;/span&gt;
+This is an introductory paragraph with some dummy text. This section will be referenced later.
 
-A ++label++ é colocada depois do código **\section**. Isto também resulta para subsections e subsubsections.
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;[h]
+&lt;span class="k"&gt;\centering&lt;/span&gt;
+&lt;span class="k"&gt;\includegraphics&lt;/span&gt;&lt;span class="na"&gt;[width=0.3\linewidth]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;overleaf-logo&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;This image will be referenced below.&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fig:leaf&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;
 
-## Equações
+You can reference images; for instance, Figure &lt;span class="k"&gt;\ref&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fig:leaf&lt;span class="nb"&gt;}&lt;/span&gt; shows the &lt;span class="k"&gt;\textit&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Overleaf&lt;span class="nb"&gt;}&lt;/span&gt; logo.
+&lt;span class="k"&gt;\vspace&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;0.5cm&lt;span class="nb"&gt;}&lt;/span&gt;
 
-Exemplo:
-```latex=
-section{Math references} \label{mathrefs}
-As mentioned in section \ref{introduction}, different elements can be referenced within a document.
-
-\subsection{Powers series} \label{subsection}
-
-\begin{equation} \label{eq:1}
-\sum_{i=0}^{\infty} a_i x^i
-\end{equation}
-
-Equation \ref{eq:1} is a typical power series.
+&lt;span class="k"&gt;\section&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Math references&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;mathrefs&lt;span class="nb"&gt;}&lt;/span&gt;
+As mentioned in section &lt;span class="k"&gt;\ref&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;introduction&lt;span class="nb"&gt;}&lt;/span&gt;, different elements can be referenced within a document.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="" src="https://i.imgur.com/IbnxULU.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="label" src="https://i.imgur.com/p4xTSca.png"&gt;&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;label&lt;/strong&gt; é colocada depois do código &lt;code&gt;\section&lt;/code&gt;. Isto também resulta para subsections e subsubsections.&lt;/p&gt;
+&lt;h2&gt;Equações&lt;/h2&gt;
+&lt;p&gt;Exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;section&lt;span class="nb"&gt;{&lt;/span&gt;Math references&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;mathrefs&lt;span class="nb"&gt;}&lt;/span&gt;
+As mentioned in section &lt;span class="k"&gt;\ref&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;introduction&lt;span class="nb"&gt;}&lt;/span&gt;, different elements can be referenced within a document.
+
+&lt;span class="k"&gt;\subsection&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Powers series&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;subsection&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;equation&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;eq:1&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\sum&lt;/span&gt;&lt;span class="nb"&gt;_{&lt;/span&gt;i=0&lt;span class="nb"&gt;}^{&lt;/span&gt;&lt;span class="k"&gt;\infty&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt; a&lt;span class="nb"&gt;_&lt;/span&gt;i x&lt;span class="nb"&gt;^&lt;/span&gt;i
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;equation&lt;span class="nb"&gt;}&lt;/span&gt;
+
+Equation &lt;span class="k"&gt;\ref&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;eq:1&lt;span class="nb"&gt;}&lt;/span&gt; is a typical power series.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="eq" src="https://i.imgur.com/IbnxULU.png"&gt;&lt;/p&gt;
 &lt;p&gt;E de igual modo para as tabelas&lt;/p&gt;
 &lt;h2&gt;Referenciar página&lt;/h2&gt;
-&lt;p&gt;```latex=
-\section{Last section}
-In subsection \ref{subsection} on page \pageref{eq:1} an example of a power series was presented.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/uvBLzoy.png)
-
-O comando **\pageref** irá inserir a página onde o elemento referenciado aparece. No exemplo, a página da equação 1 do exemplo anterior a este.
-
----
-
-# XV. Bibliografia
-
-Uma bibliografia standard usa comandos semelhantes às listas.
-
-```latex=
-\begin{thebibliography}{9}
-  \bibitem{latexcompanion} 
-  Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
-  \textit{The \LaTeX\ Companion}. 
-  Addison-Wesley, Reading, Massachusetts, 1993.
-\end{thebibliography}
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\section&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Last section&lt;span class="nb"&gt;}&lt;/span&gt;
+In subsection &lt;span class="k"&gt;\ref&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;subsection&lt;span class="nb"&gt;}&lt;/span&gt; on page &lt;span class="k"&gt;\pageref&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;eq:1&lt;span class="nb"&gt;}&lt;/span&gt; an example of a power series was presented.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="" src="https://i.imgur.com/leXc3gj.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ref" src="https://i.imgur.com/uvBLzoy.png"&gt;&lt;/p&gt;
+&lt;p&gt;O comando &lt;strong&gt;\pageref&lt;/strong&gt; irá inserir a página onde o elemento referenciado aparece. No exemplo, a página da equação 1 do exemplo anterior a este.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;XV. Bibliografia&lt;/h1&gt;
+&lt;p&gt;Uma bibliografia standard usa comandos semelhantes às listas.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;thebibliography&lt;span class="nb"&gt;}{&lt;/span&gt;9&lt;span class="nb"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;\bibitem&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;latexcompanion&lt;span class="nb"&gt;}&lt;/span&gt; 
+  Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+  &lt;span class="k"&gt;\textit&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;The &lt;span class="k"&gt;\LaTeX\ &lt;/span&gt;Companion&lt;span class="nb"&gt;}&lt;/span&gt;. 
+  Addison-Wesley, Reading, Massachusetts, 1993.
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;thebibliography&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="bibl" src="https://i.imgur.com/leXc3gj.png"&gt;&lt;/p&gt;
 &lt;p&gt;The environment thebibliography produces a list of references; such list will be titled "References" in a article document class, and "Bibliography" in book and report document classes. A parameter inside braces, 9 in the example, indicates the number of entries to be added; this parameter can not be greater than 99.&lt;/p&gt;
 &lt;p&gt;To create a bibliography entry the command \bibitem is used. A parameter inside braces is set to label this entry and can later be used as identifier for this reference. After the closing brace the text with the name of the author, the book title, publisher and so on is entered.&lt;/p&gt;
 &lt;h2&gt;Citar&lt;/h2&gt;
 &lt;p&gt;The command \cite insert the number corresponding to the bibliography entry whose label is passed inside braces. For example, the output of \cite{latexcompanion} is [1].&lt;/p&gt;
 &lt;p&gt;The information printed by the command \cite{} depends on the bibliography style used. See Bibtex bibliography styles.&lt;/p&gt;
-&lt;p&gt;```latex=
-\section{First section}&lt;/p&gt;
-&lt;p&gt;This document is an example of \texttt{thebibliography} environment using 
-in bibliography management, cited: \textit{The \LaTeX\ Companion} 
-book \cite{latexcompanion}. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;## Bibliografia com o Bibtex
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\section&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;First section&lt;span class="nb"&gt;}&lt;/span&gt;
 
-Outra maneira de fazer uma bibliografia é usar o ==***BibTeX***==. A bibliografia é colocada num ficheiro separado e depois importado na *main*.
+This document is an example of &lt;span class="k"&gt;\texttt&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;thebibliography&lt;span class="nb"&gt;}&lt;/span&gt; environment using 
+in bibliography management, cited: &lt;span class="k"&gt;\textit&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;The &lt;span class="k"&gt;\LaTeX\ &lt;/span&gt;Companion&lt;span class="nb"&gt;}&lt;/span&gt; 
+book &lt;span class="k"&gt;\cite&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;latexcompanion&lt;span class="nb"&gt;}&lt;/span&gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-```latex=
-\bibliographystyle{unsrt}
-\bibliography{sample}
+&lt;h2&gt;Bibliografia com o Bibtex&lt;/h2&gt;
+&lt;p&gt;Outra maneira de fazer uma bibliografia é usar o &lt;code&gt;BibTeX&lt;/code&gt;. A bibliografia é colocada num ficheiro separado e depois importado na &lt;em&gt;main&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\bibliographystyle&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;unsrt&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\bibliography&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;sample&lt;span class="nb"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Este usa os seguintes comandos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;\bibliography{sample}&lt;/strong&gt;:
-Importa o ++ficheiro "sample.bib"++ em Bibtex.&lt;/p&gt;
+Importa o &lt;strong&gt;ficheiro "sample.bib"&lt;/strong&gt; em Bibtex.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;\bibliographystyle{unsrt}&lt;/strong&gt;:
@@ -1918,175 +1901,169 @@ Ver o &lt;a href="https://www.overleaf.com/learn/latex/Bibtex_bibliography_style
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Ficheiro .bib&lt;/h2&gt;
-&lt;p&gt;Como foi dito anteriormente, as referêncicas bibliográficas estão usualmente num ficheiro separado com a extensão ==&lt;strong&gt;&lt;em&gt;.bib&lt;/em&gt;&lt;/strong&gt;==. Este ficheiro consiste numa lista das referências, em que cada um tem as informações relativas à entrada. Exemplo de um artigo:&lt;/p&gt;
-&lt;p&gt;```latex=
-@article{einstein,
-    author =       "Albert Einstein",
-    title =        "{Zur Elektrodynamik bewegter K{\"o}rper}. ({German})
-        [{On} the electrodynamics of moving bodies]",
-    journal =      "Annalen der Physik",
-    volume =       "322",
-    number =       "10",
-    pages =        "891--921",
-    year =         "1905",
-    DOI =          "http://dx.doi.org/10.1002/andp.19053221004"
-}&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Este ficheiro tem a informção sobre um certo elemento, que primeiro é definido por:
-
-- @article{...}:
-Descreve o **tipo de referência** bibliográfica. O *BibTeX* sabe o tipo de informação que recebe e dispõe-na de acordo com as normas associadas. Neste caso, será um artigo - mostrar-se-á o autor, o título, etc. do artigo. Ver o [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide) para mais estilos.
-- einstein:
-É o label para a referência que é identificada. Sempre que se quer citar no documento esta referência bibliográfica, usa-se este nome.
-- author = &amp;quot;Albert Einstein&amp;quot;,
-O autor do artigo é uma das muitas informações que pode ser colocada na entradao. Existem muitas mais informações, separadas entre vírgulas com a seguinte sintaxe: key = value. Ver o [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide) para mais possibilidades de informações que ultilizadas, e este [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide) para uma lista mais detalhada.
-
-
-Existem vários sites na internet que criam as entradas descritas com base num url ou o nome do artigo ou livro em causa.
-
-
-## XVI. Bibliografia com o Biblatex
-
-Finalmente, outra maneira de fazer uma bibliografia é usar o ==***Biblatex***==. Eis um exemplo simples de como o fazer:
-
-```latex=
-\usepackage{biblatex}
-\addbibresource{sample.bib}
-
-\begin{document}
-Lets cite! The Einsteins journal paper \cite{einstein} and the Dirac&amp;#39;s 
-book \cite{dirac} are physics related items. 
-
-\printbibliography
-
-\end{document}
+&lt;p&gt;Como foi dito anteriormente, as referêncicas bibliográficas estão usualmente num ficheiro separado com a extensão &lt;code&gt;.bib&lt;/code&gt;. Este ficheiro consiste numa lista das referências, em que cada um tem as informações relativas à entrada. Exemplo de um artigo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;@article&lt;span class="nb"&gt;{&lt;/span&gt;einstein,
+    author =       &amp;quot;Albert Einstein&amp;quot;,
+    title =        &amp;quot;&lt;span class="nb"&gt;{&lt;/span&gt;Zur Elektrodynamik bewegter K&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\&amp;quot;&lt;/span&gt;o&lt;span class="nb"&gt;}&lt;/span&gt;rper&lt;span class="nb"&gt;}&lt;/span&gt;. (&lt;span class="nb"&gt;{&lt;/span&gt;German&lt;span class="nb"&gt;}&lt;/span&gt;)
+        [&lt;span class="nb"&gt;{&lt;/span&gt;On&lt;span class="nb"&gt;}&lt;/span&gt; the electrodynamics of moving bodies]&amp;quot;,
+    journal =      &amp;quot;Annalen der Physik&amp;quot;,
+    volume =       &amp;quot;322&amp;quot;,
+    number =       &amp;quot;10&amp;quot;,
+    pages =        &amp;quot;891--921&amp;quot;,
+    year =         &amp;quot;1905&amp;quot;,
+    DOI =          &amp;quot;http://dx.doi.org/10.1002/andp.19053221004&amp;quot;
+&lt;span class="nb"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="" src="https://i.imgur.com/sLn64Vb.png"&gt;&lt;/p&gt;
+&lt;p&gt;Este ficheiro tem a informção sobre um certo elemento, que primeiro é definido por:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;@article{...}:
+Descreve o &lt;strong&gt;tipo de referência&lt;/strong&gt; bibliográfica. O &lt;em&gt;BibTeX&lt;/em&gt; sabe o tipo de informação que recebe e dispõe-na de acordo com as normas associadas. Neste caso, será um artigo - mostrar-se-á o autor, o título, etc. do artigo. Ver o &lt;a href="https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide"&gt;link&lt;/a&gt; para mais estilos.&lt;/li&gt;
+&lt;li&gt;einstein:
+É o label para a referência que é identificada. Sempre que se quer citar no documento esta referência bibliográfica, usa-se este nome.&lt;/li&gt;
+&lt;li&gt;author = "Albert Einstein",
+O autor do artigo é uma das muitas informações que pode ser colocada na entradao. Existem muitas mais informações, separadas entre vírgulas com a seguinte sintaxe: key = value. Ver o &lt;a href="https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide"&gt;link&lt;/a&gt; para mais possibilidades de informações que ultilizadas, e este &lt;a href="https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide"&gt;link&lt;/a&gt; para uma lista mais detalhada.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Existem vários sites na internet que criam as entradas descritas com base num url ou o nome do artigo ou livro em causa.&lt;/p&gt;
+&lt;h2&gt;XVI. Bibliografia com o Biblatex&lt;/h2&gt;
+&lt;p&gt;Finalmente, outra maneira de fazer uma bibliografia é usar o &lt;code&gt;Biblatex&lt;/code&gt;. Eis um exemplo simples de como o fazer:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;biblatex&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\addbibresource&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;sample.bib&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+Lets cite! The Einsteins journal paper &lt;span class="k"&gt;\cite&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;einstein&lt;span class="nb"&gt;}&lt;/span&gt; and the Dirac&amp;#39;s 
+book &lt;span class="k"&gt;\cite&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;dirac&lt;span class="nb"&gt;}&lt;/span&gt; are physics related items.
+
+&lt;span class="k"&gt;\printbibliography&lt;/span&gt;
+
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="bibtex" src="https://i.imgur.com/sLn64Vb.png"&gt;&lt;/p&gt;
 &lt;p&gt;Com os seguintes comandos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;\usepackage{biblatex}&lt;/strong&gt;
-Para importar o ==&lt;strong&gt;package biblatex&lt;/strong&gt;==.&lt;/li&gt;
+Para importar o &lt;code&gt;package biblatex&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;\addbibresource{sample.bib}&lt;/strong&gt;
-++Importar o ficheiro bibtex++, sample.bib, com as referências que contêm as informações de cada referência. Ver secção anterior sobre este ficheiro.&lt;/li&gt;
+&lt;strong&gt;Importar o ficheiro bibtex&lt;/strong&gt;, sample.bib, com as referências que contêm as informações de cada referência. Ver secção anterior sobre este ficheiro.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;\cite{einstein}&lt;/strong&gt;
 Este comando insere a citação da referência no documento - [1], neste caso, que corresponde ao elemento bibliográfico "einstein".&lt;/li&gt;
 &lt;li&gt;\printbibliography
 Imprime a lista de citações referenciadas, com o título "References" ou "Referências", dependendo da língua usada.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;:::info
-O Overleaf fornece uma série de templates com diferentes estilos de bibliografia. Ver exemplo neste &lt;a href="https://www.overleaf.com/latex/templates/tagged/bibliography"&gt;link&lt;/a&gt;.
-:::&lt;/p&gt;
+&lt;p&gt;O Overleaf fornece uma série de templates com diferentes estilos de bibliografia. Ver exemplo neste &lt;a href="https://www.overleaf.com/latex/templates/tagged/bibliography"&gt;link&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Package Biblatex&lt;/h3&gt;
-&lt;p&gt;Muitos parâmetros podem ser colocados ao importar o pacote biblatex. Eis um exemplo:
-```latex=
-\usepackage[
+&lt;p&gt;Muitos parâmetros podem ser colocados ao importar o pacote biblatex. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;[
 backend=biber,
 style=alphabetic,
 sorting=ynt
-]{biblatex}
-\addbibresource{sample.bib}
-...&lt;/p&gt;
-&lt;p&gt;\begin{document}&lt;/p&gt;
-&lt;p&gt;\maketitle&lt;/p&gt;
-&lt;p&gt;Using \texttt{biblatex} you can display bibliography divided into sections, 
+]&lt;span class="nb"&gt;{&lt;/span&gt;biblatex&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\addbibresource&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;sample.bib&lt;span class="nb"&gt;}&lt;/span&gt;
+...
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\maketitle&lt;/span&gt;
+
+Using &lt;span class="k"&gt;\texttt&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;biblatex&lt;span class="nb"&gt;}&lt;/span&gt; you can display bibliography divided into sections, 
 depending of citation type. 
 ...
-Knuth's items \cite{knuth-fa,knuth-acp} are dedicated to programming. &lt;/p&gt;
-&lt;p&gt;\medskip&lt;/p&gt;
-&lt;p&gt;\printbibliography&lt;/p&gt;
-&lt;p&gt;\end{document}&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/DIf8qpt.png)
+Knuth&amp;#39;s items &lt;span class="k"&gt;\cite&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;knuth-fa,knuth-acp&lt;span class="nb"&gt;}&lt;/span&gt; are dedicated to programming.
+
+&lt;span class="k"&gt;\medskip&lt;/span&gt;
+
+&lt;span class="k"&gt;\printbibliography&lt;/span&gt;
+
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="biber" src="https://i.imgur.com/DIf8qpt.png"&gt;
 Segue-se o significado de cada parâmetro:
-- **backend=biber**:
-Define o *backend* para ordenar a bibliografia, **biber** é o padrão recomendado, mas pode-se mudar para bibtex.
-- **style=alphabetic**
-Define o estilo da bibliografia e das citações; neste caso está *alphabetic*, mas podemos colocar *numeric*, que é mais usual. Mais estilos estão disponíveis. Ver [bibliography styles](https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles) e [citation styles](https://www.overleaf.com/learn/latex/Natbib_citation_styles) para mais informações sobre estilos e citações, respetivamente.
-- **sorting=ynt**
-Determinar o ordenamento de informações, neste caso ordenadar por ano, nome e título; *none* também é usual usar. Ver a lista de possibilidade no seguinte [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide)
-
-
-### Personalizar Bibliografia
-
-Não iremos entrar em detalhe, mas deixamos um [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Customizing_the_bibliography) do Overleaf que pode ajudar.
-
-
-## Exemplo 
-```latex=
-\usepackage{csquotes}
-\usepackage[
+- &lt;strong&gt;backend=biber&lt;/strong&gt;:
+Define o &lt;em&gt;backend&lt;/em&gt; para ordenar a bibliografia, &lt;strong&gt;biber&lt;/strong&gt; é o padrão recomendado, mas pode-se mudar para bibtex.
+- &lt;strong&gt;style=alphabetic&lt;/strong&gt;
+Define o estilo da bibliografia e das citações; neste caso está &lt;em&gt;alphabetic&lt;/em&gt;, mas podemos colocar &lt;em&gt;numeric&lt;/em&gt;, que é mais usual. Mais estilos estão disponíveis. Ver &lt;a href="https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles"&gt;bibliography styles&lt;/a&gt; e &lt;a href="https://www.overleaf.com/learn/latex/Natbib_citation_styles"&gt;citation styles&lt;/a&gt; para mais informações sobre estilos e citações, respetivamente.
+- &lt;strong&gt;sorting=ynt&lt;/strong&gt;
+Determinar o ordenamento de informações, neste caso ordenadar por ano, nome e título; &lt;em&gt;none&lt;/em&gt; também é usual usar. Ver a lista de possibilidade no seguinte &lt;a href="https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide"&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Personalizar Bibliografia&lt;/h3&gt;
+&lt;p&gt;Não iremos entrar em detalhe, mas deixamos um &lt;a href="https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Customizing_the_bibliography"&gt;link&lt;/a&gt; do Overleaf que pode ajudar.&lt;/p&gt;
+&lt;h2&gt;Exemplo&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;csquotes&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;[
 backend=biber,
-% style=alphabetic,
+&lt;span class="c"&gt;% style=alphabetic,&lt;/span&gt;
 style=numeric,
 sorting=none
-]{biblatex}
+]&lt;span class="nb"&gt;{&lt;/span&gt;biblatex&lt;span class="nb"&gt;}&lt;/span&gt;
 
-\addbibresource{Bibliography.bib}
+&lt;span class="k"&gt;\addbibresource&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Bibliography.bib&lt;span class="nb"&gt;}&lt;/span&gt;
 ...
 
-\printbibliography
+&lt;span class="k"&gt;\printbibliography&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h1&gt;XVII. Macros e Helpers&lt;/h1&gt;
 &lt;h2&gt;Comandos&lt;/h2&gt;
 &lt;p&gt;Até aqui usámos vários comandos definidos pelo LaTeX ou por packages. Veremos agora como criar os nossos próprios comandos.&lt;/p&gt;
-&lt;p&gt;Novos comandos são definidos por ==&lt;strong&gt;&lt;em&gt;\newcommand&lt;/em&gt;&lt;/strong&gt;==. Vejamos um exemplo simples:&lt;/p&gt;
-&lt;p&gt;```latex=
-\newcommand{\R}{\mathbb{R}}
-...&lt;/p&gt;
-&lt;p&gt;The set of real numbers are usually represented 
-by a blackboard bold capital r: ( \R ).&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/doUJrki.png)
+&lt;p&gt;Novos comandos são definidos por &lt;code&gt;\newcommand&lt;/code&gt;. Vejamos um exemplo simples:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\newcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\R&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;&lt;span class="k"&gt;\mathbb&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;R&lt;span class="nb"&gt;}}&lt;/span&gt;
+...
 
-O código recebe 2 parâmetros:
+The set of real numbers are usually represented 
+by a blackboard bold capital r: &lt;span class="s"&gt;\(&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="nv"&gt;\R&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="s"&gt;\)&lt;/span&gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-- **\R**: Este será o nome do novo comando. Isto de modo a declará-lo no meio do texto.
-- **\mathbb{R}**: Isto é o que o novo comando faz. Neste caso, escreve os números reais $\mathbb{R}$ (comando *\mathbb* necessita do *package amssymb*).
-
-
-Também é possível criar **comando com parâmetros**. Eis um exemplo:
-```latex=
-\newcommand{\bb}[1]{\mathbb{#1}}
+&lt;p&gt;&lt;img alt="command" src="https://i.imgur.com/doUJrki.png"&gt;&lt;/p&gt;
+&lt;p&gt;O código recebe 2 parâmetros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;\R&lt;/strong&gt;: Este será o nome do novo comando. Isto de modo a declará-lo no meio do texto.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;\mathbb{R}&lt;/strong&gt;: Isto é o que o novo comando faz. Neste caso, escreve os números reais &lt;span class="math"&gt;\(\mathbb{R}\)&lt;/span&gt; (comando &lt;em&gt;\mathbb&lt;/em&gt; necessita do &lt;em&gt;package amssymb&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Também é possível criar &lt;strong&gt;comando com parâmetros&lt;/strong&gt;. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\newcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\bb&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;[1]&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\mathbb&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;#1&lt;span class="nb"&gt;}}&lt;/span&gt;
 
 Other numerical systems have similar notations. 
-The complex numbers \( \bb{C} \), the rational 
-numbers \( \bb{Q} \) and the integer numbers \( \bb{Z} \).
+The complex numbers &lt;span class="s"&gt;\(&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="nv"&gt;\bb&lt;/span&gt;&lt;span class="nb"&gt;{C} &lt;/span&gt;&lt;span class="s"&gt;\)&lt;/span&gt;, the rational 
+numbers &lt;span class="s"&gt;\(&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="nv"&gt;\bb&lt;/span&gt;&lt;span class="nb"&gt;{Q} &lt;/span&gt;&lt;span class="s"&gt;\)&lt;/span&gt; and the integer numbers &lt;span class="s"&gt;\(&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="nv"&gt;\bb&lt;/span&gt;&lt;span class="nb"&gt;{Z} &lt;/span&gt;&lt;span class="s"&gt;\)&lt;/span&gt;.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Na linha ==\newcommand{\bb}[1]{\mathbb{#1}}== define o comando anterior, mas desta vez recebe um argumento que será o texto a colocar em modo &lt;em&gt;\mathbb{}&lt;/em&gt; 
 - &lt;strong&gt;[1]&lt;/strong&gt;: número de prâmetros a receber.
 - &lt;strong&gt;\mathbb{#1}&lt;/strong&gt;: Este comando referencia o parâmetro 1 - irá substituir o texto que recebe em 1º lugar no lugar do #1. Estes podem ir até 9 parâmetros, #1, #2, etc.&lt;/p&gt;
-&lt;p&gt;Também é possível criar comandos com parâmetros opcionais. Exemplo:
-```latex=
-\newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}&lt;/p&gt;
-&lt;p&gt;To save some time when writing too many expressions 
-with exponents is by defining a new command to make simpler:&lt;/p&gt;
-&lt;p&gt;[ \plusbinomial{x}{y} ]&lt;/p&gt;
-&lt;p&gt;And even the exponent can be changed&lt;/p&gt;
-&lt;p&gt;[ \plusbinomial[4]{y}{y} ]&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;![](https://i.imgur.com/wgjHUke.png)
+&lt;p&gt;Também é possível criar comandos com parâmetros opcionais. Exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\newcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\plusbinomial&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;[3][2]&lt;span class="nb"&gt;{&lt;/span&gt;(#2 + #3)&lt;span class="nb"&gt;^&lt;/span&gt;#1&lt;span class="nb"&gt;}&lt;/span&gt;
 
-Expliquemos a sintaxe da linha ==\newcommand{\plusbinomial}\[3\]\[2\]{(#2 + #3)^#1}==
+To save some time when writing too many expressions 
+with exponents is by defining a new command to make simpler:
 
-- **\plusbinomial**: Nome do novo comando
-- **\[3\]**: número de parâmetros, no caso de receber os parâmetros adicionais.
-- **\[2\]**: Este é o valor padrão para o primeiro parâmetro, que será opcional. Neste caso, temos 1 parâmetro opcional, que será logo o primeiro, o #1. 
-- **(#2 + #3)^#1**: É o que o comando faz. Neste caso, coloca um 2 no parãmetro 1 caso nao seja colocado nada dentro dos parênteses retos. Os parâmetros opcionais vêm sempre primeiro, antes dos obrigatórios.
-- \newcomand: como criar e utilidade
+&lt;span class="sb"&gt;\[&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="nv"&gt;\plusbinomial&lt;/span&gt;&lt;span class="nb"&gt;{x}{y} &lt;/span&gt;&lt;span class="s"&gt;\]&lt;/span&gt;
 
-Também podemos definir ou mudar comandos existentes, usando o código ==***\renewcommand***==. Eis um exemplo:
-```latex=
-\renewcommand{\S}{\mathbb{S}}
+And even the exponent can be changed
 
-The Riemann sphere (the complex numbers plus $\infty$) is 
-sometimes represented by \( \S \)
+&lt;span class="sb"&gt;\[&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="nv"&gt;\plusbinomial&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="nb"&gt;{y}{y} &lt;/span&gt;&lt;span class="s"&gt;\]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="" src="https://i.imgur.com/b5Lzfxf.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="command2" src="https://i.imgur.com/wgjHUke.png"&gt;&lt;/p&gt;
+&lt;p&gt;Expliquemos a sintaxe da linha ==\newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}==&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;\plusbinomial&lt;/strong&gt;: Nome do novo comando&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[3]&lt;/strong&gt;: número de parâmetros, no caso de receber os parâmetros adicionais.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[2]&lt;/strong&gt;: Este é o valor padrão para o primeiro parâmetro, que será opcional. Neste caso, temos 1 parâmetro opcional, que será logo o primeiro, o #1. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(#2 + #3)^#1&lt;/strong&gt;: É o que o comando faz. Neste caso, coloca um 2 no parãmetro 1 caso nao seja colocado nada dentro dos parênteses retos. Os parâmetros opcionais vêm sempre primeiro, antes dos obrigatórios.&lt;/li&gt;
+&lt;li&gt;\newcomand: como criar e utilidade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Também podemos definir ou mudar comandos existentes, usando o código &lt;code&gt;\renewcommand&lt;/code&gt;. Eis um exemplo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;\renewcommand&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\S&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;&lt;span class="k"&gt;\mathbb&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;S&lt;span class="nb"&gt;}}&lt;/span&gt;
+
+The Riemann sphere (the complex numbers plus &lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;\infty&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;) is 
+sometimes represented by &lt;span class="s"&gt;\(&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="nv"&gt;\S&lt;/span&gt;&lt;span class="nb"&gt; &lt;/span&gt;&lt;span class="s"&gt;\)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="command3" src="https://i.imgur.com/b5Lzfxf.png"&gt;&lt;/p&gt;
 &lt;p&gt;Neste exemplo, o comando \S, &lt;span class="math"&gt;\(\S\)&lt;/span&gt;, é reescrito para escrever um &lt;em&gt;blackboard bold&lt;/em&gt; S, &lt;span class="math"&gt;\(\mathbb{S}\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;:::info
-&lt;strong&gt;\renewcommand&lt;/strong&gt; usa a mesma sintaxe do &lt;strong&gt;\newcommand&lt;/strong&gt;, definida anteriormente.
-:::&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\renewcommand&lt;/code&gt; usa a mesma sintaxe do &lt;code&gt;\newcommand&lt;/code&gt;, definida anteriormente.&lt;/p&gt;
 &lt;h2&gt;Tratar Erros&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Erros acontecem. Quando acontecerem, ter o mesmo "mindset" de programação - tentar fazer um debug das linhas de código que originaram o erro. Em LaTeX, os típicos &lt;strong&gt;erros a vermelho&lt;/strong&gt; que se têm são falta de parênteses e erros ortográficos nos comandos, entre outros.&lt;/li&gt;
@@ -2094,11 +2071,11 @@ sometimes represented by \( \S \)
 &lt;li&gt;Quanto aos &lt;strong&gt;erros a azul&lt;/strong&gt;, normalmente ocorrem por falta de espaço e sobreposição de &lt;em&gt;floats&lt;/em&gt;; não são preocupantes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Em casos graves, ir ao histórico e reaver o último documento que esteja bem:
-&lt;img alt="" src="https://i.imgur.com/rTvbxxa.png"&gt;&lt;/p&gt;
+&lt;img alt="erros" src="https://i.imgur.com/rTvbxxa.png"&gt;&lt;/p&gt;
 &lt;p&gt;Também é possível comparar várias versões do documento para ver as modificações que ocorreram, muitas das vezes para encontrar erros:
-&lt;img alt="" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/3d/History-compare-view.gif"&gt;&lt;/p&gt;
+&lt;img alt="erros2" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/3d/History-compare-view.gif"&gt;&lt;/p&gt;
 &lt;h2&gt;Spread-LaTeX&lt;/h2&gt;
-&lt;p&gt;Este é uma ==&lt;strong&gt;&lt;em&gt;extensão, add-on,&lt;/em&gt;&lt;/strong&gt;== para converter tabelas de excel no &lt;a href="https://docs.google.com/spreadsheets/"&gt;Google Spreadsheet&lt;/a&gt; para tabela de LaTeX e vice versa. Isto porque &lt;em&gt;it's a pain in the ass&lt;/em&gt; para fazer estar transições.&lt;/p&gt;
+&lt;p&gt;Este é uma &lt;code&gt;extensão, add-on,&lt;/code&gt; para converter tabelas de excel no &lt;a href="https://docs.google.com/spreadsheets/"&gt;Google Spreadsheet&lt;/a&gt; para tabela de LaTeX e vice versa. Isto porque &lt;em&gt;it's a pain in the ass&lt;/em&gt; para fazer estar transições.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://workspace.google.com/marketplace/app/spreadlatex/218144906748"&gt;Spread-LaTeX Link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

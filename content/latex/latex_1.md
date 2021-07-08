@@ -1,11 +1,11 @@
-Title: Workshop LaTeX
+Title: Parte 1
 Author: NFIST
 Slug: latex1
 Category: Workshop LaTeX
 Date:13
 Series: Workshop LaTeX
 Series_index: 1
-Summary: \LaTeX
+Summary: 
 Tags: LaTeX, Documentos
 
 # WorkShop de LaTeX (Overleaf) - página 1

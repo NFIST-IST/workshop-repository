@@ -5,7 +5,7 @@ Category: Workshop LaTeX
 Date:13
 Series: Workshop LaTeX
 Series_index: 3
-Summary: \LaTeX
+Summary:
 Tags: LaTeX, Documentos
 
 

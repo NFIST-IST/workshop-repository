@@ -6,6 +6,7 @@ SITENAME = 'workshops'
 SITEURL = ''
 
 PATH = 'content'
+STATIC_PATHS = ['files','images']
 
 TIMEZONE = 'Europe/Lisbon'
 LOCALE = 'pt_PT.utf8'
