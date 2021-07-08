@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Parte 3 - workshops</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../images/favicon.png" rel="icon">
+
+<link rel="canonical" href="../workshop-latex/latex3">
+
+        <meta name="author" content="NFIST" />
+        <meta name="keywords" content="LaTeX,Documentos" />
+        <meta name="description" content="\LaTeX" />
+
+        <meta property="og:site_name" content="workshops" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Parte 3"/>
+        <meta property="og:url" content="../workshop-latex/latex3"/>
+        <meta property="og:description" content="\LaTeX"/>
+        <meta property="article:published_time" content="2021-07-13" />
+            <meta property="article:section" content="Workshop LaTeX" />
+            <meta property="article:tag" content="LaTeX" />
+            <meta property="article:tag" content="Documentos" />
+            <meta property="article:author" content="NFIST" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops ATOM Feed"/>
+
+        <link href="../feeds/workshop-latex.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops Workshop LaTeX ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+<img class="img-responsive pull-left" style="margin-right:2px" src="../images/logo.png" width="100"/> workshops            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="../category/workshop-fc.html">Workshop fc</a>
+                        </li>
+                        <li class="active">
+                            <a href="../category/workshop-latex.html">Workshop latex</a>
+                        </li>
+                        <li >
+                            <a href="../category/workshop-mathematica.html">Workshop mathematica</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../workshop-latex/latex3"
+                       rel="bookmark"
+                       title="Permalink to Parte 3">
+                        Workshop LaTeX - Parte 3
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Data</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2021-07-13T00:00:00+01:00"> ter 13 julho 2021</time>
+    </span>
+
+            <span class="label label-default">Workshop</span>
+            Parte 4 de 5 do Workshop LaTeX
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="../tag/latex.html">LaTeX</a>
+        /
+	<a href="../tag/documentos.html">Documentos</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>XII. Environment - Items, Tabelas e Figuras</h1>
+<p><code>Environments</code> são usados para formatar blocos de texto. Iremos explicar e mostrar como definir e usar environments.</p>
+<p>Já introduzimos alguns Environments no modo Matemática com as equações, e logo no início com o <code>\begin{document}</code>.</p>
+<p>O <span style="color:red"> <em>\begin</em> </span> e o <span style="color:red"> <em>\end</em>
+</span> são usados para criar diversos Environments, tais como listas de
+pontos, números, figuras, tabelas e muitos outros.</p>
+<p>Em baixo, temos um exemplo simples de como usar um Environment.</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+This text will be centred since it is inside a special 
+environment. Environments provide a efficient way of modifying 
+blocks of text within your document.
+<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+</code></pre></div>
+
+<p>Seguem-se os Environments mais usados:</p>
+<h2>Items</h2>
+<p>Para fazer listas em forma de itens, números ou outro, é usado Environments.
+Dentro destas listas, o comando de <code>\item</code> é usado para identificar um item na
+lista.</p>
+<p>Colocando o Environment dentro do próprio Environment, cria-se uma sublista associada.</p>
+<h3>Itemize</h3>
+<p>O famoso <strong><em>itemize environment</em></strong> cria listas não numeradas, normalmente chamado de "bulleted" list.</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\item</span> First item
+<span class="k">\item</span> Second item
+...
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</code></pre></div>
+
+<p>Os níveis associados ao <em>itemize</em> são quatro:</p>
+<p><img alt="itemize" src="https://i.imgur.com/M49iXpe.png"></p>
+<p>Por padrão, os níveis assumem o seguinte esquema:
+- Nível 1 é <strong>\textbullet</strong> (•),
+- Nível 2 é <strong>\textendash</strong> (–) ,
+- Nível 3 é <strong>\textasteriskcentered</strong> (<em>)
+- Nível 4 é </em><em>\textperiodcentered</em>* (·).</p>
+<h4>Mudar o estilo das listas</h4>
+<p>Este esquema é alterável, redefinindo o comando do tipo de número ou letra do nível da lista. Eis um exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>amssymb<span class="nb">}</span>
+...
+
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\labelitemi</span><span class="nb">}{</span><span class="s">$</span><span class="nv">\blacksquare</span><span class="s">$</span><span class="nb">}</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\labelitemii</span><span class="nb">}{</span><span class="s">$</span><span class="nv">\square</span><span class="s">$</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+  <span class="k">\item</span>  First Level
+  <span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+    <span class="k">\item</span>  Second Level
+    <span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+      <span class="k">\item</span>  Third Level
+      <span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+        <span class="k">\item</span>  Fourth Level
+      <span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+    <span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+  <span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="itemize2" src="https://i.imgur.com/svq2sLm.png"></p>
+<p>Os símbolos matemáticos do exemplo usam o <strong><em>amssymb package</em></strong>, daí adicionar-se <code>\usepackage{amssymb}</code> ao <strong>preamble</strong>.</p>
+<p>O comando <code>\renewcommand{\labelitem...}{;;;}</code> muda o marcador do ... nível para outro marcador(;;;):</p>
+<ul>
+<li><strong>\labelitemi</strong> for Level 1</li>
+<li><strong>\labelitemii</strong> for Level 2</li>
+<li><strong>\labelitemiii</strong> for Level 3</li>
+<li><strong>\labelitemiv</strong> for Level 4</li>
+</ul>
+<p>Para mudar um item em específico, usar (com o respetivo package):</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+  <span class="k">\item</span>  Default item label for entry one
+  <span class="k">\item</span>  Default item label for entry two
+  <span class="k">\item</span><span class="na">[$\square$]</span>  Custom item label for entry three
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</code></pre></div>
+
+<h3>Enumerações</h3>
+<p>O <strong><em>enumerate environment</em></strong> produz listas numeradas. A lista numerada gera automaticamente os números de cada item.</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+  <span class="k">\item</span> First item
+  <span class="k">\item</span> Second item
+    ...
+<span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</code></pre></div>
+
+<p>Os níveis associados ao <em>enumerate</em> são quatro:</p>
+<p><img alt="enumerate" src="https://i.imgur.com/MLryvUY.png"></p>
+<p>Por padrão, os níveis assumem o seguinte esquema:</p>
+<ul>
+<li>Arabic number (1, 2, 3, ...) para o nível 1;</li>
+<li>Lowercase letter (a, b, c, ...) para o nível 2;</li>
+<li>Lowercase Roman numeral (i, ii, iii, ...) para o nível 3;</li>
+<li>Uppercase letter (A, B, C, ...) para o nível 4.</li>
+</ul>
+<h4>Mudar estilo dos números</h4>
+<p>Este esquema é alterável redefinindo o comando do tipo de número ou letra do nível da lista. Eis um exemplo:</p>
+<div class="highlight"><pre><span></span><code> <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\labelenumii</span><span class="nb">}{</span><span class="k">\Roman</span><span class="nb">{</span>enumii<span class="nb">}}</span>
+ <span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+   <span class="k">\item</span> item 1 on level 1
+   <span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+     <span class="k">\item</span> item 1 on level 2
+     <span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+       <span class="k">\item</span> item 1 on level 3
+       <span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+         <span class="k">\item</span> item 1 on level 4
+         <span class="k">\item</span> item 2 on level 4
+       <span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+       <span class="k">\item</span> item 2 on level 3
+     <span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+     <span class="k">\item</span> item 2 on level 2
+   <span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+   <span class="k">\item</span> item 2 on level 1
+ <span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="enumerate2" src="https://i.imgur.com/miYh24e.png"></p>
+<p>O comando <code>\renewcommand{\labelenumii}{\Roman{enumii}}</code> muda o segundo nível
+para números romanos maiúsculos. Colocar <strong>\labelenum_</strong> em vez do
+<strong>\theenum_</strong> resulta em mudar a label do mesmo, por exemplo tirar os () do
+nível existentes por defeito.</p>
+<ol>
+<li><strong>\theenumi</strong> for Level 1</li>
+<li><strong>\theenumii</strong> for Level 2</li>
+<li><strong>\theenumiii</strong> for Level 3</li>
+<li><strong>\theenumiv</strong> for Level 4</li>
+</ol>
+<h4>Tabela de estilos de listas numeradas:</h4>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\alph</td>
+<td>Lowercase letter (a, b, c, ...)</td>
+</tr>
+<tr>
+<td>\Alph</td>
+<td>Uppercase letter (A, B, C, ...)</td>
+</tr>
+<tr>
+<td>\arabic</td>
+<td>Arabic number (1, 2, 3, ...)</td>
+</tr>
+<tr>
+<td>\roman</td>
+<td>Lowercase Roman numeral (i, ii, iii, ...)</td>
+</tr>
+<tr>
+<td>\Roman</td>
+<td>Uppercase Roman numeral (I, II, III, ...)</td>
+</tr>
+</tbody>
+</table>
+<h4>Mudar contador dos números</h4>
+<p>Os contadores das listas que incrementam os <em>\item</em> começam sempre pelo
+primeiro número ou letra: 1,a,i,A,I. Isto pode ser mudado com o
+<code>*\setcounter{enum_}*</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+  <span class="k">\setcounter</span><span class="nb">{</span>enumi<span class="nb">}{</span>4<span class="nb">}</span>
+  <span class="k">\item</span> item 5 on level 1
+  <span class="k">\item</span> item 6 on level 1
+<span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="enumerate3" src="https://i.imgur.com/NgHMXwI.png"></p>
+<h3>Descrição</h3>
+<p>O <strong><em>description environment</em></strong> produz uma lista com uma certa label. </p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>description<span class="nb">}</span>
+   <span class="k">\item</span> [label 1] First item
+   <span class="k">\begin</span><span class="nb">{</span>description<span class="nb">}</span>
+      <span class="k">\item</span> [label 1.1] Second item
+   <span class="k">\end</span><span class="nb">{</span>description<span class="nb">}</span>
+      ...
+<span class="k">\end</span><span class="nb">{</span>description<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="description" src="https://i.imgur.com/dhPZtLa.png"></p>
+<h3>Misturar</h3>
+<p>No LaTeX é possível colocar diferente tipos de listas dentro de outras listas, até quatro níveis.</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+   <span class="k">\item</span> The labels consists of sequential numbers.
+   <span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+     <span class="k">\item</span> The individual entries are indicated with a black dot, a so-called bullet.
+     <span class="k">\item</span> The text in the entries may be of any length.
+   <span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+   <span class="k">\item</span> The numbers starts at 1 with every call to the enumerate environment.
+<span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="misturar" src="https://i.imgur.com/xOcsjFY.png"></p>
+<h3>Formatar espaços das listas</h3>
+<p>Existe uma série de comandos de espaçamentos para as listas, que podem ser mudados:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\itemsep</td>
+<td>\labelsep</td>
+<td>\labelwidth</td>
+<td>\leftmargin</td>
+<td>\listparindent</td>
+</tr>
+<tr>
+<td>\parsep</td>
+<td>\parskip</td>
+<td>\partopsep</td>
+<td>\rightmargin</td>
+<td>\topsep</td>
+</tr>
+</tbody>
+</table>
+<h4>Exemplo para Separação entre Items</h4>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\addtolength</span><span class="nb">{</span><span class="k">\itemsep</span><span class="nb">}{</span>-0.5<span class="k">\baselineskip</span><span class="nb">}</span>
+<span class="k">\item</span> Item 1
+<span class="k">\item</span> Item 2
+<span class="k">\item</span> Item 3
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\setlength</span><span class="nb">{</span><span class="k">\itemsep</span><span class="nb">}{</span>0pt<span class="nb">}</span>
+<span class="k">\item</span> Item 1
+<span class="k">\item</span> Item 2
+<span class="k">\item</span> Item 3
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="listsep" src="https://i.imgur.com/B1t2avI.png"></p>
+<h2>Tabelas</h2>
+<p>Inserir tabelas é uma das coisas mais essenciais a fazer num documento. O LaTeX
+permite personalizar as tabelas em tamanho, combinar células, mudar a cor, etc. </p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[&lt;placement&gt;]
+   <span class="c">% table body</span>
+   <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}</span>[pos]<span class="nb">{</span>cols<span class="nb">}</span>
+      column 1 entry <span class="nb">&amp;</span> column 2 entry ... <span class="nb">&amp;</span> column n entry <span class="k">\\</span>
+      ...
+   <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+   <span class="k">\caption</span><span class="nb">{</span>&lt;table title&gt;<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</code></pre></div>
+
+<p>O posicionamento da tabela, <strong><em>placement</em></strong>, será explicado melhor na próxima secção.</p>
+<p>A legenda, <strong><em>\caption</em></strong> da tabela pode ser colocado tanto em baixo como no
+topo da tabela; dependerá onde o comando aparece, antes ou depois do corpo da
+tabela.</p>
+<p>No corpo da tabela, <em>table body</em>, é normalmente usado o <strong>tabular
+environment</strong>. Este recebe dois parâmetros, um opcional, [pos], e outro
+obrigatório, {cols}</p>
+<ul>
+<li><strong>[pos]</strong> define a posição vertical, pode tomar os seguintes valores: t, b,
+ c, significando linha do topo alinhada com o texto, linha debaixo alinhado
+ com o texto, tabela centrada no texto, respetivamente.</li>
+<li><strong>{cols}</strong> define o número, o alinhamento e as fronteiras das colunas, que podem assumir os seguintes valores:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>l</td>
+<td>alinhar o texto à esquerda</td>
+</tr>
+<tr>
+<td>c</td>
+<td>alinhar o texto ao centro</td>
+</tr>
+<tr>
+<td>r</td>
+<td>alinhar o texto à direita</td>
+</tr>
+<tr>
+<td>p{\&lt;width>}</td>
+<td>Fixar largura da coluna com texto alinhado no topo</td>
+</tr>
+<tr>
+<td>m{\&lt;width>}</td>
+<td>Fixar largura da coluna com texto alinhado no centro *</td>
+</tr>
+<tr>
+<td>b{\&lt;width>}</td>
+<td>Fixar largura da coluna com texto alinhado em baixo *</td>
+</tr>
+<tr>
+<td>|</td>
+<td>linha vertical</td>
+</tr>
+<tr>
+<td>||</td>
+<td>linha vertical dupla</td>
+</tr>
+<tr>
+<td>*{num}{form}</td>
+<td>formata a forma com <em>num</em> nº de vezes</td>
+</tr>
+</tbody>
+</table>
+<p>Aqui está um exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span> |c|c|c| <span class="nb">}</span> 
+ <span class="k">\hline</span>
+ cell1 <span class="nb">&amp;</span> cell2 <span class="nb">&amp;</span> cell3 <span class="k">\\</span> 
+ cell4 <span class="nb">&amp;</span> cell5 <span class="nb">&amp;</span> cell6 <span class="k">\\</span> 
+ cell7 <span class="nb">&amp;</span> cell8 <span class="nb">&amp;</span> cell9 <span class="k">\\</span> 
+ <span class="k">\hline</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="table" src="https://i.imgur.com/tlfZMiX.png"></p>
+<p>Para entender alguns pormenores deste exmplo, vejamos:</p>
+<ul>
+<li><strong>{ |c|c|c| }</strong>: 
+Declara as 3 colunas separadas por linhas verticais. Cada c significa que o conteúdo está centrado, </li>
+<li><strong>\hline</strong>:
+Linha horizontal entres duas linhas. Na secção seguinte mostramos mais.</li>
+<li><strong>cell1 &amp; cell2 &amp; cell3 \\</strong>:
+Cada célula é separada pelo &amp;, e com \\ para separar linhas.</li>
+</ul>
+<h3>Separação entre células:</h3>
+<p>Para separar as células temos os seguintes comandos:</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>Separar colunas</td>
+</tr>
+<tr>
+<td>\</td>
+<td>Começar nova linha (adicionar mais espaço, e.g. \\[6pt])</td>
+</tr>
+<tr>
+<td>\hline</td>
+<td>linha horizontal entre linhas</td>
+</tr>
+<tr>
+<td>\newline</td>
+<td>começar nova linha dentro de uma célula</td>
+</tr>
+<tr>
+<td>\cline{i-j}</td>
+<td>linha parcial horizontal da coluna i à coluna j</td>
+</tr>
+</tbody>
+</table>
+<p>Temos aqui um exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>|r|c|l|<span class="nb">}</span>
+<span class="k">\hline</span>
+<span class="nb">&amp;</span> col 1 <span class="nb">&amp;</span> col 2 <span class="k">\\</span>
+<span class="k">\hline</span>
+row 1 <span class="nb">&amp;</span> entry A1 <span class="nb">&amp;</span> entry B1 <span class="k">\\</span>
+row 2 <span class="nb">&amp;</span> entry A2 <span class="nb">&amp;</span> entry B2 <span class="k">\\</span>
+<span class="k">\hline</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="table2" src="https://i.imgur.com/bHeKySc.png"></p>
+<h4>Tamanhos fixos</h4>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span><span class="k">\centering</span>
+  <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span> | m<span class="nb">{</span>5em<span class="nb">}</span> | m<span class="nb">{</span>1cm<span class="nb">}</span>| m<span class="nb">{</span>1cm<span class="nb">}</span> | <span class="nb">}</span> 
+     <span class="k">\hline</span>
+     cell1 dummy text dummy text dummy text<span class="nb">&amp;</span> cell2 <span class="nb">&amp;</span> cell3 <span class="k">\\</span>    
+     <span class="k">\hline</span>
+     cell1 dummy text dummy text dummy text <span class="nb">&amp;</span> cell5 <span class="nb">&amp;</span> cell6 <span class="k">\\</span> 
+     <span class="k">\hline</span>
+     cell7 <span class="nb">&amp;</span> cell8 <span class="nb">&amp;</span> cell9 <span class="k">\\</span> 
+     <span class="k">\hline</span>
+     <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="table33" src="https://i.imgur.com/9tyPT7H.png"></p>
+<p>Primeiro, para usar estes parâmetros é necessário ter no <strong>preamble</strong> o <em>package array</em>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>array<span class="nb">}</span>
+</code></pre></div>
+
+<p>Na <em>tabular</em>, o parâmetro <strong><em>m{5em}</em></strong> coloca a primeira coluna com um tamanho de 5em e centra o texto no meio da célula.</p>
+<h3>Posição</h3>
+<p>Para colocar a tabela num certo sítio da página, o environment <strong><em>table</em></strong> recebe um parâmtro que explicita como a colocar. Eis um exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[h!]
+  <span class="k">\centering</span>
+  <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>||c c c||<span class="nb">}</span> 
+    <span class="k">\hline</span>
+    Col1 <span class="nb">&amp;</span> Col2 <span class="nb">&amp;</span> Col2  <span class="k">\\</span> [0.5ex] 
+    <span class="k">\hline\hline</span>
+    1 <span class="nb">&amp;</span> 6 <span class="nb">&amp;</span> 87837  <span class="k">\\</span> 
+    2 <span class="nb">&amp;</span> 7 <span class="nb">&amp;</span> 78  <span class="k">\\</span>
+    3 <span class="nb">&amp;</span> 88 <span class="nb">&amp;</span> 788 <span class="k">\\</span> [1ex] 
+    <span class="k">\hline</span>
+  <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="table4" src="https://i.imgur.com/CNGIrcD.png"></p>
+<p>Este exemplo também mostra linhas duplas e espaço entre 2 linhas.</p>
+<p>O parâmetro adicional <code>*\[h!\]*</code> determina a posição da tabela no local do código. Em baixo está uma tabela com as várias opções disponíveis:</p>
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th>Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h</td>
+<td>Coloca a imagem, aqui (here), i.e., aproximadamente no local onde está o código fonte</td>
+</tr>
+<tr>
+<td>t</td>
+<td>Coloca no topo da página.</td>
+</tr>
+<tr>
+<td>b</td>
+<td>Coloca em baixo da página.</td>
+</tr>
+<tr>
+<td>p</td>
+<td>Coloca numa página especial só para imagens e outros floats.</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Sobrepõem-se ao parâmetro do LaTeX que consideram um "bom" local.</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Coloca no local específico onde está o código. Necessita do <code>*\usepackage{float}*</code>. É equivalente a usar h!.</td>
+</tr>
+</tbody>
+</table>
+<p>No exemplo acima, o comando <code>\centering</code> centra a imagem; por defeito, é alinhada à esquerda.</p>
+<h3>Juntar/Merge colunas e linhas</h3>
+<p>É possível juntar colunas, usando o comando 
+<code>\multicolumn</code>, e linhas, com o comando <code>**multirow**</code>.</p>
+<h4>Colunas</h4>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span> |p<span class="nb">{</span>3cm<span class="nb">}</span>||p<span class="nb">{</span>2cm<span class="nb">}</span>|p<span class="nb">{</span>2cm<span class="nb">}</span>|p<span class="nb">{</span>2cm<span class="nb">}</span>|  <span class="nb">}</span>
+ <span class="k">\hline</span>
+ <span class="k">\multicolumn</span><span class="nb">{</span>4<span class="nb">}{</span>|c|<span class="nb">}{</span>Country List<span class="nb">}</span> <span class="k">\\</span>
+ <span class="k">\hline</span>
+ Afghanistan   <span class="nb">&amp;</span> AF    <span class="nb">&amp;</span>AFG<span class="nb">&amp;</span>   004<span class="k">\\</span>
+ <span class="k">\hline</span>
+ Aland Islands<span class="nb">&amp;</span>   AX  <span class="nb">&amp;</span> ALA   <span class="nb">&amp;</span>248<span class="k">\\</span>
+ Albania <span class="nb">&amp;</span>AL <span class="nb">&amp;</span> ALB<span class="nb">&amp;</span>  008<span class="k">\\</span>
+ <span class="k">\hline</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="table5" src="https://i.imgur.com/QJsNQ2Y.png"></p>
+<p>Vemos os vários parâmetros do comando <code>\multicolumn\{4\}\{|c|\}\{Country List\}</code> :</p>
+<ul>
+<li>{4}
+O número de colunas em conjunto, neste caso 4.</li>
+<li>{|c|}
+Delimitadores e alinhamento da célula juntos, neste caso centrada e com linha vertical.</li>
+<li>{Country List}
+Texto a ser mostrado na célula.</li>
+</ul>
+<h4>Linhas:</h4>
+<p>Para combinar linhas, é necessário o <code>**package multirow**</code> no <strong>preamble</strong> 
+    :::latex
+    \usepackage{multirow}</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span><span class="k">\centering</span>
+  <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span> |c|c|c|c| <span class="nb">}</span> 
+    <span class="k">\hline</span>
+    col1 <span class="nb">&amp;</span> col2 <span class="nb">&amp;</span> col3 <span class="k">\\</span>
+    <span class="k">\hline</span>
+    <span class="k">\multirow</span><span class="nb">{</span>3<span class="nb">}{</span>4em<span class="nb">}{</span>Multiple row<span class="nb">}</span> <span class="nb">&amp;</span> cell2 <span class="nb">&amp;</span> cell3 <span class="k">\\</span> 
+    <span class="nb">&amp;</span> cell5 <span class="nb">&amp;</span> cell6 <span class="k">\\</span> 
+    <span class="nb">&amp;</span> cell8 <span class="nb">&amp;</span> cell9 <span class="k">\\</span> 
+    <span class="k">\hline</span>
+  <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="table6" src="https://i.imgur.com/SnGaG0G.png"></p>
+<p>O comando <strong>multirow</strong> recebe 3 parâmetros:</p>
+<ul>
+<li><strong>{3}: 1º</strong> - nº de linhas a juntar</li>
+<li><strong>{4em}: 2º</strong> - largura da coluna; 4em por exemplo. Caso seja o tamanho da coluna inicialmente declarada, colocar {!}</li>
+<li><strong>{Multiple row}: 3º</strong> - conteúdo da célula</li>
+</ul>
+<h3>Tabelas de múltiplas páginas</h3>
+<p>Para inserir tabelas muito grandes que ocupam mais de uma página do documento, é necessário usar o <code>**longtable package**</code> ao <strong>preamble</strong>.
+    :::latex
+    \usepackage{longtable}</p>
+<p>Ver <a href="https://www.overleaf.com/learn/latex/Tables#Multi-page_tables">link</a> do Overleaf para exemplo.</p>
+<p>De seguida, referimos alguns dos comandos e o seu significado (que também aparece no link):</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\endfirsthead</td>
+<td>Everything above this command will appear at the beginning of the table, in the first page.</td>
+</tr>
+<tr>
+<td>\endhead</td>
+<td>Whatever you put before this command and below endfirsthead will be displayed at the top of the table in every page except the first one.</td>
+</tr>
+<tr>
+<td>\endfoot</td>
+<td>Similar to \endhead, what you put after \endhead and before this command will appear at the bottom of the table in every page except the last one.</td>
+</tr>
+<tr>
+<td>\endlastfoot</td>
+<td>Similar to endfisthead. The elements after \endfoot and before this command will be displayed at the bottom of the table but only in the last page where the table appears.</td>
+</tr>
+</tbody>
+</table>
+<h3>Formatar, Estilo</h3>
+<p>Não se irá entrar em detalhe sobre como mudar a grossura das linhas, a cor das
+células, etc., mas aqui
+<a href="https://www.overleaf.com/learn/latex/Tables#Changing_the_appearance_of_a_table">link</a>
+pode ver-se como fazê-lo.</p>
+<h3>Tabelas ao lado de texto</h3>
+<p>Para colocar uma tabela no meio do texto, é necessário primeiro colocar no <strong>preamble</strong> o seguinte package:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>wrapfig<span class="nb">}</span>
+</code></pre></div>
+
+<p>E agora é possível usar o <code>environment wraptable</code>, que recebe dois parâmetros:</p>
+<ol>
+<li>Um para alinhar o bloco da tabela, que pode assumir l, r, c, i ou o, para esquerda, direita, centro, inner e outer, respetivamente.</li>
+<li>Um para a largura do bloco com a tabela, relembrando que não é a mesma coisa que o tamanho da própria tabela.</li>
+</ol>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer 
+adipiscing elit.
+
+<span class="k">\begin</span><span class="nb">{</span>wraptable<span class="nb">}{</span>r<span class="nb">}{</span>10em<span class="nb">}</span>
+  <span class="k">\centering</span>
+  <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span> |c|c|  <span class="nb">}</span>
+     <span class="k">\hline</span>
+     Country Name <span class="nb">&amp;</span>   <span class="k">\\</span>
+     <span class="k">\hline</span>
+     Albania    <span class="nb">&amp;</span>AL  <span class="k">\\</span>
+     <span class="k">\hline</span>
+  <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+  <span class="k">\caption</span><span class="nb">{</span>Table inside a wraptable<span class="nb">}</span>
+  <span class="k">\label</span><span class="nb">{</span>table:ta2<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>wraptable<span class="nb">}</span>
+
+Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer 
+adipiscing elit. Duis fringilla tristique neque. Sed interdum 
+libero ut metus. Pellentesque placerat. Nam rutrum augue a leo. 
+Morbi sed elit sit amet ante lobortis sollicitudin...
+</code></pre></div>
+
+<p><img alt="table7" src="https://i.imgur.com/5iIPVpK.png"></p>
+<h2>Figuras</h2>
+<p>Inserir imagens é uma das coisa mais habituais a fazer num documento.</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>
+<span class="k">\graphicspath</span><span class="nb">{</span> <span class="nb">{</span>./images/<span class="nb">}}</span>
+...
+
+<span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[&lt;placement&gt;]
+   <span class="c">% figure body</span>
+   <span class="k">\centering</span>
+   <span class="k">\includegraphics</span><span class="na">[&lt;options&gt;]</span><span class="nb">{</span>&lt;path to file&gt;<span class="nb">}</span>
+   <span class="k">\caption</span><span class="nb">{</span>&lt;figure title&gt;<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+</code></pre></div>
+
+<p>O comando <strong>\graphicspath{ {./images/} }</strong> diz ao LaTeX a diretoria, a pasta,
+onde as imagens estão. Esta também pode ser adicionada apenas no \&lt;path to
+file>, caso tenham imagens em diferentes pastas.</p>
+<p>O posicionamento da figura, <strong><em>placement</em></strong>, será falado melhor na próxima secção.</p>
+<p>A legenda, <strong><em>\caption</em></strong>, da imagem pode ser colocada tanto em baixo como no
+topo da imagem; dependerá onde o comando aparece, antes ou depois,
+respetivamente, do corpo da imagem.</p>
+<p>No corpo da imagem, <em>figure body</em>, é normalmente usado o <code>includegraphics
+environment</code>. As opções <strong><em>options</em></strong> é uma lista que contém informação sobre
+a figura: </p>
+<table>
+<thead>
+<tr>
+<th>options</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>angle</td>
+<td>rotating angle (CCW)</td>
+</tr>
+<tr>
+<td>scale</td>
+<td>scaling factor</td>
+</tr>
+<tr>
+<td>width</td>
+<td>width of image</td>
+</tr>
+<tr>
+<td>height</td>
+<td>height of image</td>
+</tr>
+</tbody>
+</table>
+<div class="alert alert-warning">
+Não esquecer de colocar o tipo de ficheiro .png, .pdf, .jpg, .jpeg, etc.
+Não esquecer de colocar no <b>preamble</b> o package associado \usepackage{graphicx}
+</div>
+
+<h3>Tamanho da imagem</h3>
+<p>Existem algumas macros em LaTeX para especificar quantidades do documento, para posteriormente usar no tamanho da imagem. As mais úteis são:</p>
+<ul>
+<li><strong>\pagewidth</strong> largura da página, incluindo margens;</li>
+<li><strong>\textwidth</strong> largura da corpo de texto; </li>
+<li><strong>\linewidth</strong> largura do parágrafo atual do código, e.g. se tivermos em 2 colunas será o tamanho de uma coluna - <code>*recomendado*</code>.</li>
+</ul>
+<p>Eis um exemplo para colocar uma imagem centrada com o tamanho de matade de página, usando <code>width=0.5\textwidth</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[!htb]
+  <span class="k">\centering</span>
+  <span class="k">\includegraphics</span><span class="na">[width=0.5\textwidth]</span><span class="nb">{</span>./images/IST<span class="nb">_</span>Logo.png<span class="nb">}</span>
+  <span class="k">\caption</span><span class="nb">{</span>Logo do IST!<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+</code></pre></div>
+
+<p>Existem outros comandos para escalar a imagem em relação ao tamanho real da imagem: <code>*\includegraphics\[scale=1.5\]{./images/IST_Logo.png}*</code></p>
+<ul>
+<li>includegraphics: para importar imagens, ajustar tamanho.</li>
+<li>begin{figure}: para criar numeração, legenda e referência.</li>
+</ul>
+<h3>Posição</h3>
+<p>Para colocar a imagem num certo sítio da página, o environment <strong><em>figure</em></strong> recebe um parâmetro para esse efeito. Eis um exemplo:</p>
+<div class="highlight"><pre><span></span><code>In the next example the figure will be positioned 
+right below this sentence.
+
+<span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[h]
+   <span class="k">\includegraphics</span><span class="na">[width=8cm]</span><span class="nb">{</span>Plot<span class="nb">}</span>
+   <span class="k">\centering</span>
+<span class="k">\end</span><span class="nb">{</span>figure
+</code></pre></div>
+
+<p>O parâmetro adicional <code>*\[h\]*</code> determina a posição da figura no local do código. Em baixo está uma tabela com as várias opções dispoívies:</p>
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th>Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h</td>
+<td>Coloca a imagem, aqui (here), i.e., aproximadamente no local onde está o código fonte</td>
+</tr>
+<tr>
+<td>t</td>
+<td>Coloca no topo da página.</td>
+</tr>
+<tr>
+<td>b</td>
+<td>Coloca em baixo da página.</td>
+</tr>
+<tr>
+<td>p</td>
+<td>Coloca numa página especial só para imagens e outros floats.</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Sobrepõem-se ao parâmetro do LaTeX que consideram um "bom" local.</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Coloca na local específico onde está o código. Necessita do <code>*\usepackage{float}*</code>. É equivalente a usar h!.</td>
+</tr>
+</tbody>
+</table>
+<p>No exemplo acima, o comando <code>\centering</code> centra a imagem; por defeito é alinhada à esquerda.</p>
+<h3>Wrap Images - Texto ao lado de imagem</h3>
+<p>Também é possível colocar imagens ao lado de texto, para caso de figuras pequenas.
+O <code>**package wrapfig**</code> é o que fornece as ferramentas para tal. Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer 
+adipiscing elit. Duis fringilla tristique neque. Sed interdum 
+libero ut metus. Pellentesque placerat.
+
+<span class="k">\begin</span><span class="nb">{</span>wrapfigure<span class="nb">}{</span>l<span class="nb">}{</span>0.25<span class="k">\textwidth</span><span class="nb">}</span>
+<span class="k">\includegraphics</span><span class="na">[width=0.9\linewidth]</span><span class="nb">{</span>overleaf-logo<span class="nb">}</span> 
+<span class="k">\caption</span><span class="nb">{</span>Caption1<span class="nb">}</span>
+<span class="k">\label</span><span class="nb">{</span>fig:wrapfig<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>wrapfigure<span class="nb">}</span>
+
+Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer 
+adipiscing elit. Duis fringilla tristique neque. Sed interdum
+</code></pre></div>
+
+<p><img alt="fig" src="https://i.imgur.com/Jvg6GxP.png"></p>
+<p>Primeiro, importar o pacote, adicionando ao <strong>preamble</strong> o seguinte:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>wrapfig<span class="nb">}</span>
+</code></pre></div>
+
+<p>Agora definimos um environment de wrapfigure com o comando <code>\begin{wrapfigure}{l}{0.25\textwidth} \\end{wrapfigure}</code>. Notamos que este aceita 2 argumentos dentro dos parêntesis { }. Expliquemos o que cada um significa:</p>
+<ul>
+<li>
+<p>{l}:
+Definie o alinhamento da figura. Pode ser definido como <strong>l, r, c, i ou o</strong>, que significam esquerda, direita, centro, inner e outer. Estes últimos dois costumam ser usados em two-sided documents, e.g., livros.</p>
+</li>
+<li>
+<p>{0.25\textwidth}
+Define a largura da caixa da figura, não necessariamente a imagem em si; se quisermos tal, mudar no comando <em>\includegraphics</em> para o espaço alocado à imagem no meio do texto. Unidades habituais de usar: cm, in, mm, etc.</p>
+</li>
+</ul>
+<h3>Várias imagens numa figura</h3>
+<p>É ainda possível colocar mais que uma imagem numa só imagem, cada uma delas tendo a sua referência. Eis um exemplo:</p>
+<div class="highlight"><pre><span></span><code>Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Duis fringilla tristique neque...
+
+<span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[H]
+
+  <span class="k">\begin</span><span class="nb">{</span>subfigure<span class="nb">}{</span>0.5<span class="k">\textwidth</span><span class="nb">}</span>
+    <span class="k">\includegraphics</span><span class="na">[width=0.9\linewidth, height=6cm]</span>  <span class="nb">{</span>overleaf-logo<span class="nb">}</span> 
+    <span class="k">\caption</span><span class="nb">{</span>Caption1<span class="nb">}</span>
+    <span class="k">\label</span><span class="nb">{</span>fig:subim1<span class="nb">}</span>
+  <span class="k">\end</span><span class="nb">{</span>subfigure<span class="nb">}</span>
+  <span class="k">\begin</span><span class="nb">{</span>subfigure<span class="nb">}{</span>0.5<span class="k">\textwidth</span><span class="nb">}</span>
+    <span class="k">\includegraphics</span><span class="na">[width=0.9\linewidth, height=6cm]</span><span class="nb">{</span>mesh<span class="nb">}</span>
+    <span class="k">\caption</span><span class="nb">{</span>Caption 2<span class="nb">}</span>
+    <span class="k">\label</span><span class="nb">{</span>fig:subim2<span class="nb">}</span>
+  <span class="k">\end</span><span class="nb">{</span>subfigure<span class="nb">}</span>
+
+  <span class="k">\caption</span><span class="nb">{</span>Caption for this figure with two images<span class="nb">}</span>
+  <span class="k">\label</span><span class="nb">{</span>fig:image2<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+
+Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, 
+luctus a, egestas a, turpis. Mauris lacinia lorem sit amet ipsum. 
+Nunc quis urna dictum turpis accumsan semper.
+</code></pre></div>
+
+<p><img alt="fig2" src="https://i.imgur.com/US9i6vf.png"></p>
+<p>Primeiro, importar o pacote, adicionando ao <strong>preamble</strong> o seguinte:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>subcaption<span class="nb">}</span>
+</code></pre></div>
+
+<p>O environment <code>*\subfigure*</code> pede só um parâmetro, que corresponde à largura da
+figura. Este environment tem de ser usado dentro da <strong>figure environment</strong>.
+Tanto a legenda como a label podem ser definidas para cada subfigura.</p>
+<h3>Legendas aos lados</h3>
+<p>Podemos ainda colocar figuras com a legenda de lado. O <code>**package sidecap**</code> tem as ferramentas para tal.</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="na">[rightcaption]</span><span class="nb">{</span>sidecap<span class="nb">}</span>
+
+...
+
+<span class="k">\begin</span><span class="nb">{</span>SCfigure<span class="nb">}</span>[0.5][h]
+<span class="k">\caption</span><span class="nb">{</span>Using again the picture of the universe.
+This caption will be on the right<span class="nb">}</span>
+<span class="k">\includegraphics</span><span class="na">[width=0.6\textwidth]</span><span class="nb">{</span>universe<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>SCfigure<span class="nb">}</span>
+</code></pre></div>
+
+<p><img alt="fig3" src="https://i.imgur.com/5Tu5OG9.png"></p>
+<p>Temos dois novos comandos:</p>
+<ul>
+<li><strong>\usepackage[rightcaption]{sidecap}</strong>
+Importa-se o pacote sidecap. Com o parâmetro adicional <code>rightcaption</code>,
+estabelece-se a posição da legenda à direita da imagem (também é possível usar
+<code>leftcaption</code>). Para livros, outercaption e innercaption também estão
+disponíveis.</li>
+<li><strong><div class="math">\begin{SCfigure}\[0.5\][h] \\end{SCfigure}</div></strong>
+É um environment parecido com o <em>figure</em>. O <code>primeiro parâmetro</code> representa a
+<strong>largura da legenda</strong> relativamente ao tamanho da imagem declarado no
+<em>\includegraphics</em>. O <code>segundo parãmetro</code> funciona de forma exatamente igual à
+<strong>posição da figura</strong> como no <em>figure environment</em>. Ver a secção de
+Posicionamento para mais informações.</li>
+</ul>
+<h2>Definir novos Environments</h2>
+<p>Pode-se ainda criar novos environments que dêem jeito. Para tal usa-se o comando <strong><em>\newenvironment</em></strong> no <em>Preamble</em>:</p>
+<div class="highlight"><pre><span></span><code><span class="c">% ------ Preable:</span>
+<span class="k">\newenvironment</span><span class="nb">{</span>boxed<span class="nb">}</span>
+    <span class="nb">{</span><span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+    <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>|p<span class="nb">{</span>0.9<span class="k">\textwidth</span><span class="nb">}</span>|<span class="nb">}</span>
+    <span class="k">\hline\\</span>
+    <span class="nb">}</span>
+    <span class="nb">{</span> 
+    <span class="k">\\\\\hline</span>
+    <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span> 
+    <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+    <span class="nb">}</span>
+
+<span class="c">%--------------------------------------------------</span>
+
+Below this line a boxed environment is used
+
+<span class="k">\begin</span><span class="nb">{</span>boxed<span class="nb">}</span>
+This is the text formatted by the boxed environment
+<span class="k">\end</span><span class="nb">{</span>boxed<span class="nb">}</span>
+
+This text is again outside the environment
+</code></pre></div>
+
+<p><img alt="env" src="https://i.imgur.com/lNr8fU2.png"></p>
+<p>Neste exemplo temos a criação de um environment que desenha uma caixa à volta de texto.</p>
+<p>A seguir ao <em>\newenvironment</em> temos o nome do novo environment, <strong>boxed</strong>. Por
+baixo temos outros <strong>dois</strong> parentêsis. O <strong>1º</strong> coloca o código antes do
+texto, e o <strong>2º</strong> tem dentro o que aparece depois do texto.</p>
+<p>Finalmente ainda é possível criar environments que recebem argumentos e muito
+mais. Segue-se um
+<strong><a href="https://www.overleaf.com/learn/latex/Environments#Defining_a_new_environment">link</a></strong>
+com mais informação sobre tal.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Workshop LaTeX - Parte 4</h4>
+       <h5>Anteriores:</h5>
+       <ul>
+           <li><a href="../workshop-latex/latex">1. Workshop LaTeX</a></li>
+           <li><a href="../workshop-latex/latex1">1. Workshop LaTeX</a></li>
+           <li><a href="../workshop-latex/latex2">2. Parte 2</a></li>
+       </ul>
+       <h5>Seguintes:</h5>
+       <ul>
+           <li><a href="../workshop-latex/latex4">4. Workshop LaTeX</a></li>
+       </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item" style="padding: 8px 10px">
+  <h4><i class="fa fa-user fa-lg"></i><span class="icon-label">Segue-nos</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://www.facebook.com/NucleoFisicaIST"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+    <li class="list-group-item"><a href="https://www.instagram.com/nfist_/"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+    <li class="list-group-item"><a href="https://www.nfist.pt"><i class="fa fa-link fa-lg"></i> Website</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Series -->
+<li class="list-group-item">
+  <h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Workshop LaTeX</span></h4>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h5></i>Anterior:</h5>
+      <a href="../workshop-latex/latex2">  • Parte 2</a>
+    </li>
+    <li class="list-group-item">
+      <h5>Seguinte:</h5>
+      <a href="../workshop-latex/latex4">  • Workshop LaTeX</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Series -->
+
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container-fluid">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2021 NFIST
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Voltar ao início</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+
+    <script src="../theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>

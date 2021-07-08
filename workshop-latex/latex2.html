@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Parte 2 - workshops</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../images/favicon.png" rel="icon">
+
+<link rel="canonical" href="../workshop-latex/latex2">
+
+        <meta name="author" content="NFIST" />
+        <meta name="keywords" content="LaTeX,Documentos" />
+        <meta name="description" content="\LaTeX" />
+
+        <meta property="og:site_name" content="workshops" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Parte 2"/>
+        <meta property="og:url" content="../workshop-latex/latex2"/>
+        <meta property="og:description" content="\LaTeX"/>
+        <meta property="article:published_time" content="2021-07-13" />
+            <meta property="article:section" content="Workshop LaTeX" />
+            <meta property="article:tag" content="LaTeX" />
+            <meta property="article:tag" content="Documentos" />
+            <meta property="article:author" content="NFIST" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops ATOM Feed"/>
+
+        <link href="../feeds/workshop-latex.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops Workshop LaTeX ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+<img class="img-responsive pull-left" style="margin-right:2px" src="../images/logo.png" width="100"/> workshops            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="../category/workshop-fc.html">Workshop fc</a>
+                        </li>
+                        <li class="active">
+                            <a href="../category/workshop-latex.html">Workshop latex</a>
+                        </li>
+                        <li >
+                            <a href="../category/workshop-mathematica.html">Workshop mathematica</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../workshop-latex/latex2"
+                       rel="bookmark"
+                       title="Permalink to Parte 2">
+                        Workshop LaTeX - Parte 2
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Data</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2021-07-13T00:00:00+01:00"> ter 13 julho 2021</time>
+    </span>
+
+            <span class="label label-default">Workshop</span>
+            Parte 3 de 5 do Workshop LaTeX
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="../tag/latex.html">LaTeX</a>
+        /
+	<a href="../tag/documentos.html">Documentos</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>VIII. Secções</h1>
+<p>O LaTeX está organizado numerando, por capítulos e secções, o documento. Existem 7 níveis de dependência, em função da <em>document class</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Nome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>\part{part}</td>
+</tr>
+<tr>
+<td>0</td>
+<td>\chapter{chapter}</td>
+</tr>
+<tr>
+<td>1</td>
+<td>\section{section}</td>
+</tr>
+<tr>
+<td>2</td>
+<td>\subsection{subsection}</td>
+</tr>
+<tr>
+<td>3</td>
+<td>\subsubsection{subsubsection}</td>
+</tr>
+<tr>
+<td>4</td>
+<td>\paragraph{paragraph}</td>
+</tr>
+<tr>
+<td>5</td>
+<td>\subparagraph{subparagraph}</td>
+</tr>
+</tbody>
+</table>
+<p>Normalmente, as secções são o principal nível usado, as partes e capítulos são mais para, e.g., livros.</p>
+<h2>Numeração</h2>
+<p>Por defeito, a numeração das secções, etc., é feita automaticamente. Para alterar o modo de numeração, veremos mais à frente, em <strong><em>Layout</em></strong>. Para retirar simplesmente a numeração, basta adicionar um asterisco antes dos { }, tal como acontecia no modo Matemática. Estes não serão adicionados no Índice.</p>
+<div class="highlight"><pre><span></span><code><span class="k">\section*</span><span class="nb">{</span>Introduction<span class="nb">}</span>
+</code></pre></div>
+
+<h2>Table of Content - Índice</h2>
+<p>Não iremos entrar em detalhe sobre a construção do Índice, dado não ser um tema
+muito utilizado, mas colocaremos o
+<a href="https://www.overleaf.com/learn/latex/Table_of_contents">link</a>, que redireciona
+para o site do Overleaf.</p>
+<hr>
+<h1>IX. Preamble e Packages</h1>
+<p>Já foi mencionado várias vezes o <strong>Preamble</strong>; este é a primeira coisa que
+aparece no ficheiro a seguir à <em>document class</em>, antes do texto do documento.
+Este dará informações extra ao LaTeX de como formatar e incluir texto no
+documento.</p>
+<p>Neste incluir-se-ão, muitas vezes, packages. Muitos dos comandos e environments
+aqui falados já estão incluídos no LaTeX (excepto os do modo Matemática, onde
+já está incluindo um pacote, <em>amsmath</em>). 
+<strong>Packages</strong> são bibliotecas de comandos e environments extra. Existem milhares disponíveis.</p>
+<p>Incluir uma package - incluir no <strong><em>preamble</em></strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="c">% Document class</span>
+<span class="k">\documentclass</span><span class="na">[12pt,a4paper]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+<span class="c">% &gt;&gt;&gt; Preamble</span>
+<span class="c">% Packages</span>
+<span class="k">\usepackage</span><span class="na">[setting1, setting2,...]</span><span class="nb">{</span>package<span class="nb">_</span>name<span class="nb">}</span> <span class="c">%preamble</span>
+
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="c">% &gt;&gt;&gt; Main body</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+Hello World!
+<span class="c">% now we can use commands from package_name here...</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div>
+
+<p>Cada package tem o seu objetivo, como por exemplo incluir imagens, cores, entre outros, que o LaTeX não disponibiliza por si automaticamente.</p>
+<p>Vemos também que algumas packages têm opções para incluir definições especiais do pacote.</p>
+<h2>Lista de Packages</h2>
+<p>A lista de todas as packages disponíveis pode ser encontrada na <em>Comprehensive
+TEX Archive Network</em>: <a href="http://www.ctan.org">CTAN</a>. Aqui, o detalhe de cada
+pacote é dado por cada autor.</p>
+<p>Segue-se um pdf para uma lista mais abreviada de packages, habitualmente
+mostrados num exemplo e com o link para a package direta: <a href="/content/LaTeX_packages.pdf">pdf
+link</a>
+- Créditos do <em>Bernardo Silva</em> por fazer este pdf.</p>
+<p>Exemplos de pacotes usados:</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amsmath</td>
+<td>AMS mathematical facilities</td>
+</tr>
+<tr>
+<td>amsfonts</td>
+<td>TeX fonts from the American Mathematical Society</td>
+</tr>
+<tr>
+<td>babel</td>
+<td>Multilingual support for plain TEX or LaTeX</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color control for LaTeX documents</td>
+</tr>
+<tr>
+<td>fancyhdr</td>
+<td>Extensive control of page headers and footers in LaTeX</td>
+</tr>
+<tr>
+<td>graphicx</td>
+<td>Enhanced support for graphics</td>
+</tr>
+<tr>
+<td>hyperref</td>
+<td>Extensive support for hypertext in LaTeX</td>
+</tr>
+<tr>
+<td>natbib</td>
+<td>Flexible bibliography support</td>
+</tr>
+<tr>
+<td>TikZ</td>
+<td>Create PostScript and PDF graphics in TeX</td>
+</tr>
+<tr>
+<td>xcolor</td>
+<td>Driver-independent color extensions for LaTeX and pdfLaTeX</td>
+</tr>
+</tbody>
+</table>
+<h2>Criar Packages</h2>
+<p>Também dá para criar os nossos próprios Packages, sendo este processo mais
+complicado, de forma a personalizar o documento - <a href="https://www.overleaf.com/learn/latex/Writing_your_own_package">link para
+overleaf</a> ou
+<a href="https://en.wikibooks.org/wiki/LaTeX/Creating_Packages">link para wikibooks</a>.</p>
+<hr>
+<h1>X. Layout</h1>
+<h2>Títulos, Subtítulos, Autores, Data</h2>
+<p>Para declarar o título e outras informações de um documento, existem comandos específicos.
+Estes comandos podem ser incluídos no <em>preamble</em> do documento e são "chamados" pelo comando <code>\maketitle</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Utilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\title{First document}</td>
+<td>Título</td>
+</tr>
+<tr>
+<td>\author{A. Author \and B. Author}</td>
+<td>Nome(s) do(s) autor(es)</td>
+</tr>
+<tr>
+<td>\thanks{C. Author}</td>
+<td>Adicionar à frente do(s) autor(es) dentro dos { }. Sobrescrito com uma footnote com os agradecimentos.</td>
+</tr>
+<tr>
+<td>\affil{IST}</td>
+<td>Filiação</td>
+</tr>
+<tr>
+<td>\date{\today}</td>
+<td>Data manualmente ou usar comando <strong>\today</strong> para ser automático à data de compilação</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>The Title<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>A. Author <span class="k">\and</span> B. Author <span class="k">\thanks</span><span class="nb">{</span>C. Author<span class="nb">}}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>titlepage<span class="nb">}</span>
+<span class="k">\maketitle</span>
+<span class="k">\end</span><span class="nb">{</span>titlepage<span class="nb">}</span>
+
+<span class="k">\par</span> Hello World
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div>
+
+<p>Para colocar o subtítulo depois dos autores, basta redefinir o comando <em>\subtitle</em> da forma:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\newcommand</span><span class="nb">{</span><span class="k">\subtitle</span><span class="nb">}</span>[1]<span class="nb">{</span>
+  <span class="k">\postauthor</span><span class="nb">{</span>
+    <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span><span class="k">\par\end</span><span class="nb">{</span>center<span class="nb">}</span>
+    <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span><span class="k">\large</span>#1<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+    <span class="nb">}</span>
+<span class="nb">}</span>
+</code></pre></div>
+
+<h3>Title Page</h3>
+<p>É possível colocar o título numa só página, como foi feito no exemplo, usando o
+environment <em>titlepage</em>. Este bloco terá um comportamento dependente do tipo de
+documento em causa.</p>
+<h2>Cabeçalho e Rodapé</h2>
+<p>A maneira mais simples de colocar um certo estilo para os cabeçalhos e rodapés é usando o comando: <code>\pagestyle{''style''}</code></p>
+<p>Com 3 estilos:
+- empty: Both the header and footer are cleared (blank) in this page style.
+- plain: This is the default style. The header is empty and the footer contains page numbers in the centre.
+- myheadings: As shown in the introduction,The footer is empty in this page
+ style. The header contains the page number on right side (on even pages) or
+ on left side (on odd pages) along with other user-supplied information; there
+ is an exception for the first page of each chapter, where the footer contains
+ centred page number while the header is blank.</p>
+<p>Mas estilos podem ser modificados em relação ao básico com o package
+<a href="https://mirrors.up.pt/pub/CTAN/macros/latex/contrib/fancyhdr/fancyhdr.pdf"><strong><em>fancyhdr</em></strong></a>.
+Eis um exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>fancyhdr<span class="nb">}</span>
+
+<span class="k">\pagestyle</span><span class="nb">{</span>fancy<span class="nb">}</span>
+<span class="k">\fancyhf</span><span class="nb">{}</span>
+<span class="k">\rhead</span><span class="nb">{</span>Overleaf<span class="nb">}</span>
+<span class="k">\lhead</span><span class="nb">{</span>Guides and tutorials<span class="nb">}</span>
+<span class="k">\rfoot</span><span class="nb">{</span>Page <span class="k">\thepage</span><span class="nb">}</span>
+</code></pre></div>
+
+<p>Aqui temos o seguinte: 
+Depois do estilo "fancy" ser defenido por <code>\pagestyle{fancy}</code>. </p>
+<ul>
+<li>O comando <code>\fancyhf{}</code> apaga o estilo existente, para não haver sobreposições dos elementos novos com os padrões falados anteriormente.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Comando</th>
+<th align="left">Utilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">\rhead{Right Text}</td>
+<td align="left">Texto entre parênteses à direita no cabeçalho</td>
+</tr>
+<tr>
+<td align="left">\lhead{Left Text}</td>
+<td align="left">Texto entre parênteses à esquerda no cabeçalho</td>
+</tr>
+<tr>
+<td align="left">\chead{Center Text}</td>
+<td align="left">Texto entre parênteses no centro no cabeçalho</td>
+</tr>
+<tr>
+<td align="left">\rfoot{Right Text}</td>
+<td align="left">Texto entre parênteses à direita no rodapé</td>
+</tr>
+<tr>
+<td align="left">\lfoot{Left Text}</td>
+<td align="left">Texto entre parênteses à esquerda no rodapé</td>
+</tr>
+<tr>
+<td align="left">\cfoot{Page \thepage }</td>
+<td align="left">Texto entre parênteses no centro no rodapé. O comando <code>*\thepage*</code>  irá criar automaticamente a paginação no centro</td>
+</tr>
+</tbody>
+</table>
+<h3>Linhas</h3>
+<p>Para além do texto, ainda temos duas linhas "decorativas" no cabeçalho e
+rodapé. Por default, são de <em>0pt</em> de espessura, dai estarem invisíveis. Para
+mudar, é fácil:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\headrulewidth</span><span class="nb">}{</span>1pt<span class="nb">}</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\footrulewidth</span><span class="nb">}{</span>1pt<span class="nb">}</span>
+</code></pre></div>
+
+<p>Finalmente, existem uns outros comandos, não tão usados, referidos no site do
+Overleaf,
+<a href="https://www.overleaf.com/learn/latex/Headers_and_footers#Reference_guide">link</a>.</p>
+<h3>Last Page</h3>
+<p>Também podemos referenciar a última página do documento usando o package <code>lastpage</code>. Exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>fancyhdr,lastpage<span class="nb">}</span>
+
+<span class="k">\cfoot</span><span class="nb">{</span><span class="k">\thepage\ </span>de <span class="k">\pageref</span><span class="nb">{</span>LastPage<span class="nb">}}</span>
+</code></pre></div>
+
+<h2>Section Modifier</h2>
+<p>Com a package
+<a href="https://ftp.eq.uc.pt/software/TeX/macros/latex/contrib/titlesec/titlesec.pdf">titlesec</a>,
+é possível personalizar as secções, subsecções, etc., de forma fácil:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>titlesec<span class="nb">}</span>
+
+<span class="k">\titleformat</span>
+<span class="nb">{</span><span class="k">\section</span><span class="nb">}</span> <span class="c">% command</span>
+[hang] <span class="c">% shape</span>
+<span class="nb">{</span><span class="k">\bfseries\Large</span><span class="nb">}</span> <span class="c">% format</span>
+<span class="nb">{</span>Roman<span class="nb">{</span>section<span class="nb">}</span>.<span class="nb">}</span> <span class="c">% label</span>
+<span class="nb">{</span>2mm<span class="nb">}</span> <span class="c">% sep</span>
+<span class="nb">{}</span> <span class="c">% before-code</span>
+[] <span class="c">% after-code</span>
+
+<span class="k">\titleformat</span><span class="nb">{</span><span class="k">\subsection</span><span class="nb">}</span>[hang]
+<span class="nb">{</span><span class="k">\large\bfseries</span><span class="nb">}{</span><span class="k">\thesection</span>.<span class="k">\arabic</span><span class="nb">{</span>subsection<span class="nb">}</span>.<span class="nb">}</span>
+<span class="nb">{</span>1.5mm<span class="nb">}{}</span>[]
+
+...
+</code></pre></div>
+
+<p>Este exemplo segue o seguinte formato:</p>
+<blockquote>
+<p>\titleformat{"command"}["shape"]{"format"}{"label"}{"sep"}{"before-code"}["after-code"]</p>
+</blockquote>
+<p>onde <em>["shape"]</em> e <em>["after-code"]</em> são parâmetros opcionais. E temos as seguintes definições:</p>
+<ul>
+<li><strong>\&lt;command></strong> é o comando da seção em questão a ser mo dificado: \part, \chapter, \section, \subsection, \subsubsection, \paragraph or \subparagraph.</li>
+<li><strong>\&lt;shape></strong> é a forma do parágrafo a seguir à seção, valores possíveis: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame.</li>
+<li><strong>\&lt;format></strong> é o formato a ser aplicado ao título e ao texto, e.g.: \normalfont\Large\bfseries.</li>
+<li><strong>\&lt;label></strong> especificar a label/números antes do texto.</li>
+<li><strong>\&lt;sep></strong> tamanho da separação horizontal entre o <em>label</em> e o <em>texto</em>.</li>
+<li><strong>\&lt;before-code></strong> código que precede a seção.</li>
+<li><strong>\&lt;after-code></strong> código que sucede a seção.</li>
+</ul>
+<p>Esta informação, incluindo ainda os espaços antes e depois da secção, pode ser vista neste <a href="https://www.overleaf.com/learn/latex/Sections_and_chapters">link</a></p>
+<h2>Margens, Geometry</h2>
+<p>Falta saber como definir o tamanho e as margens de um documento. Para tal, com
+o <strong>package</strong>
+<a href="https://mirrors.up.pt/pub/CTAN/macros/latex/contrib/geometry/geometry.pdf">geometry</a>,
+é fácil personalizar o documento acrescentando no <strong>preamble</strong> o necessário.
+<em>Exemplo:</em> Criar uma folha A4 com texto que não exceda 6in de largura e 8in de altura:</p>
+<div class="highlight"><pre><span></span><code>```latex
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+</code></pre></div>
+
+<p>Os parâmetros colocados entre os parênteses [ ] determinaram o layout.</p>
+<p>O tamanho do papel, a orientação e as margens são os elementos mais usados
+deste pacote. Outra maneira será definir os parâmetros no preamble fora do
+package:</p>
+<p>Exemplo: criar um paper A4, portrait orientation e 2cm de margem, 2cm no topo e 1.5cm em baixo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="na">[a4paper,portrait,margin=2cm,top=2cm,bottom=1.5cm]</span><span class="nb">{</span>geometry<span class="nb">}</span>
+</code></pre></div>
+
+<p>OU</p>
+<div class="highlight"><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>geometry<span class="nb">}</span>
+<span class="k">\geometry</span><span class="nb">{</span>a4paper,portrait,margin=2cm,top=2cm,bottom=1.5cm<span class="nb">}</span>
+</code></pre></div>
+
+<h3>Dimensões Específicas das Margens</h3>
+<p>Por padrão, o LaTeX coloca as seguintes dimensões (com uma imagem
+representativa retirada do Overleaf)
+(<a href="https://www.overleaf.com/learn/latex/Page_size_and_margins#Fine_tuning_your_LaTeX_page_dimensions">link</a>):</p>
+<p><img alt="layout" src="https://i.imgur.com/BqUjM5X.png"></p>
+<p>Com o pacote <strong>geometry</strong>, é intuitivo mudar o layout da página.
+Segue-se uma lista de elemento do documento cuja tamanho é alterável:</p>
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th align="left">Alteração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>textwidth</td>
+<td align="left">Elemento 8 da figura</td>
+</tr>
+<tr>
+<td>textheight</td>
+<td align="left">Elemento 7 da figura</td>
+</tr>
+<tr>
+<td>total</td>
+<td align="left">Por defeito, as dimensões do corpo dependem de outros, mas é combinação dos comandos includehead, includefoot, includeheadfoot and includemp, mudando o tamanho do cabeçalho, corpo e rodapé e margens todos juntos</td>
+</tr>
+<tr>
+<td>left, lmargin, inner</td>
+<td align="left">Estes três alteram o tamanho da margem esquerda, elementos 1 e 3 em conjunto da figura</td>
+</tr>
+<tr>
+<td>right, rmargin, outer</td>
+<td align="left">Estes três alteram o tamanho da margem esquerda, elementos 9 e 10 em conjunto da figura</td>
+</tr>
+<tr>
+<td>top, tmargin</td>
+<td align="left">Elementos 2 e 6 em conjunto da figura</td>
+</tr>
+<tr>
+<td>bottom, bmargin</td>
+<td align="left">Estes representam a distância da parte debaixo do documento à <em>baseline</em>.</td>
+</tr>
+<tr>
+<td>headheight</td>
+<td align="left">Altura do Cabeçalho, elemento 5 da figura</td>
+</tr>
+<tr>
+<td>headsep</td>
+<td align="left">Separação entre o cabeçalho (baseline) e o texto, elemento 6 da figura.</td>
+</tr>
+<tr>
+<td>footnotesep</td>
+<td align="left">Separação entre a parte de baixo do texto (baseline) e o topo das footnotes.</td>
+</tr>
+<tr>
+<td>footskip</td>
+<td align="left">Separação ente a baseline da última linha do texto e do rodapé</td>
+</tr>
+<tr>
+<td>marginparwidth, marginpar</td>
+<td align="left">Largura das notas de margens, elemento 10 da figura</td>
+</tr>
+</tbody>
+</table>
+<p>Para alterar estes parâmetros é necessário escrever na forma:</p>
+<div class="highlight"><pre><span></span><code>```latex
+%parameter = value_units
+\headheight = 20pt
+</code></pre></div>
+
+<p>Nota: usar as unidades <em>standard</em> do LaTeX (mm, cm, pt, in)</p>
+<hr>
+<h1>XI. Typesetting 2</h1>
+<h2>Tipos de Fontes</h2>
+<h3>Font Families</h3>
+<p>Existe uma grande diversidade de famílias de fontes, tal como no Word. Alguns exemplos comuns incluem a Times, Courier, ou Helvetica.
+As fontes são geralmente agrupadas em 3 categorias: <em>serif</em>, <em>sans serif</em>, e <em>monospaced</em>, abreviadas em LaTeX para rm, sf, e tt, respetivamente.</p>
+<p>O texto em documentos de LaTeX está, por defeito, em <em>Roman</em> (serif). Para mudar, colocar no <em>preamble</em>, antes do início do documento</p>
+<div class="highlight"><pre><span></span><code><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\familydefault</span><span class="nb">}{</span>&lt;family&gt;<span class="nb">}</span>
+</code></pre></div>
+
+<p>Onde a &lt;<span style="color:green">family</span>&gt; pode assumir os diferentes tipos:</p>
+<ul>
+<li>\rmdefault</li>
+<li>\sfdefault</li>
+<li>\ttdefault</li>
+</ul>
+<h3>Catálogo de Fontes:</h3>
+<p>Para uma maior variedade, existe um site que mostra todos os estilos existentes
+nos diferentes modos, e como aplicar no LaTeX:
+<a href="https://tug.org/FontCatalogue/">Link</a></p>
+<p>O próprio Overleaf dá um catálogo mais simples e fácil de utilizar, mas mais pequeno:
+<a href="https://pt.overleaf.com/learn/latex/Font_typefaces">Link para o Overleaf</a></p>
+<h2>Size</h2>
+<p>Para reescalar o tamanho do texto em relação ao predefinido, usar os seguintes comandos:</p>
+<p><img align="center" src="https://i.imgur.com/v4Fecow.png" width="250"></p>
+<p>A seguinte sintaxe muda-o no meio do texto:</p>
+<div class="highlight"><pre><span></span><code>In this example the <span class="nb">{</span><span class="k">\huge</span> huge font size<span class="nb">}</span> is set and 
+the <span class="nb">{</span><span class="k">\footnotesize</span> Foot note size also<span class="nb">}</span>. There&#39;s a fairly 
+large set of font sizes.
+</code></pre></div>
+
+<p>Existe um site do Overleaf que tem uma lista com estes comandos:
+<a href="https://pt.overleaf.com/learn/latex/Font_sizes,_families,_and_styles#Font_sizes">Link</a></p>
+<p>Por defeito, <code>\normalsize</code> tem 10 points, mas podemos mudar isto, como
+referimos no início, na declaração da <code>\documentclass</code>, e.g.
+<code>\documentclass[12pt]{article}</code>.</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Workshop LaTeX - Parte 3</h4>
+       <h5>Anteriores:</h5>
+       <ul>
+           <li><a href="../workshop-latex/latex">1. Workshop LaTeX</a></li>
+           <li><a href="../workshop-latex/latex1">1. Workshop LaTeX</a></li>
+       </ul>
+       <h5>Seguintes:</h5>
+       <ul>
+           <li><a href="../workshop-latex/latex3">3. Parte 3</a></li>
+           <li><a href="../workshop-latex/latex4">4. Workshop LaTeX</a></li>
+       </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item" style="padding: 8px 10px">
+  <h4><i class="fa fa-user fa-lg"></i><span class="icon-label">Segue-nos</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://www.facebook.com/NucleoFisicaIST"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+    <li class="list-group-item"><a href="https://www.instagram.com/nfist_/"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+    <li class="list-group-item"><a href="https://www.nfist.pt"><i class="fa fa-link fa-lg"></i> Website</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Series -->
+<li class="list-group-item">
+  <h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Workshop LaTeX</span></h4>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h5></i>Anterior:</h5>
+      <a href="../workshop-latex/latex1">  • Workshop LaTeX</a>
+    </li>
+    <li class="list-group-item">
+      <h5>Seguinte:</h5>
+      <a href="../workshop-latex/latex3">  • Parte 3</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Series -->
+
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container-fluid">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2021 NFIST
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Voltar ao início</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+
+    <script src="../theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>

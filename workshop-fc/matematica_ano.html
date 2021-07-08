@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Condições if - workshops</title>
+    <title>Equações do Movimento - workshops</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,15 @@
 
     <link href="../images/favicon.png" rel="icon">
 
-<link rel="canonical" href="../workshop-fc/ifs">
+<link rel="canonical" href="../workshop-fc/matematica_ano">
 
         <meta name="author" content="Bernardo Silva, Luís Lourenço" />
         <meta name="keywords" content="Programação,Física,Secundário" />
 
         <meta property="og:site_name" content="workshops" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Condições if"/>
-        <meta property="og:url" content="../workshop-fc/ifs"/>
+        <meta property="og:title" content="Equações do Movimento"/>
+        <meta property="og:url" content="../workshop-fc/matematica_ano"/>
         <meta property="og:description" content=""/>
         <meta property="article:published_time" content="2021-07-02" />
             <meta property="article:section" content="Workshop FC" />
@@ -86,10 +86,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../workshop-fc/ifs"
+                    <a href="../workshop-fc/matematica_ano"
                        rel="bookmark"
-                       title="Permalink to Condições if">
-                        Workshop FC - Condições if
+                       title="Permalink to Equações do Movimento">
+                        Workshop FC - Equações do Movimento
                     </a>
                 </h1>
             </header>
@@ -103,7 +103,7 @@
     </span>
 
             <span class="label label-default">Workshop</span>
-            Parte 6 de 20 do Workshop FC
+            Parte 11 de 20 do Workshop FC
 
 
 
@@ -160,191 +160,70 @@
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */</style><div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/NFIST-IST/workshop-repository/blob/main/content/workshop_fc/2_2_ifs.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p>A Física procura encontrar as leis que regem o comportamento da natureza.</p>
+<p>Interessa por isso olhar para quais são essas leis e perceber como as ferramentas computacionais podem ser úteis para perceber o seu conteúdo.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Condi&#231;&#245;es-If">Condi&#231;&#245;es <em>If</em><a class="anchor-link" href="#Condi&#231;&#245;es-If">&#182;</a></h1>
+<h1 id="Leis-de-Newton"><strong><em>Leis de Newton</em></strong><a class="anchor-link" href="#Leis-de-Newton">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Quando temos a necessidade de executar algum código apenas se se verificar dada uma condição, podemos utilizar um <code>if</code> (se).</p>
+<p>Vamos considerar o problema do movimento de um corpo de massa $m$. A sua posição pode variar no tempo, sendo uma função vetorial $\vec{r}(t)$ - que na verdade são 3 funções $x(t)$, $y(t)$ e $z(t)$. Este corpo pode ser uma bola a cair devido à atração gravítica da Terra, a própria Terra a mover-se em torno do Sol, ou numa escala mais pequena, um átomo a colidir com outros átomos.</p>
+<p>A primeira descrição das leis que determinam estes movimentos foi dada por <strong>Newton</strong>, e durante mais de 200 anos, foi a única descrição que tínhamos da natureza. Há cerca de um século, descobrimos que ela se comporta de maneira diferente, quer quando olhamos para coisas muito pequenas, como o movimento de átomos, quer quando olhamos para coisas muito grandes, como o movimento de planetas e estrelas. Em cada um destes casos surgiram novas teorias, não havendo ainda um conjunto de leis que funcione em todos as dimensões.</p>
+<p>Contudo, à escala do ser humano, as leis de Newton fornecem uma descrição praticamente exata da realidade e é para estas que vamos olhar.</p>
+<h3 id="Leis-de-Newton"><strong><em>Leis de Newton</em></strong><a class="anchor-link" href="#Leis-de-Newton">&#182;</a></h3><p>Existem várias maneiras de descrever a Mecânica Clássica (Newtoniana). Newton descreveu a interação entre corpos através de <strong>Forças</strong>. De forma geral, a força aplicada num corpo é um vetor que pode depender da sua posição, velocidade, e do tempo $F(\vec{r},\vec{v},t)$.</p>
+<p>A <strong>velocidade</strong> é definida como variação da posição por intervalo de tempo, e a <strong>aceleração</strong> como variação da velocidade:</p>
+<p>$\vec{v} = \frac{\Delta\vec{r}}{\Delta t}\;\;$ e  $\;\;\vec{a} = \frac{\Delta \vec{v}}{\Delta t} $</p>
+<p>Se estas quantidades variarem rapidamente, devemos calcular em intervalos de tempo curtos o suficiente, durante os quais $\vec{v}$ e $\vec{a}$ são aproximadamente constantes.</p>
+<p>A <strong>2ª Lei de Newton</strong> é então a equação  que determina o movimento do corpo, e tem a fomra:</p>
+<p>$\quad \boxed{\vec{F} = m\vec{a}}$</p>
+<p>O movimento é $\vec{r}(t)$ que satisfaz esta equação.</p>
+<p>$ $
+  $ $</p>
+<h3 id="Exemplo---Movimento-com-for&#231;a-constante"><strong><em>Exemplo - Movimento com for&#231;a constante</em></strong><a class="anchor-link" href="#Exemplo---Movimento-com-for&#231;a-constante">&#182;</a></h3><p>Consideramos movimento a uma dimensão.</p>
+<p>Se a força for constante $F$, a aceleração é também constante $a = F/m$. Neste a velocidade tem solução exata fácil:</p>
+<p>$ \frac{\Delta v}{\Delta t} = a =const. \;\Longleftrightarrow\; \Delta v = v(t) - v_0 = a \cdot t$</p>
+<p>Onde $v_0$ corresponde à velocidade do corpo em $t=0$.</p>
+<p>Para a posição, como a velocidade não é constante, temos de considerar intervalos pequenos, durante os quais a velocidade é aproximadamente constante:</p>
+<p>$\frac{\delta x}{\delta t} =  v \;\Longleftrightarrow\; \delta x =  x(t+\delta t) - x(t) =  v(t) \cdot \delta t$</p>
+<p>Esta equação tem como solução:</p>
+<p>$x(t) = x_0 + v_0  t + \frac{1}{2}at^2$</p>
+<p>Onde $x_0$ é uma constante qualquer que vai corresponder à posição do corpo em $t=0$.</p>
+<p>A equação obtida aplica-se por exemplo à queda de corpos. A força gravítica é em geral mais complicada, mas junto à superfície da Terra é aproximadamente constante. Um corpo de massa $m$ é atraído para a Terra com:</p>
+<p>$\vec{F_g} = -mg \vec{e_z}$</p>
+<p>Verifica-se então que $a_z = F_z/m = -mg/m = -g$, que é independente da massa do corpo $-$ todos os corpos caem com a mesma aceleração, se não existirem outras forças como atrito no ar que os distingam. Nas direções $x$ e $y$ a força é nula pelo que $a_x = a_y = 0$. Então temos:</p>
+<p>$x(t) = x_0 + v_{x0} t$</p>
+<p>$y(t) = y_0 + v_{y0} t$</p>
+<p>$z(t) = z_0 + v_{z0} t -\frac{1}{2}gt^2$</p>
 
-<pre><code>if {condicao}:
-  {código a executar se a condição for verdadeira}</code></pre>
-<p>Podemos ainda executar operações se a condição for falsa, através de um <code>else</code> (caso contrário):</p>
-
-<pre><code>if {condicao}:
-  {código a executar se a condição for verdadeira}
-else:
-  {código a executar se a condição for falsa}</code></pre>
-<p>Existe, por fim, a opção de verificar mais que uma condição, com um <code>elif</code> (<code>else</code> + <code>if</code>):</p>
-
-<pre><code>if {condicao 1}:
-  {código a executar se a condição for verdadeira}
-elif {condicao 2}:
-  {código a executar se a condição 1 for falsa e a condição 2 for verdadeira}
-else:
-  {código a executar se ambas as condições forem falsas}</code></pre>
-
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="M&#233;todo-de-Euler"><strong><em>M&#233;todo de Euler</em></strong><a class="anchor-link" href="#M&#233;todo-de-Euler">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>(Nota: as chavetas <code>{ }</code> não devem ser escritas, são apenas para representar que o texte deve ser substituído por alguma coisa)</p>
+<p>Apesar do exemplo visto ter solução simples, isto não acontece para a maior parte dos problemas. Interessa por isso investigar como observar o movimento aproximado do corpo, para os casos em que a solução exata não está ao nosso alcance.</p>
+<h3 id="Aproxima&#231;&#245;es"><strong><em>Aproxima&#231;&#245;es</em></strong><a class="anchor-link" href="#Aproxima&#231;&#245;es">&#182;</a></h3><p>A maneira como podemos calcular aproximadamente o movimento do corpo é considerando pequenos intervalos do tempo, nos quais a força é aproximadamente constante. Chamando a este intervalo $dt$, temos:</p>
+<p>$\frac{\delta v}{\delta t} = F/m \approx const. \;\Longrightarrow\;\;v(t+dt) \approx v(t) + F/m \cdot dt$</p>
+<p>Da mesma maneira, a velocidade variou pouco durante este intervalo, pelo que:</p>
+<p>$\frac{\delta x}{\delta t} = v \approx const. \;\Longrightarrow\;\; x(t+dt) \approx x(t) +v\cdot dt $</p>
+<p>Usando estas equações podemos determinar soluções aproximadas para os nossos problemas:</p>
+<h3 id="M&#233;todo-de-Euler"><strong><em>M&#233;todo de Euler</em></strong><a class="anchor-link" href="#M&#233;todo-de-Euler">&#182;</a></h3><p>Conhecendo as condições iniciais do nosso problema:</p>
+<p>$\vec{r}(t=0) = \vec{r_0}$</p>
+<p>$\vec{v}(t=0) = \vec{v_0}$</p>
+<p>Escolhemos um intervalo de tempo pequeno o suficiente $dt$, e calculamos iterativamente, até alcançar o tempo desejado:</p>
+<p>$\vec{v}(t+dt) = \vec{v}(t) + \vec{F}/m \cdot dt$</p>
+<p>$\vec{r}(t+dt) = \vec{r}(t) + \vec{v} \cdot dt$</p>
+<p>Escolhendo $dt$ cada vez mais pequeno a solução obtida deve tender para a solução exata, contudo aumenta o número de contas que temos de fazer.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">35</span>
-
-<span class="k">if</span> <span class="n">x</span><span class="o">&gt;</span><span class="n">y</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x é maior que y&quot;</span><span class="p">)</span>
-
-<span class="k">elif</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">y</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x é menor que y&quot;</span><span class="p">)</span>
-
-<span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x e y são iguais&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>x é menor que y
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Na sintaxe (maneira como se escreve), não nos devemos esquecer dos dois pontos <code>:</code> no final da linha, a seguir à condição.</p>
-<p>Outra coisa muito importante de realçar aqui é a <strong>indentação</strong>. Chamamos indentação ao espaço entre o início da linha e o texto nela escrito. Um parágrafo, de acordo com as regras do portugês, deverá estar <strong>indentado</strong>.</p>
-<p>Neste caso, a maneira de o Python saber que operações estão dentro do <code>if</code> é através da indentação. Todas estas operações deverão ter uma indentação maior que a do <code>if</code>, ou seja, se o <code>if</code> estiver no início da linha, as operações têm que ter pelo menos um espaço no início da linha. O número de espaços não é importante (podendo também ser um <code>Tab</code>, a tecla por cima do <em>Caps Lock</em>), sendo usual usar 2 a 4 espaços. De notar que é também importante que todas as operações tenham o mesmo número de espaços, se não obteremos um erro.</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="k">if</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Esta operação está dentro do if&quot;</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Esta também&quot;</span><span class="p">)</span>
-     <span class="c1">#print(&quot;Se o comentário desta for retirado, ocorrerá um erro&quot;)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Esta operação está fora do if&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Esta operação está dentro do if
-Esta também
-Esta operação está fora do if
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Quando estamos interessados em verificar mais que uma condição, podemos usar um <code>if</code> dentro de outro, ou operações lógicas (<code>and</code>, <code>or</code>, ...).</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
-  <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x está no intervalo ]2,5[&quot;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x está no intervalo ]2,5[&quot;</span><span class="p">)</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x é igual a 0 ou a 10&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>x está no intervalo ]2,5[
-x está no intervalo ]2,5[
-x é igual a 0 ou a 10
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 
@@ -381,7 +260,7 @@ x é igual a 0 ou a 10
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
-    <h4>Workshop FC - Parte 6</h4>
+    <h4>Workshop FC - Parte 11</h4>
        <h5>Anteriores:</h5>
        <ul>
            <li><a href="../workshop-fc/intro_workshop">1. Introdução ao Workshop</a></li>
@@ -389,14 +268,14 @@ x é igual a 0 ou a 10
            <li><a href="../workshop-fc/funcionamento">1.2. Funcionamento</a></li>
            <li><a href="../workshop-fc/programacaopython">2. Introdução à Programação em Python</a></li>
            <li><a href="../workshop-fc/variaveis">2.1. Variáveis</a></li>
-       </ul>
-       <h5>Seguintes:</h5>
-       <ul>
+           <li><a href="../workshop-fc/ifs">2.2. Condições if</a></li>
            <li><a href="../workshop-fc/funcoes">2.3. Funções e Bibliotecas</a></li>
            <li><a href="../workshop-fc/ciclos">2.4. Ciclos</a></li>
            <li><a href="../workshop-fc/matplotlib">2.5. A Biblioteca Matplotlib</a></li>
            <li><a href="../workshop-fc/matematica_fisica">3. Conceitos Físicos e Matemáticos</a></li>
-           <li><a href="../workshop-fc/matematica_ano">3.1. Equações do Movimento</a></li>
+       </ul>
+       <h5>Seguintes:</h5>
+       <ul>
            <li><a href="../workshop-fc/matematica_ano_derivadas">3.2. Equações do Movimento (12° ano)</a></li>
            <li><a href="../workshop-fc/exemplos_fisicos">4. Exemplos Físicos</a></li>
            <li><a href="../workshop-fc/massa_mola">4.1. Sistema Massa Mola</a></li>
@@ -435,11 +314,11 @@ x é igual a 0 ou a 10
   <ul class="list-group">
     <li class="list-group-item">
       <h5></i>Anterior:</h5>
-      <a href="../workshop-fc/variaveis">  • Variáveis</a>
+      <a href="../workshop-fc/matematica_fisica">  • Conceitos Físicos e Matemáticos</a>
     </li>
     <li class="list-group-item">
       <h5>Seguinte:</h5>
-      <a href="../workshop-fc/funcoes">  • Funções e Bibliotecas</a>
+      <a href="../workshop-fc/matematica_ano_derivadas">  • Equações do Movimento (12° ano)</a>
     </li>
   </ul>
 </li>

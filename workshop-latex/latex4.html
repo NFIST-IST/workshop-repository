@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Workshop LaTeX - workshops</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../images/favicon.png" rel="icon">
+
+<link rel="canonical" href="../workshop-latex/latex4">
+
+        <meta name="author" content="NFIST" />
+        <meta name="keywords" content="LaTeX,Documentos" />
+        <meta name="description" content="\LaTeX" />
+
+        <meta property="og:site_name" content="workshops" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Workshop LaTeX"/>
+        <meta property="og:url" content="../workshop-latex/latex4"/>
+        <meta property="og:description" content="\LaTeX"/>
+        <meta property="article:published_time" content="2021-07-13" />
+            <meta property="article:section" content="Workshop LaTeX" />
+            <meta property="article:tag" content="LaTeX" />
+            <meta property="article:tag" content="Documentos" />
+            <meta property="article:author" content="NFIST" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops ATOM Feed"/>
+
+        <link href="../feeds/workshop-latex.atom.xml" type="application/atom+xml" rel="alternate"
+              title="workshops Workshop LaTeX ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+<img class="img-responsive pull-left" style="margin-right:2px" src="../images/logo.png" width="100"/> workshops            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="../category/workshop-fc.html">Workshop fc</a>
+                        </li>
+                        <li class="active">
+                            <a href="../category/workshop-latex.html">Workshop latex</a>
+                        </li>
+                        <li >
+                            <a href="../category/workshop-mathematica.html">Workshop mathematica</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../workshop-latex/latex4"
+                       rel="bookmark"
+                       title="Permalink to Workshop LaTeX">
+                        Workshop LaTeX - Workshop LaTeX
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Data</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2021-07-13T00:00:00+01:00"> ter 13 julho 2021</time>
+    </span>
+
+            <span class="label label-default">Workshop</span>
+            Parte 5 de 5 do Workshop LaTeX
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="../tag/latex.html">LaTeX</a>
+        /
+	<a href="../tag/documentos.html">Documentos</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>WorkShop de LaTeX (Overleaf) - página 4</h1>
+<p>Índice:
+[TOC]</p>
+<hr>
+<h1>XIII. Paper Layout</h1>
+<h2>Abstract</h2>
+<p>Em documentos científicos, é costume colocar um breve resumo do documento. em LaTeX, o ==<strong><em>abstract environment</em></strong>== serve para isso. Eis um exemplo:</p>
+<p>```latex=
+\hrule
+</p>
+<div class="math">\begin{abstract}
+This is a simple paragraph at the beginning of the document.
+A brief introduction to the main subject.
+\end{abstract}</div>
+<p>
+\hrule\vspace{5mm}</p>
+<p>This is the document</p>
+<div class="highlight"><pre><span></span><code>![](https://i.imgur.com/Xa2PIWZ.png)
+
+
+Outra forma para colocar o Abstract será:
+
+```latex=
+% Preamble
+\usepackage{abstract}
+\setlength{\absleftindent}{4mm}
+\setlength{\absrightindent}{4mm}
+\setlength{\abstitleskip}{-4mm}
+...
+
+\hrule\begin{abstract}
+  % text
+\end{abstract}
+\hrule\vspace{5mm}
+</code></pre></div>
+
+<p>Pode-se personalizar alguns dos espaços do Abstract no <strong>preamble</strong>.</p>
+<h2>Documento em colunas</h2>
+<p>Para criar um documento de duas colunas, basta colocar um parâmetro na <em>document class</em>: ==<strong><em>\twocolumn</em></strong>==.</p>
+<p>Para maior flexibilidade, podemos simplesmente criar um <em>article</em> com múltiplas colunas. O ==<strong><em>package multicol</em></strong>== fornece os comandos para isso. Eis um exemplo:</p>
+<p>```latex=
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{multicol}</p>
+<p>\begin{document}</p>
+<div class="math">\begin{multicols}{3}
+[
+\section{First Section}
+All human things are subject to decay. And when fate summons, Monarchs must obey.
+]
+\blindtext\blindtext
+\end{multicols}</div>
+<p>\end{document}</p>
+<div class="highlight"><pre><span></span><code>![](https://i.imgur.com/AxYmdc3.png)
+
+Primeiro, importar o seguinte package no *preamble*: ***\usepackage{multicol}***
+
+Agora, podemos usar o environment ==**multicols**==, que recebe como argumento o ++número de colunas++, 3 neste caso. Eventualmente, pode receber um segundo argumento para inserir um texto antes das colunas no topo, tal como no exemplo.
+
+O texto das colunas insere-se dentro do** \\begin{multicols}** e **\\end{multicols}**.
+
+### Separador de colunas
+
+Para colocar um separador entre as colunas, basta definir o ==***\columnsep***== com um certo tamanho no **preamble**
+
+```latex=
+\setlength{\columnsep}{1cm}
+</code></pre></div>
+
+<ul>
+<li><strong>\columnbreak</strong>: Este comando insere uma quebra de coluna em causa.</li>
+</ul>
+<p>Segue-se o <a href="https://ftp.eq.uc.pt/software/TeX/macros/latex/required/tools/multicol.pdf">link</a> para a documentação do package multicol.</p>
+<h2>Índice - Table of Content</h2>
+<p>Não iremos entrar em detalhe sobre a construção do Índice, dado não ser muito utilizado em relatórios, mas este <a href="https://www.overleaf.com/learn/latex/Table_of_contents">link</a> redireciona para o site do Overleaf que explica o procedimento.</p>
+<hr>
+<h1>XIV. Label Cross-References</h1>
+<p>Informações retiradas do <a href="https://www.overleaf.com/learn/latex/Cross_referencing_sections,_equations_and_floats">link</a> do Overleaf.</p>
+<p>If you need to insert cross-references to numbered elements in the document, (like equations, sections and figures) there are commands to automate it in LATEX. This article explains how.</p>
+<p>O comando ==<strong><em>\label{ }</em></strong>== é usado para identificar um número/letra, seja uma secção, equação ou tabela. Isto para depois ser referenciada com o comando ==<strong><em>\ref{ }</em></strong>=, ou referenciando a sua página, ==<strong><em>\pageref{ }</em></strong>==.</p>
+<h2>Secções</h2>
+<p>Exemplo:</p>
+<p>```latex=
+\section{Introduction} \label{introduction}
+This is an introductory paragraph with some dummy text. This section will be referenced later.</p>
+<div class="math">\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\linewidth]{overleaf-logo}
+\caption{This image will be referenced below.}
+\label{fig:leaf}
+\end{figure}</div>
+<p>You can reference images; for instance, Figure \ref{fig:leaf} shows the \textit{Overleaf} logo.
+\vspace{0.5cm}</p>
+<p>\section{Math references} \label{mathrefs}
+As mentioned in section \ref{introduction}, different elements can be referenced within a document.</p>
+<div class="highlight"><pre><span></span><code>![](https://i.imgur.com/p4xTSca.png)
+
+A ++label++ é colocada depois do código **\section**. Isto também resulta para subsections e subsubsections.
+
+## Equações
+
+Exemplo:
+```latex=
+section{Math references} \label{mathrefs}
+As mentioned in section \ref{introduction}, different elements can be referenced within a document.
+
+\subsection{Powers series} \label{subsection}
+
+\begin{equation} \label{eq:1}
+\sum_{i=0}^{\infty} a_i x^i
+\end{equation}
+
+Equation \ref{eq:1} is a typical power series.
+</code></pre></div>
+
+<p><img alt="" src="https://i.imgur.com/IbnxULU.png"></p>
+<p>E de igual modo para as tabelas</p>
+<h2>Referenciar página</h2>
+<p>```latex=
+\section{Last section}
+In subsection \ref{subsection} on page \pageref{eq:1} an example of a power series was presented.</p>
+<div class="highlight"><pre><span></span><code>![](https://i.imgur.com/uvBLzoy.png)
+
+O comando **\pageref** irá inserir a página onde o elemento referenciado aparece. No exemplo, a página da equação 1 do exemplo anterior a este.
+
+---
+
+# XV. Bibliografia
+
+Uma bibliografia standard usa comandos semelhantes às listas.
+
+```latex=
+\begin{thebibliography}{9}
+  \bibitem{latexcompanion} 
+  Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+  \textit{The \LaTeX\ Companion}. 
+  Addison-Wesley, Reading, Massachusetts, 1993.
+\end{thebibliography}
+</code></pre></div>
+
+<p><img alt="" src="https://i.imgur.com/leXc3gj.png"></p>
+<p>The environment thebibliography produces a list of references; such list will be titled "References" in a article document class, and "Bibliography" in book and report document classes. A parameter inside braces, 9 in the example, indicates the number of entries to be added; this parameter can not be greater than 99.</p>
+<p>To create a bibliography entry the command \bibitem is used. A parameter inside braces is set to label this entry and can later be used as identifier for this reference. After the closing brace the text with the name of the author, the book title, publisher and so on is entered.</p>
+<h2>Citar</h2>
+<p>The command \cite insert the number corresponding to the bibliography entry whose label is passed inside braces. For example, the output of \cite{latexcompanion} is [1].</p>
+<p>The information printed by the command \cite{} depends on the bibliography style used. See Bibtex bibliography styles.</p>
+<p>```latex=
+\section{First section}</p>
+<p>This document is an example of \texttt{thebibliography} environment using 
+in bibliography management, cited: \textit{The \LaTeX\ Companion} 
+book \cite{latexcompanion}. </p>
+<div class="highlight"><pre><span></span><code>## Bibliografia com o Bibtex
+
+Outra maneira de fazer uma bibliografia é usar o ==***BibTeX***==. A bibliografia é colocada num ficheiro separado e depois importado na *main*.
+
+```latex=
+\bibliographystyle{unsrt}
+\bibliography{sample}
+</code></pre></div>
+
+<p>Este usa os seguintes comandos:</p>
+<ul>
+<li>
+<p><strong>\bibliography{sample}</strong>:
+Importa o ++ficheiro "sample.bib"++ em Bibtex.</p>
+</li>
+<li>
+<p><strong>\bibliographystyle{unsrt}</strong>:
+Coloca um certo estilo para a bibliografia. A informação mostrada depende do estilo usado. 
+Ver o <a href="https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles">Bibtex bibliography styles</a>, que contém os vários estilos da bibliografia disponíveis no LaTeX.</p>
+</li>
+</ul>
+<h2>Ficheiro .bib</h2>
+<p>Como foi dito anteriormente, as referêncicas bibliográficas estão usualmente num ficheiro separado com a extensão ==<strong><em>.bib</em></strong>==. Este ficheiro consiste numa lista das referências, em que cada um tem as informações relativas à entrada. Exemplo de um artigo:</p>
+<p>```latex=
+@article{einstein,
+    author =       "Albert Einstein",
+    title =        "{Zur Elektrodynamik bewegter K{\"o}rper}. ({German})
+        [{On} the electrodynamics of moving bodies]",
+    journal =      "Annalen der Physik",
+    volume =       "322",
+    number =       "10",
+    pages =        "891--921",
+    year =         "1905",
+    DOI =          "http://dx.doi.org/10.1002/andp.19053221004"
+}</p>
+<div class="highlight"><pre><span></span><code>Este ficheiro tem a informção sobre um certo elemento, que primeiro é definido por:
+
+- @article{...}:
+Descreve o **tipo de referência** bibliográfica. O *BibTeX* sabe o tipo de informação que recebe e dispõe-na de acordo com as normas associadas. Neste caso, será um artigo - mostrar-se-á o autor, o título, etc. do artigo. Ver o [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide) para mais estilos.
+- einstein:
+É o label para a referência que é identificada. Sempre que se quer citar no documento esta referência bibliográfica, usa-se este nome.
+- author = &quot;Albert Einstein&quot;,
+O autor do artigo é uma das muitas informações que pode ser colocada na entradao. Existem muitas mais informações, separadas entre vírgulas com a seguinte sintaxe: key = value. Ver o [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide) para mais possibilidades de informações que ultilizadas, e este [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide) para uma lista mais detalhada.
+
+
+Existem vários sites na internet que criam as entradas descritas com base num url ou o nome do artigo ou livro em causa.
+
+
+## XVI. Bibliografia com o Biblatex
+
+Finalmente, outra maneira de fazer uma bibliografia é usar o ==***Biblatex***==. Eis um exemplo simples de como o fazer:
+
+```latex=
+\usepackage{biblatex}
+\addbibresource{sample.bib}
+
+\begin{document}
+Lets cite! The Einsteins journal paper \cite{einstein} and the Dirac&#39;s 
+book \cite{dirac} are physics related items. 
+
+\printbibliography
+
+\end{document}
+</code></pre></div>
+
+<p><img alt="" src="https://i.imgur.com/sLn64Vb.png"></p>
+<p>Com os seguintes comandos:</p>
+<ul>
+<li><strong>\usepackage{biblatex}</strong>
+Para importar o ==<strong>package biblatex</strong>==.</li>
+<li><strong>\addbibresource{sample.bib}</strong>
+++Importar o ficheiro bibtex++, sample.bib, com as referências que contêm as informações de cada referência. Ver secção anterior sobre este ficheiro.</li>
+<li><strong>\cite{einstein}</strong>
+Este comando insere a citação da referência no documento - [1], neste caso, que corresponde ao elemento bibliográfico "einstein".</li>
+<li>\printbibliography
+Imprime a lista de citações referenciadas, com o título "References" ou "Referências", dependendo da língua usada.</li>
+</ul>
+<p>:::info
+O Overleaf fornece uma série de templates com diferentes estilos de bibliografia. Ver exemplo neste <a href="https://www.overleaf.com/latex/templates/tagged/bibliography">link</a>.
+:::</p>
+<h3>Package Biblatex</h3>
+<p>Muitos parâmetros podem ser colocados ao importar o pacote biblatex. Eis um exemplo:
+```latex=
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{sample.bib}
+...</p>
+<p>\begin{document}</p>
+<p>\maketitle</p>
+<p>Using \texttt{biblatex} you can display bibliography divided into sections, 
+depending of citation type. 
+...
+Knuth's items \cite{knuth-fa,knuth-acp} are dedicated to programming. </p>
+<p>\medskip</p>
+<p>\printbibliography</p>
+<p>\end{document}</p>
+<div class="highlight"><pre><span></span><code>![](https://i.imgur.com/DIf8qpt.png)
+Segue-se o significado de cada parâmetro:
+- **backend=biber**:
+Define o *backend* para ordenar a bibliografia, **biber** é o padrão recomendado, mas pode-se mudar para bibtex.
+- **style=alphabetic**
+Define o estilo da bibliografia e das citações; neste caso está *alphabetic*, mas podemos colocar *numeric*, que é mais usual. Mais estilos estão disponíveis. Ver [bibliography styles](https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles) e [citation styles](https://www.overleaf.com/learn/latex/Natbib_citation_styles) para mais informações sobre estilos e citações, respetivamente.
+- **sorting=ynt**
+Determinar o ordenamento de informações, neste caso ordenadar por ano, nome e título; *none* também é usual usar. Ver a lista de possibilidade no seguinte [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide)
+
+
+### Personalizar Bibliografia
+
+Não iremos entrar em detalhe, mas deixamos um [link](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Customizing_the_bibliography) do Overleaf que pode ajudar.
+
+
+## Exemplo 
+```latex=
+\usepackage{csquotes}
+\usepackage[
+backend=biber,
+% style=alphabetic,
+style=numeric,
+sorting=none
+]{biblatex}
+
+\addbibresource{Bibliography.bib}
+...
+
+\printbibliography
+</code></pre></div>
+
+<hr>
+<h1>XVII. Macros e Helpers</h1>
+<h2>Comandos</h2>
+<p>Até aqui usámos vários comandos definidos pelo LaTeX ou por packages. Veremos agora como criar os nossos próprios comandos.</p>
+<p>Novos comandos são definidos por ==<strong><em>\newcommand</em></strong>==. Vejamos um exemplo simples:</p>
+<p>```latex=
+\newcommand{\R}{\mathbb{R}}
+...</p>
+<p>The set of real numbers are usually represented 
+by a blackboard bold capital r: ( \R ).</p>
+<div class="highlight"><pre><span></span><code>![](https://i.imgur.com/doUJrki.png)
+
+O código recebe 2 parâmetros:
+
+- **\R**: Este será o nome do novo comando. Isto de modo a declará-lo no meio do texto.
+- **\mathbb{R}**: Isto é o que o novo comando faz. Neste caso, escreve os números reais $\mathbb{R}$ (comando *\mathbb* necessita do *package amssymb*).
+
+
+Também é possível criar **comando com parâmetros**. Eis um exemplo:
+```latex=
+\newcommand{\bb}[1]{\mathbb{#1}}
+
+Other numerical systems have similar notations. 
+The complex numbers \( \bb{C} \), the rational 
+numbers \( \bb{Q} \) and the integer numbers \( \bb{Z} \).
+</code></pre></div>
+
+<p>Na linha ==\newcommand{\bb}[1]{\mathbb{#1}}== define o comando anterior, mas desta vez recebe um argumento que será o texto a colocar em modo <em>\mathbb{}</em> 
+- <strong>[1]</strong>: número de prâmetros a receber.
+- <strong>\mathbb{#1}</strong>: Este comando referencia o parâmetro 1 - irá substituir o texto que recebe em 1º lugar no lugar do #1. Estes podem ir até 9 parâmetros, #1, #2, etc.</p>
+<p>Também é possível criar comandos com parâmetros opcionais. Exemplo:
+```latex=
+\newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}</p>
+<p>To save some time when writing too many expressions 
+with exponents is by defining a new command to make simpler:</p>
+<p>[ \plusbinomial{x}{y} ]</p>
+<p>And even the exponent can be changed</p>
+<p>[ \plusbinomial[4]{y}{y} ]</p>
+<div class="highlight"><pre><span></span><code>![](https://i.imgur.com/wgjHUke.png)
+
+Expliquemos a sintaxe da linha ==\newcommand{\plusbinomial}\[3\]\[2\]{(#2 + #3)^#1}==
+
+- **\plusbinomial**: Nome do novo comando
+- **\[3\]**: número de parâmetros, no caso de receber os parâmetros adicionais.
+- **\[2\]**: Este é o valor padrão para o primeiro parâmetro, que será opcional. Neste caso, temos 1 parâmetro opcional, que será logo o primeiro, o #1. 
+- **(#2 + #3)^#1**: É o que o comando faz. Neste caso, coloca um 2 no parãmetro 1 caso nao seja colocado nada dentro dos parênteses retos. Os parâmetros opcionais vêm sempre primeiro, antes dos obrigatórios.
+- \newcomand: como criar e utilidade
+
+Também podemos definir ou mudar comandos existentes, usando o código ==***\renewcommand***==. Eis um exemplo:
+```latex=
+\renewcommand{\S}{\mathbb{S}}
+
+The Riemann sphere (the complex numbers plus $\infty$) is 
+sometimes represented by \( \S \)
+</code></pre></div>
+
+<p><img alt="" src="https://i.imgur.com/b5Lzfxf.png"></p>
+<p>Neste exemplo, o comando \S, <span class="math">\(\S\)</span>, é reescrito para escrever um <em>blackboard bold</em> S, <span class="math">\(\mathbb{S}\)</span>.</p>
+<p>:::info
+<strong>\renewcommand</strong> usa a mesma sintaxe do <strong>\newcommand</strong>, definida anteriormente.
+:::</p>
+<h2>Tratar Erros</h2>
+<ul>
+<li>Erros acontecem. Quando acontecerem, ter o mesmo "mindset" de programação - tentar fazer um debug das linhas de código que originaram o erro. Em LaTeX, os típicos <strong>erros a vermelho</strong> que se têm são falta de parênteses e erros ortográficos nos comandos, entre outros.</li>
+<li>Alguns <strong>erros a amarelo</strong> não são muito relevantes e não há muito problema em deixá-los, mas devemos evitá-los. Repeticões de label e falta de referenciação são exemplos destes erros.</li>
+<li>Quanto aos <strong>erros a azul</strong>, normalmente ocorrem por falta de espaço e sobreposição de <em>floats</em>; não são preocupantes.</li>
+</ul>
+<p>Em casos graves, ir ao histórico e reaver o último documento que esteja bem:
+<img alt="" src="https://i.imgur.com/rTvbxxa.png"></p>
+<p>Também é possível comparar várias versões do documento para ver as modificações que ocorreram, muitas das vezes para encontrar erros:
+<img alt="" src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/3/3d/History-compare-view.gif"></p>
+<h2>Spread-LaTeX</h2>
+<p>Este é uma ==<strong><em>extensão, add-on,</em></strong>== para converter tabelas de excel no <a href="https://docs.google.com/spreadsheets/">Google Spreadsheet</a> para tabela de LaTeX e vice versa. Isto porque <em>it's a pain in the ass</em> para fazer estar transições.</p>
+<ul>
+<li><a href="https://workspace.google.com/marketplace/app/spreadlatex/218144906748">Spread-LaTeX Link</a></li>
+</ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Workshop LaTeX - Parte 5</h4>
+       <h5>Anteriores:</h5>
+       <ul>
+           <li><a href="../workshop-latex/latex">1. Workshop LaTeX</a></li>
+           <li><a href="../workshop-latex/latex1">1. Workshop LaTeX</a></li>
+           <li><a href="../workshop-latex/latex2">2. Parte 2</a></li>
+           <li><a href="../workshop-latex/latex3">3. Parte 3</a></li>
+       </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item" style="padding: 8px 10px">
+  <h4><i class="fa fa-user fa-lg"></i><span class="icon-label">Segue-nos</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://www.facebook.com/NucleoFisicaIST"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+    <li class="list-group-item"><a href="https://www.instagram.com/nfist_/"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+    <li class="list-group-item"><a href="https://www.nfist.pt"><i class="fa fa-link fa-lg"></i> Website</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Series -->
+<li class="list-group-item">
+  <h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Workshop LaTeX</span></h4>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h5></i>Anterior:</h5>
+      <a href="../workshop-latex/latex3">  • Parte 3</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Series -->
+
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container-fluid">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2021 NFIST
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Voltar ao início</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+
+    <script src="../theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>
