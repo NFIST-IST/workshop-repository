@@ -20,6 +20,7 @@ $ git submodule update --init --recursive
 
 Since we will be working with some Python libraries, it is advised to use a 
 virtual environment. 
+Here we used python's venv, but you can use the tool of your choosing such as pyevn or conda environments.
 
 ```
 $ python -m venv ~/.envs/workshop-repository
